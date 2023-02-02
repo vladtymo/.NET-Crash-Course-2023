@@ -1,0 +1,15 @@
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.csproj.AssemblyReference.cache
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.AssemblyInfoInputs.cache
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.AssemblyInfo.cs
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.csproj.CoreCompileInputs.cache
+D:\.Net\dot_net_crash_course\dz_1\bin\Debug\net7.0\dz_1.exe
+D:\.Net\dot_net_crash_course\dz_1\bin\Debug\net7.0\dz_1.deps.json
+D:\.Net\dot_net_crash_course\dz_1\bin\Debug\net7.0\dz_1.runtimeconfig.json
+D:\.Net\dot_net_crash_course\dz_1\bin\Debug\net7.0\dz_1.dll
+D:\.Net\dot_net_crash_course\dz_1\bin\Debug\net7.0\dz_1.pdb
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.dll
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\refint\dz_1.dll
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.pdb
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\dz_1.genruntimeconfig.cache
+D:\.Net\dot_net_crash_course\dz_1\obj\Debug\net7.0\ref\dz_1.dll

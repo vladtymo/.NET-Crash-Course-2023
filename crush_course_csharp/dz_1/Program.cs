@@ -3,6 +3,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        Console.OutputEncoding = System.Text.Encoding.Unicode;
+        Console.InputEncoding = System.Text.Encoding.Unicode;
+
         //------завдання 1------//
         /*
         Console.Write("Введіть поточний рік: ");

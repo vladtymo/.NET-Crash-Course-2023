@@ -41,9 +41,6 @@ namespace hometask1.TimeDate
                     continue;
                 }
             } while (true);
-
-
-
         }
 
         public void SecondsToTime()

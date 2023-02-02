@@ -41,7 +41,7 @@
             DateTime time1 = new DateTime(1, 1, 1, h, m, s);
             Console.WriteLine($"\n Time = {time1.ToString("HH:mm:ss")}");
 
-            Console.WriteLine("Task 5: Time ");
+            Console.WriteLine("Task 5: Days in a year ");
             int y;
             Console.Write("Enter year: ");
             y = Convert.ToInt32(Console.ReadLine());

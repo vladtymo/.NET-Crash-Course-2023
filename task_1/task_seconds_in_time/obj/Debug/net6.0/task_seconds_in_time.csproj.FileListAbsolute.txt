@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\bin\Debug\net6.0\task_seconds_in_time.exe
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\bin\Debug\net6.0\task_seconds_in_time.deps.json
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\bin\Debug\net6.0\task_seconds_in_time.runtimeconfig.json
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\bin\Debug\net6.0\task_seconds_in_time.dll
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\bin\Debug\net6.0\task_seconds_in_time.pdb
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.dll
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\refint\task_seconds_in_time.dll
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.pdb
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\task_seconds_in_time.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET\task_1\task_seconds_in_time\obj\Debug\net6.0\ref\task_seconds_in_time.dll

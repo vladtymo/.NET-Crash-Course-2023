@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET\task_1\task_date\bin\Debug\net6.0\task_date.exe
+C:\Users\PC\Desktop\.NET\task_1\task_date\bin\Debug\net6.0\task_date.deps.json
+C:\Users\PC\Desktop\.NET\task_1\task_date\bin\Debug\net6.0\task_date.runtimeconfig.json
+C:\Users\PC\Desktop\.NET\task_1\task_date\bin\Debug\net6.0\task_date.dll
+C:\Users\PC\Desktop\.NET\task_1\task_date\bin\Debug\net6.0\task_date.pdb
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.dll
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\refint\task_date.dll
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.pdb
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\task_date.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET\task_1\task_date\obj\Debug\net6.0\ref\task_date.dll

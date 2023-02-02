@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\bin\Debug\net6.0\task_enum.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\bin\Debug\net6.0\task_enum.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\bin\Debug\net6.0\task_enum.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\bin\Debug\net6.0\task_enum.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\bin\Debug\net6.0\task_enum.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\refint\task_enum.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\task_enum.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_enum\obj\Debug\net6.0\ref\task_enum.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EOREPSTUpFxqrf92TFL3FE2za7qdh4HtdB9quu1MfypD48a/JKXXdIXTXnr3ZgKbEXCuJAfT+t7hQBLI2gtYwA==",
+  "dgSpecHash": "WCgyCRmsMqTclkT176S6qxGSkxNM77ptnNn/O/9lnm5LZXgg0+het0ZFcJdH+Y7++svpYnoSu8W6Js34yX8C4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\.NET\\task_2\\task_enum\\task_enum.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_2\\task_enum\\task_enum.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

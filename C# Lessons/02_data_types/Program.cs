@@ -55,11 +55,16 @@ Console.WriteLine("\n----------------- TASK 4 -----------------");
 Console.Write("Enter seconds: ");
 int seconds = int.Parse(Console.ReadLine()); // 8405 -> 2h 20m 5s
 
-int hours = seconds / 3600;
+const int secondsPerHour = 3600;
+const int secondsPerMinute = 60;
 
-seconds -= hours * 3600;                     // 1205
-int minutes = seconds / 60;
+//secondsPerHour += 1; // cannot modify constants value
 
-seconds -= minutes * 60;                     // 5
+int hours = seconds / secondsPerHour;
+
+seconds -= hours * secondsPerHour;              // 1205
+int minutes = seconds / secondsPerMinute;
+
+seconds -= minutes * secondsPerMinute;          // 5
 
 Console.WriteLine($"Time: {hours}:{minutes}:{seconds}");

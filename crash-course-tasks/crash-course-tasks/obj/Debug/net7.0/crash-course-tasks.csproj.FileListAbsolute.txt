@@ -1,0 +1,15 @@
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\bin\Debug\net7.0\crash-course-tasks.exe
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\bin\Debug\net7.0\crash-course-tasks.deps.json
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\bin\Debug\net7.0\crash-course-tasks.runtimeconfig.json
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\bin\Debug\net7.0\crash-course-tasks.dll
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\bin\Debug\net7.0\crash-course-tasks.pdb
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.csproj.AssemblyReference.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.AssemblyInfoInputs.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.AssemblyInfo.cs
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.dll
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\refint\crash-course-tasks.dll
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.pdb
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\crash-course-tasks.genruntimeconfig.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks\obj\Debug\net7.0\ref\crash-course-tasks.dll

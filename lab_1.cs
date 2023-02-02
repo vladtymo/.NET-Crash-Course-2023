@@ -28,7 +28,7 @@
             float r;
             Console.Write("Enter radius: ");
             r = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"\nArea of a circle= {3.14 * r * r}");
+            Console.WriteLine($"\nArea of a circle= {Math.PI * r * r}");
 
             Console.WriteLine("Task 4: Time ");
             int s1, h, m, s;

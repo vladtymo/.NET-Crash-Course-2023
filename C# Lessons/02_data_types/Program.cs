@@ -35,3 +35,31 @@ Console.WriteLine($"Result: {a}");
 Console.WriteLine($"Door info: {area / 10000}m^2 {color} made of {material} with status {isOpen}");
 
 // ----------- ariphmetic operations: + - * / %
+// ----------- modify value: += -= *= /= %=
+
+// ----------- type converting
+// string parse using type.Parse() method
+double doubleValue = double.Parse("55.2");
+int intValue = int.Parse("876");
+
+Console.WriteLine($"Double value: {doubleValue}");
+Console.WriteLine($"Int value: {intValue}");
+
+// type converting using Convert class
+decimal decimalValue = Convert.ToDecimal(doubleValue);
+Console.WriteLine($"Int value: {intValue}");
+
+// ----------- practical tasks -----------
+// task 4:
+Console.WriteLine("\n----------------- TASK 4 -----------------");
+Console.Write("Enter seconds: ");
+int seconds = int.Parse(Console.ReadLine()); // 8405 -> 2h 20m 5s
+
+int hours = seconds / 3600;
+
+seconds -= hours * 3600;                     // 1205
+int minutes = seconds / 60;
+
+seconds -= minutes * 60;                     // 5
+
+Console.WriteLine($"Time: {hours}:{minutes}:{seconds}");

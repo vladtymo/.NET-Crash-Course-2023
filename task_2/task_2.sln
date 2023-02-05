@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task_exchange_currency", "t
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diameter", "Circumference\Diameter.csproj", "{88A5458C-01B3-41C0-A45D-A5C2B95F8441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Palindrome.csproj", "{8069D581-9572-4B16-B8AD-53EE1E1FC193}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8069D581-9572-4B16-B8AD-53EE1E1FC193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8069D581-9572-4B16-B8AD-53EE1E1FC193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8069D581-9572-4B16-B8AD-53EE1E1FC193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8069D581-9572-4B16-B8AD-53EE1E1FC193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

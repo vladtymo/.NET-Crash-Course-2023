@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\bin\Debug\net6.0\Palindrome.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\bin\Debug\net6.0\Palindrome.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\bin\Debug\net6.0\Palindrome.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\bin\Debug\net6.0\Palindrome.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\bin\Debug\net6.0\Palindrome.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\refint\Palindrome.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\Palindrome.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Palindrome\obj\Debug\net6.0\ref\Palindrome.dll

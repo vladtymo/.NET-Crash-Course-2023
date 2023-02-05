@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\bin\Debug\net6.0\task_exchange_currency.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\bin\Debug\net6.0\task_exchange_currency.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\bin\Debug\net6.0\task_exchange_currency.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\bin\Debug\net6.0\task_exchange_currency.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\bin\Debug\net6.0\task_exchange_currency.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\refint\task_exchange_currency.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\task_exchange_currency.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\task_exchange_currency\obj\Debug\net6.0\ref\task_exchange_currency.dll

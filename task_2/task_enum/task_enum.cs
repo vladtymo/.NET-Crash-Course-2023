@@ -1,6 +1,6 @@
 ﻿
 enum Week { Monday=1, Tuesday , Wednesday , Thursday, Friday, Saturday, Sunday }
-internal class Program
+internal class task_enum
 {
     private static void Main(string[] args)
     {

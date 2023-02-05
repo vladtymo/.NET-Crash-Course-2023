@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\bin\Debug\net6.0\Diameter.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\bin\Debug\net6.0\Diameter.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\bin\Debug\net6.0\Diameter.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\bin\Debug\net6.0\Diameter.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\bin\Debug\net6.0\Diameter.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\refint\Diameter.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\Diameter.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_2\Circumference\obj\Debug\net6.0\ref\Diameter.dll

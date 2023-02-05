@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task_enum", "task_enum\task_enum.csproj", "{321258A6-7480-4418-AC05-F24894EE4F3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "task_exchange_currency", "task_exchange_currency\task_exchange_currency.csproj", "{A66F38DB-F937-44D6-AE57-AD1B0552001F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "task_exchange_currency", "task_exchange_currency\task_exchange_currency.csproj", "{A66F38DB-F937-44D6-AE57-AD1B0552001F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diameter", "Circumference\Diameter.csproj", "{88A5458C-01B3-41C0-A45D-A5C2B95F8441}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A66F38DB-F937-44D6-AE57-AD1B0552001F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A66F38DB-F937-44D6-AE57-AD1B0552001F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A66F38DB-F937-44D6-AE57-AD1B0552001F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A5458C-01B3-41C0-A45D-A5C2B95F8441}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\bin\Debug\net7.0\Homework 1.exe
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\bin\Debug\net7.0\Homework 1.deps.json
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\bin\Debug\net7.0\Homework 1.runtimeconfig.json
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\bin\Debug\net7.0\Homework 1.dll
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\bin\Debug\net7.0\Homework 1.pdb
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.csproj.AssemblyReference.cache
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.AssemblyInfoInputs.cache
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.AssemblyInfo.cs
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.csproj.CoreCompileInputs.cache
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.dll
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\refint\Homework 1.dll
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.pdb
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\Homework 1.genruntimeconfig.cache
+C:\Users\TRONEVI4\Desktop\Net Crash course\Homework 1\Homework 1\obj\Debug\net7.0\ref\Homework 1.dll

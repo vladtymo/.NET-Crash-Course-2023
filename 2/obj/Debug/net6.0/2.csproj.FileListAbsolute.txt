@@ -1,0 +1,15 @@
+/home/maks/Стільниця/c#.NET/2/bin/Debug/net6.0/2
+/home/maks/Стільниця/c#.NET/2/bin/Debug/net6.0/2.deps.json
+/home/maks/Стільниця/c#.NET/2/bin/Debug/net6.0/2.runtimeconfig.json
+/home/maks/Стільниця/c#.NET/2/bin/Debug/net6.0/2.dll
+/home/maks/Стільниця/c#.NET/2/bin/Debug/net6.0/2.pdb
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.csproj.AssemblyReference.cache
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.GeneratedMSBuildEditorConfig.editorconfig
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.AssemblyInfoInputs.cache
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.AssemblyInfo.cs
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.csproj.CoreCompileInputs.cache
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.dll
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/refint/2.dll
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.pdb
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/2.genruntimeconfig.cache
+/home/maks/Стільниця/c#.NET/2/obj/Debug/net6.0/ref/2.dll

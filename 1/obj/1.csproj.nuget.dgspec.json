@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/maks/Стільниця/c#.NET/1/1.csproj": {}
+  },
+  "projects": {
+    "/home/maks/Стільниця/c#.NET/1/1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/maks/Стільниця/c#.NET/1/1.csproj",
+        "projectName": "1",
+        "projectPath": "/home/maks/Стільниця/c#.NET/1/1.csproj",
+        "packagesPath": "/home/maks/.nuget/packages/",
+        "outputPath": "/home/maks/Стільниця/c#.NET/1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/maks/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

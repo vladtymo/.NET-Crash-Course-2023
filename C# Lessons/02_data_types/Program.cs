@@ -36,6 +36,11 @@ Console.WriteLine($"Door info: {area / 10000}m^2 {color} made of {material} with
 
 // ----------- ariphmetic operations: + - * / %
 // ----------- modify value: += -= *= /= %=
+// ----------- increment/decrement: ++ --
+int c = 10;
+int result = c++;
+Console.WriteLine(c);      // 11
+Console.WriteLine(result); // 10
 
 // ----------- type converting
 // string parse using type.Parse() method

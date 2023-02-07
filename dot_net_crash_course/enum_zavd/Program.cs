@@ -4,10 +4,8 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        //Zavd1();
-        Zavd2();
-
-
+        Zavd1();
+        //Zavd2();
     }
 
     private static void Zavd1()
@@ -45,7 +43,7 @@ internal class Program
 
     private static void Zavd2()
     {
-
+        ///later
     }
 
 

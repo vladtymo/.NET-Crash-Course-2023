@@ -1,0 +1,15 @@
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\bin\Debug\net7.0\Task3.exe
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\bin\Debug\net7.0\Task3.deps.json
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\bin\Debug\net7.0\Task3.runtimeconfig.json
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\bin\Debug\net7.0\Task3.dll
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\bin\Debug\net7.0\Task3.pdb
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.csproj.AssemblyReference.cache
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.AssemblyInfoInputs.cache
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.AssemblyInfo.cs
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.csproj.CoreCompileInputs.cache
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.dll
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\refint\Task3.dll
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.pdb
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\Task3.genruntimeconfig.cache
+C:\Users\kkoly\source\repos\NikHusachenko\.NET-Crash-Course-2023\Hometasks\Task1\Task3\obj\Debug\net7.0\ref\Task3.dll

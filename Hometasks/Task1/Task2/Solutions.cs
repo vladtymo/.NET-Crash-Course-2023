@@ -184,6 +184,7 @@ namespace Task2
                 if(str[i] != str[str.Length - 1 - i])
                 {
                     isPalindrome = false;
+                    break;
                 }
             }
 

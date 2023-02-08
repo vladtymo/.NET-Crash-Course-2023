@@ -1,0 +1,15 @@
+D:\Solutions\TaskMasivi\TaskMasivi\bin\Debug\net6.0\TaskMasivi.exe
+D:\Solutions\TaskMasivi\TaskMasivi\bin\Debug\net6.0\TaskMasivi.deps.json
+D:\Solutions\TaskMasivi\TaskMasivi\bin\Debug\net6.0\TaskMasivi.runtimeconfig.json
+D:\Solutions\TaskMasivi\TaskMasivi\bin\Debug\net6.0\TaskMasivi.dll
+D:\Solutions\TaskMasivi\TaskMasivi\bin\Debug\net6.0\TaskMasivi.pdb
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.csproj.AssemblyReference.cache
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.AssemblyInfoInputs.cache
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.AssemblyInfo.cs
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.csproj.CoreCompileInputs.cache
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.dll
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\refint\TaskMasivi.dll
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.pdb
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\TaskMasivi.genruntimeconfig.cache
+D:\Solutions\TaskMasivi\TaskMasivi\obj\Debug\net6.0\ref\TaskMasivi.dll

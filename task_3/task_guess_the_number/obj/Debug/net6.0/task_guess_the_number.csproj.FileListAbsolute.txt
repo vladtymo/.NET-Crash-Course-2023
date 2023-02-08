@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\bin\Debug\net6.0\task_guess_the_number.exe
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\bin\Debug\net6.0\task_guess_the_number.deps.json
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\bin\Debug\net6.0\task_guess_the_number.runtimeconfig.json
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\bin\Debug\net6.0\task_guess_the_number.dll
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\bin\Debug\net6.0\task_guess_the_number.pdb
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.dll
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\refint\task_guess_the_number.dll
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.pdb
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\task_guess_the_number.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET\task_3\task_guess_the_number\obj\Debug\net6.0\ref\task_guess_the_number.dll

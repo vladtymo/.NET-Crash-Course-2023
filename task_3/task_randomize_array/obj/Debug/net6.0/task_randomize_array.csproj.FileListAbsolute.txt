@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\bin\Debug\net6.0\task_randomize_array.exe
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\bin\Debug\net6.0\task_randomize_array.deps.json
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\bin\Debug\net6.0\task_randomize_array.runtimeconfig.json
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\bin\Debug\net6.0\task_randomize_array.dll
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\bin\Debug\net6.0\task_randomize_array.pdb
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.dll
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\refint\task_randomize_array.dll
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.pdb
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\task_randomize_array.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET\task_3\task_randomize_array\obj\Debug\net6.0\ref\task_randomize_array.dll

@@ -91,24 +91,24 @@ namespace Prog
             #endregion
             #region Task_4  - Користувач вводить число, визначити чи воно є паліндромом.
 
-            //int number, tmp_number, reverse = 0;
-            //Console.Write("Введіть число :");
-            //number = int.Parse(Console.ReadLine());
-            //tmp_number= number;
+            int number, tmp_number, reverse = 0;
+            Console.Write("Введіть число :");
+            number = int.Parse(Console.ReadLine());
+            tmp_number = number;
 
-            //while (tmp_number != 0)                                                                                                                                                                                                                                                                                                                                                                                                               
-            //{
-            //    reverse = (reverse * 10) + tmp_number % 10;
-            //    tmp_number /= 10;
-            //}
-            //if (number == reverse)
-            //{
-            //    Console.WriteLine(" Це Поліндром");
-            //}
-            //else
-            //{
-            //    Console.WriteLine(" Це не Поліндром");
-            //}
+            while (tmp_number != 0)
+            {
+                reverse = (reverse * 10) + tmp_number % 10;
+                tmp_number /= 10;
+            }
+            if (number == reverse)
+            {
+                Console.WriteLine(" Це Поліндром");
+            }
+            else
+            {
+                Console.WriteLine(" Це не Поліндром");
+            }
 
             #endregion
 

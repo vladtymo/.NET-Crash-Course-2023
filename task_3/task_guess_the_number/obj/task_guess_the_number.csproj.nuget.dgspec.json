@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\.NET\\task_3\\task_guess_the_number\\task_guess_the_number.csproj": {}
+    "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_3\\task_guess_the_number\\task_guess_the_number.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\.NET\\task_3\\task_guess_the_number\\task_guess_the_number.csproj": {
+    "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_3\\task_guess_the_number\\task_guess_the_number.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET\\task_3\\task_guess_the_number\\task_guess_the_number.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_3\\task_guess_the_number\\task_guess_the_number.csproj",
         "projectName": "task_guess_the_number",
-        "projectPath": "C:\\Users\\PC\\Desktop\\.NET\\task_3\\task_guess_the_number\\task_guess_the_number.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_3\\task_guess_the_number\\task_guess_the_number.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\.NET\\task_3\\task_guess_the_number\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_3\\task_guess_the_number\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

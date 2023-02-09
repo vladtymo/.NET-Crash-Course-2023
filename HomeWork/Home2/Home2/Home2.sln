@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home2.1", "Home2\Home2.1.csproj", "{AC5EFC95-0643-4510-898F-F357C923D689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home2.2", "Home2.2\Home2.2.csproj", "{8D40347D-57B4-4296-A42F-1C662F18EA80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home2.3", "Home2.3\Home2.3.csproj", "{DD943974-5D1D-47CF-B4F4-5C7090BC7373}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC5EFC95-0643-4510-898F-F357C923D689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5EFC95-0643-4510-898F-F357C923D689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5EFC95-0643-4510-898F-F357C923D689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5EFC95-0643-4510-898F-F357C923D689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D40347D-57B4-4296-A42F-1C662F18EA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D40347D-57B4-4296-A42F-1C662F18EA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D40347D-57B4-4296-A42F-1C662F18EA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D40347D-57B4-4296-A42F-1C662F18EA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD943974-5D1D-47CF-B4F4-5C7090BC7373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD943974-5D1D-47CF-B4F4-5C7090BC7373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD943974-5D1D-47CF-B4F4-5C7090BC7373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD943974-5D1D-47CF-B4F4-5C7090BC7373}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02947C68-952D-4037-AAAC-4131CA14202D}
+	EndGlobalSection
+EndGlobal

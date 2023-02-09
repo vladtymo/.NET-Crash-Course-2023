@@ -17,6 +17,8 @@ Console.WriteLine(str2);
 string result = "Hi! " + str + "..."; // string.Concat()
 Console.WriteLine("Result: " + result);
 
+Console.WriteLine("Element at 4 index: " + str[4]); // 0
+
 // ------------------------- methods
 if (str.Contains("world"))
     Console.WriteLine("String contains 'world' substring");

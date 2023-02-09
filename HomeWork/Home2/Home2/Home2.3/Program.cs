@@ -31,15 +31,20 @@ internal class Program
 
 
 
-
+        Tasks tasks;
         Console.WriteLine(res);
-        Tasks CoolOperation = Enum.Parse<Tasks>(Console.ReadLine());
+        string input = Console.ReadLine();
+        bool sucess = Enum.TryParse<Tasks>(input, out tasks);
+        if (!sucess)
+        {
+            Console.WriteLine("entry {0} is not a valid value", input);
+            return;
+        }
         Console.WriteLine("Введiть завдання яке будемо виконувати\n" +
             "1.     - обрахувати суму чисел в масиві\r\n:\n" +
             "2.     - відсортувати масив\r\n:\n" +
             "3.     - знайти кількість парних значень\r\n:");
-        double task = Convert.ToDouble(Console.ReadLine());
-        switch (CoolOperation)
+        switch (tasks)
         {
             case Tasks.task1:
                 int sum = massive.Sum();

@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\Enum\Week\bin\Debug\net7.0\Week.exe
+C:\Users\Admin\source\repos\Enum\Week\bin\Debug\net7.0\Week.deps.json
+C:\Users\Admin\source\repos\Enum\Week\bin\Debug\net7.0\Week.runtimeconfig.json
+C:\Users\Admin\source\repos\Enum\Week\bin\Debug\net7.0\Week.dll
+C:\Users\Admin\source\repos\Enum\Week\bin\Debug\net7.0\Week.pdb
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.dll
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\refint\Week.dll
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.pdb
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\Week.genruntimeconfig.cache
+C:\Users\Admin\source\repos\Enum\Week\obj\Debug\net7.0\ref\Week.dll

@@ -49,7 +49,7 @@ for (int i = 0; i < numbers.Length; i++)
 */
 
 // 4
-
+/*
 enum MenuFunc
 {
     Sum = 1,
@@ -113,3 +113,4 @@ class Program
         }
     }
 }
+*/

@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\bin\Debug\net6.0\task_lower_upper.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\bin\Debug\net6.0\task_lower_upper.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\bin\Debug\net6.0\task_lower_upper.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\bin\Debug\net6.0\task_lower_upper.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\bin\Debug\net6.0\task_lower_upper.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\refint\task_lower_upper.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\task_lower_upper.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_lower_upper\obj\Debug\net6.0\ref\task_lower_upper.dll

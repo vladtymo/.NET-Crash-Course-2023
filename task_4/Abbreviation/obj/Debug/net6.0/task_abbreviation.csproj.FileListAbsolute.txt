@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\bin\Debug\net6.0\task_abbreviation.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\bin\Debug\net6.0\task_abbreviation.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\bin\Debug\net6.0\task_abbreviation.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\bin\Debug\net6.0\task_abbreviation.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\bin\Debug\net6.0\task_abbreviation.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\refint\task_abbreviation.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\task_abbreviation.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\Abbreviation\obj\Debug\net6.0\ref\task_abbreviation.dll

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_year\\task_year.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_year\\task_year.csproj",
       "projectName": "task_year",
-      "projectPath": "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_year\\task_year.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_year\\task_year.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_year\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_year\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

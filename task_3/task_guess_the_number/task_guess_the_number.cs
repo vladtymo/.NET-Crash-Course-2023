@@ -1,6 +1,5 @@
-﻿
-Random random = new Random();
-int number = (random.Next()%10)+1;
+﻿Random random = new Random();
+int number = random.Next(0,11);
 int value = -1;
 int index = 0;
 Console.WriteLine("Guess the number: ");

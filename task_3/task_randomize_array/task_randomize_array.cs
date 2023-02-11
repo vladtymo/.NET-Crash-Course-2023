@@ -8,7 +8,7 @@ internal class task_randomize_array
         int[] array = new int[20];
         for (int i = 0; i < array.Length; i++)
         {
-            array[i] = random.Next()%101;
+            array[i] = random.Next(0,101);
         }
         Console.Write("array = {");
         for (int i = 0; i < array.Length; i++)
@@ -58,8 +58,9 @@ internal class task_randomize_array
                     }
                     Console.WriteLine($"Max Value = {max}");
                     break;
+                case 0:break;
                 default:
-                    Console.WriteLine("Goodbye!!!");
+                    Console.WriteLine("Invalid value!!!");
                     break;
             }
 

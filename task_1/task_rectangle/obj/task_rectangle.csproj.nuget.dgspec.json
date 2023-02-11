@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_rectangle\\task_rectangle.csproj": {}
+    "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_rectangle\\task_rectangle.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_rectangle\\task_rectangle.csproj": {
+    "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_rectangle\\task_rectangle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_rectangle\\task_rectangle.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_rectangle\\task_rectangle.csproj",
         "projectName": "task_rectangle",
-        "projectPath": "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_rectangle\\task_rectangle.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_rectangle\\task_rectangle.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\.NET\\task_1\\task_rectangle\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\.NET-Crash-Course-2023\\task_1\\task_rectangle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

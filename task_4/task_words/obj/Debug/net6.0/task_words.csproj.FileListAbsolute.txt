@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\bin\Debug\net6.0\task_words.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\bin\Debug\net6.0\task_words.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\bin\Debug\net6.0\task_words.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\bin\Debug\net6.0\task_words.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\bin\Debug\net6.0\task_words.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\refint\task_words.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\task_words.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_words\obj\Debug\net6.0\ref\task_words.dll

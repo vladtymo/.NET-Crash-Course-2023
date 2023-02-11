@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\bin\Debug\net6.0\task_delet_space.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\bin\Debug\net6.0\task_delet_space.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\bin\Debug\net6.0\task_delet_space.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\bin\Debug\net6.0\task_delet_space.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\bin\Debug\net6.0\task_delet_space.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\refint\task_delet_space.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\task_delet_space.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_4\task_delet_space\obj\Debug\net6.0\ref\task_delet_space.dll

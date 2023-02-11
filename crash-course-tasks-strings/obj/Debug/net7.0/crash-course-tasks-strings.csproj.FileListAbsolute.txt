@@ -1,0 +1,15 @@
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\bin\Debug\net7.0\crash-course-tasks-strings.exe
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\bin\Debug\net7.0\crash-course-tasks-strings.deps.json
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\bin\Debug\net7.0\crash-course-tasks-strings.runtimeconfig.json
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\bin\Debug\net7.0\crash-course-tasks-strings.dll
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\bin\Debug\net7.0\crash-course-tasks-strings.pdb
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.csproj.AssemblyReference.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.AssemblyInfoInputs.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.AssemblyInfo.cs
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.csproj.CoreCompileInputs.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.dll
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\refint\crash-course-tasks-strings.dll
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.pdb
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\crash-course-tasks-strings.genruntimeconfig.cache
+C:\Users\Max\source\repos\crash-course-tasks\crash-course-tasks-strings\obj\Debug\net7.0\ref\crash-course-tasks-strings.dll

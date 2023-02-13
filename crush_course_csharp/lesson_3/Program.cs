@@ -92,9 +92,9 @@ internal class Program
             $"{(int)ArrayAction.Count} - {ArrayAction.Count}\n" +
             $"{(int)ArrayAction.Max} - {ArrayAction.Max}\n");
 
-        ArrayAction dayNumber = Enum.Parse<ArrayAction>(Console.ReadLine());
+        ArrayAction action = Enum.Parse<ArrayAction>(Console.ReadLine());
 
-        switch (dayNumber)
+        switch (action)
         {
             case ArrayAction.Summ:
                 int summ = 0;

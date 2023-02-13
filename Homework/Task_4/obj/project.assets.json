@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Task_4\\Task_4.csproj",
-      "projectName": "Task_4",
-      "projectPath": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Task_4\\Task_4.csproj",
+      "projectUniqueName": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Task_4\\Tasks_4.csproj",
+      "projectName": "Tasks_4",
+      "projectPath": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Task_4\\Tasks_4.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Task_4\\obj\\",
       "projectStyle": "PackageReference",

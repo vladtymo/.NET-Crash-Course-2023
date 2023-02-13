@@ -5,11 +5,11 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task 1", "Crash Course\Task 1.csproj", "{5B0E6828-E53B-4C24-8BA6-D4C7D93B7F66}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task 2", "ConsoleApp1\Task 2.csproj", "{DF7ADD74-8F29-435C-8398-4D3EC7900127}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks_2", "ConsoleApp1\Tasks_2.csproj", "{DF7ADD74-8F29-435C-8398-4D3EC7900127}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks_3", "Tasks_3\Tasks_3.csproj", "{8362558D-876F-4DC0-8278-914AB20F5D3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_4", "Task_4\Task_4.csproj", "{CD4AFC37-CD2A-4885-B004-60066D3BE298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tasks_4", "Task_4\Tasks_4.csproj", "{CD4AFC37-CD2A-4885-B004-60066D3BE298}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

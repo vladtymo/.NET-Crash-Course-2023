@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace Home3
 {
@@ -18,7 +14,7 @@ namespace Home3
 
             foreach (var w in words)
             {
-                Console.Write(w+" ");
+                Console.Write(w + " ");
             }
 
         }

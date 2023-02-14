@@ -1,4 +1,6 @@
-﻿namespace Home3
+﻿using System.Threading.Tasks;
+
+namespace Home3
 {
     internal class Program
     {

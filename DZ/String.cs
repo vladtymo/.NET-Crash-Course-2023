@@ -94,7 +94,7 @@ namespace Code_Coach_Challenge
             {
                 if (text.EndsWith("."))
                  {
-                    ///
+                    //
                 }
             }
         }

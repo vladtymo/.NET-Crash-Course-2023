@@ -6,15 +6,14 @@ Console.WriteLine("Введіть слова");
 do
 {
     string word = Console.ReadLine();
-    builder.Append(word+", ");
+    builder.Append(word + ", ");
 
-    Console.WriteLine("Replaced: " + str.Replace(' ', '-'));
     if (word.EndsWith("."))
     {
 
         break;
     };
 
-} while (1==1);
+} while (1 == 1);
 
 Console.WriteLine("Reuslt:\n" + builder.ToString());

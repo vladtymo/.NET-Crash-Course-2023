@@ -1,6 +1,5 @@
-﻿using System;
+using System;
 using System.IO;
-using System.Linq;
 
 namespace Code_Coach_Challenge
 {
@@ -72,14 +71,32 @@ namespace Code_Coach_Challenge
         }
         static private void abbreviation()
         {
-            string s = "asdc.,, bcsdc.,, cfgc,.";
-            string[] parts = s.Split(new char[] { ' ', '.', ',' });
-             
+            Console.WriteLine("Enter some text");
+            string abbreviation = "";
+            string text = Console.ReadLine();
+
+            for (int i = 0; i < text.Length; i++)
+            {
+                if(text[i]-1==' ')
+                {
+                    abbreviation += text[i];
+                }
+            }
+            ////////
            
-            string result = String.Concat(parts.Select(part => char.ToUpper(part[0])));
-            Console.WriteLine(result);
-
+//Сформувати з введених слів рядок, розділивши їх комою з пробілом.
         }
-
+        static private void rightWriting()
+        {
+            Console.WriteLine("Enter some text");
+            string text = Console.ReadLine();
+            for (int i = 0; i < text.Length; i++)
+            {
+                if (text.EndsWith("."))
+                 {
+                    ///
+                }
+            }
+        }
     }
 }

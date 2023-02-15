@@ -42,65 +42,52 @@ namespace Tasks_3
             Random random = new Random();
             int winningNum = random.Next(1,101), myNum=0,counter=0;
             Console.WriteLine("You have to guess which number is guessed from 1 to 100.\n If you enter \"-1\" the game ends.\nGood Luck!");
-            
-            
             do
             {
-               
                 Console.Write("Enter your num: ");
                 myNum = int.Parse(Console.ReadLine());
-               
                 if (myNum < -1 || myNum > 100)
                 {
                     Console.WriteLine("Enter a valid value (from 1 to 100)");
                 }
-                
                 else
                 {
                     ++counter;
                     if (myNum == -1)
                     {
-                       Console.WriteLine($"The number was {winningNum}");
+                        Console.WriteLine($"The number was {winningNum}");
                         Console.WriteLine($"Game Over");
                         break;
                     }
                     else if (myNum > winningNum)
                     {
                         Console.WriteLine("The winning number is smaller then your.");
-
                     }
                     else if (myNum < winningNum)
                     {
                         Console.WriteLine("The winning number is bigger then your.");
-
                     }
                     else
-                    {
-
+                    { 
                         Console.WriteLine("Congratulations!");
                         Console.WriteLine($"You have made {counter} attempts!");
                         break;
                     }
                 }
             } while (true);
-
         }
         static void Task3(int[] arr )
         {
             Random random = new Random();
-          
             for(int i=0;i<arr.Length;i++) arr[i] = random.Next(0, 100);
             Console.Write("Arr elements: "); 
             Print(arr);
-           
-            
-        }
-        
-        enum Calculations { Sum=1 ,Sort, NumOfEven , FindMax }
-   
+        }       
+
+        enum Calculations { Sum=1 ,Sort, NumOfEven , FindMax }   
+
         static void Task4()
-        {
-           
+        {           
             int[] arr = new int[5];
             int count=0,sum=0;
             Task3(arr);
@@ -109,8 +96,7 @@ namespace Tasks_3
                 $"{(int)Calculations.Sort}- sort the array\n" +
                 $"{(int)Calculations.NumOfEven}- find the number of even values\n" +
                 $"{(int)Calculations.FindMax}- find the maximum element" 
-                );
-           
+                );    
             Console.Write("Enter your choice: ");
             Calculations calculations = Enum.Parse<Calculations>(Console.ReadLine());
             switch(calculations)
@@ -132,16 +118,8 @@ namespace Tasks_3
                     Console.WriteLine($"Number of even numbers = {count}.");
                     break;
                 case Calculations.FindMax:
-
                     Console.Write("Max value in array is: "); Print(arr.Max()); 
-
-                   // int[] arr2 = new int[arr.Length];
-                   // Array.Copy(arr, arr2, arr.Length);        
-                   // Array.Sort(arr2);
-                   //Print(arr2[arr2.Length - 1]);
-
-                    break;
-              
+                    break;           
             }
         }
         static void Print(params int[] arr)

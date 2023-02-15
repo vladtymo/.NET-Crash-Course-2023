@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Weapon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <range>1000</range>
+  <caliber>5.45</caliber>
+  <magazine>10</magazine>
+  <maxSize>10</maxSize>
+</Weapon>

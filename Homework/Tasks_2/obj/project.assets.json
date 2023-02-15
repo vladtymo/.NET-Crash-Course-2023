@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GAmes\\Homework\\Tasks_2\\Tasks_2.csproj",
+      "projectUniqueName": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Tasks_2\\Tasks_2.csproj",
       "projectName": "Tasks_2",
-      "projectPath": "C:\\GAmes\\Homework\\Tasks_2\\Tasks_2.csproj",
+      "projectPath": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Tasks_2\\Tasks_2.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\GAmes\\Homework\\Tasks_2\\obj\\",
+      "outputPath": "C:\\GAmes\\с#\\.NET-Crash-Course-2023\\Homework\\Tasks_2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

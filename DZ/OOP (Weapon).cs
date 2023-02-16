@@ -9,7 +9,7 @@ namespace Code_Coach_Challenge
         int range;
         float caliber;
         int maxSize;
-        public int amount;
+        int amount;
         
         public void initialize(int range,float caliber,int maxSize)
         {
@@ -41,8 +41,7 @@ namespace Code_Coach_Challenge
             weapon.shot();
             weapon.shot();
             weapon.reCharge();
-            Console.WriteLine(weapon.amount);
-        }
+          }
     }
 }
 

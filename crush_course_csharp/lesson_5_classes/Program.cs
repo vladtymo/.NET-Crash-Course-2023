@@ -199,8 +199,6 @@
                             }
                             
                         }
-                        
-
                         break;
                     case 3:
                         checkValue = true;
@@ -212,8 +210,6 @@
 
                 }
             }
-            
-            
         }
     }
 }

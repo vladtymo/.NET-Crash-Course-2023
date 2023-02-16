@@ -19,7 +19,7 @@
         {
             if (countOfBullets - 1 >= 0)
             {
-                Console.WriteLine("Постріл виконано!");
+                Console.WriteLine("Постріл виконано!\n");
                 countOfBullets--;
                 return true;
             }
@@ -39,7 +39,7 @@
             string path = @"..\..\..\..\weapons.txt";
             File.AppendAllText(path, $"{name}\n{shotRange}\n{caliber}\n{maxSize}\n\n");
         }
-        public void Load(string name)
+        public bool Load(string name)
         {
             IEnumerable<string> s = new string[] { };
             s = File.ReadLines(@"..\..\..\..\weapons.txt");
@@ -50,20 +50,23 @@
             if(indexName == -1)
             {
                 Console.WriteLine("Такої зброї немає в переліку");
+                return false;
             }
             else
             {
                 //-----Save info values
                 this.name = name;
-                shotRange = int.Parse(infoAboutWeapons[indexName + 1]);
+                shotRange = float.Parse(infoAboutWeapons[indexName + 1]);
                 caliber = float.Parse(infoAboutWeapons[indexName + 2]);
                 maxSize = int.Parse(infoAboutWeapons[indexName + 3]);
+                countOfBullets = maxSize;
                 //-------Write info
                 Console.WriteLine("\nWeapon Info:\n" +
                     $"   Name: {name}\n" +
                     $"   Shot Range: {shotRange}\n" +
                     $"   Caliber: {caliber}\n" +
                     $"   Max Size Of Magazine: {maxSize}\n");
+                return true;
             }
         }
     }
@@ -118,7 +121,12 @@
                                 {
                                     newObject.Save();
                                 }
-                                else if(checkSave != "2" || checkSave != "No")
+                                else if(checkSave == "2" || checkSave == "No")
+                                {
+                                    Console.WriteLine("Вихід в головне меню...");
+                                    break;
+                                }
+                                else
                                 {
                                     Console.WriteLine("Такого варіанту немає...");
                                 }
@@ -143,8 +151,56 @@
                         else
                         {
                             Weapon loadObject = new Weapon();
-                            loadObject.Load(nameWeapon);
+                            bool checkLoad = loadObject.Load(nameWeapon);
+                            if (checkLoad)
+                            {
+                                while (true)
+                                {
+                                    Console.WriteLine("Бажаєте зробити вистріл?\n" +
+                                        "1 - Yes\n" +
+                                        "2 - No");
+                                    string checkShot = Console.ReadLine();
+                                    if (checkShot == "1" || checkShot == "Yes")
+                                    {
+                                        bool checkBullets = loadObject.Shot();
+                                        if (!checkBullets)
+                                        {
+                                            Console.WriteLine("Перезарядити зброю?" +
+                                                "1 - Yes" +
+                                                "2 - No");
+                                            string checkRecharge = Console.ReadLine();
+                                            if (checkRecharge == "1" || checkRecharge == "Yes")
+                                            {
+                                                loadObject.Recharge();
+                                            }
+                                            else if (checkRecharge == "2" || checkRecharge == "No")
+                                            {
+                                                Console.WriteLine("Вихід в головне меню...");
+                                                break;
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("Такого варіанту немає...");
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    else if (checkShot == "2" || checkShot == "No")
+                                    {
+                                        Console.WriteLine("Вихід в головне меню...");
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("Такого варіанту немає...");
+                                        break;
+                                    }
+                                }
+                            }
+                            
                         }
+                        
+
                         break;
                     case 3:
                         checkValue = true;

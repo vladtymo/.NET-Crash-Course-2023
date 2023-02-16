@@ -19,15 +19,15 @@
         enum ModeType { DRY, COOL, HEAT }
 
         // properties
-        private string model;
-        int year;
-        string color;
-        int minTemperature; // 16
-        int maxTemperature; // 32
-        float currentTemperature;
-        PowerType power;
-        ModeType mode;
-        bool isPowerOn;
+        string model; // private by default
+        private int year;
+        private string color;
+        private int minTemperature; // 16
+        private int maxTemperature; // 32
+        private float currentTemperature;
+        private PowerType power;
+        private ModeType mode;
+        private bool isPowerOn;
 
         // default values: bool: false, number: 0, reference: null
 

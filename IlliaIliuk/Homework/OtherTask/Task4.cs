@@ -90,16 +90,16 @@ Console.WriteLine(str);
 
 ////6
 
-Console.Write("Enter text: ");
-string str = Console.ReadLine()!;
+//Console.Write("Enter text: ");
+//string str = Console.ReadLine()!;
 
 
-for (int i = 1; i < str.Length-1; i++)
-{
-	if (str[i] == ' ' & str[i-1] == '.' & str[i+1] == '.')
-	{
-		str = str.Remove(i,1);
-	}
-}
+//for (int i = 1; i < str.Length-1; i++)
+//{
+//	if (str[i] == ' ' & str[i-1] == '.' & str[i+1] == '.')
+//	{
+//		str = str.Remove(i,1);
+//	}
+//}
 
-Console.WriteLine(str);
+//Console.WriteLine(str);

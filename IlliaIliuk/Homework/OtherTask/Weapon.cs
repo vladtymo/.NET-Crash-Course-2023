@@ -4,13 +4,6 @@
     private int currentBullets;
     private int shotRange;
     private double caliber;
-    public Weapon()
-    {
-        maxSize = 0;
-        currentBullets = 0;
-        shotRange = 0;
-        caliber = 0;
-    }
 
     public void Initialize(int shotRange = 1, double caliber = 9, int maxSize = 1)
     {

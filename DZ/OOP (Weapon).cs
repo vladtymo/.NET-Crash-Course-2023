@@ -10,8 +10,7 @@ namespace Code_Coach_Challenge
         float caliber;
         int maxSize;
         public int amount;
-
-
+        
         public void initialize(int range,float caliber,int maxSize)
         {
             this.range = range;
@@ -20,8 +19,6 @@ namespace Code_Coach_Challenge
             amount = maxSize;
             Console.WriteLine($"The max distance: {range} caliber: {caliber}" +
                 $" max size {maxSize}  ");
-
-
         }
         public bool shot()
         {
@@ -44,19 +41,8 @@ namespace Code_Coach_Challenge
             weapon.shot();
             weapon.shot();
             weapon.reCharge();
-
-
             Console.WriteLine(weapon.amount);
-            
-
-
-
-
         }
-
-
-
-
     }
 }
 

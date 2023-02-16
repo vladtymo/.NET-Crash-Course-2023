@@ -1,0 +1,15 @@
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\bin\Debug\net7.0\05_cycles.exe
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\bin\Debug\net7.0\05_cycles.deps.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\bin\Debug\net7.0\05_cycles.runtimeconfig.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\bin\Debug\net7.0\05_cycles.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\bin\Debug\net7.0\05_cycles.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.csproj.AssemblyReference.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.AssemblyInfoInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.AssemblyInfo.cs
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.csproj.CoreCompileInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\refint\05_cycles.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\05_cycles.genruntimeconfig.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\05_cycles\obj\Debug\net7.0\ref\05_cycles.dll

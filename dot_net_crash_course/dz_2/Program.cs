@@ -13,7 +13,7 @@ internal class Program
         //Zavd1();
         //Zavd2();
         //Zavd3();
-        Zavd4();
+        //Zavd4();
     }
 
     private static void Zavd4()

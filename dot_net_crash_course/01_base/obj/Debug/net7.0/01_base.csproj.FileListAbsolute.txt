@@ -1,0 +1,15 @@
+D:\.Net\dot_net_crash_course\01_base\bin\Debug\net7.0\01_base.exe
+D:\.Net\dot_net_crash_course\01_base\bin\Debug\net7.0\01_base.deps.json
+D:\.Net\dot_net_crash_course\01_base\bin\Debug\net7.0\01_base.runtimeconfig.json
+D:\.Net\dot_net_crash_course\01_base\bin\Debug\net7.0\01_base.dll
+D:\.Net\dot_net_crash_course\01_base\bin\Debug\net7.0\01_base.pdb
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.csproj.AssemblyReference.cache
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.AssemblyInfoInputs.cache
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.AssemblyInfo.cs
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.csproj.CoreCompileInputs.cache
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.dll
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\refint\01_base.dll
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.pdb
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\01_base.genruntimeconfig.cache
+D:\.Net\dot_net_crash_course\01_base\obj\Debug\net7.0\ref\01_base.dll

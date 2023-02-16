@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Code_Coach_Challenge
+namespace OOP
 {
 
     class Weapon

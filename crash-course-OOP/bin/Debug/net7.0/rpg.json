@@ -1,0 +1,7 @@
+{
+  "name": "RPG-7",
+  "range": 700,
+  "caliber": 40,
+  "curr_bullets": 0,
+  "max_bullets": 1
+}

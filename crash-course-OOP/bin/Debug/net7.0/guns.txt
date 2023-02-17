@@ -1,2 +1,0 @@
-Gun: RPG-7; Range: 700m; Caliber: 40mm; Max magazine`s size: 1 bullet(-s)
-Gun: Glock-17; Range: 50m; Caliber: 9mm; Max magazine`s size: 17 bullet(-s)

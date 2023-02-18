@@ -24,4 +24,10 @@ Console.WriteLine(loginInt);
  * cr + tab + tab - Console.ReadLine() (custom);
  */
 
+
+/*
+ * Конкатенація "hi" + name
+ * Інтерполяція $"Hi {name}"
+ */
+
 Console.ReadKey();

@@ -10,14 +10,14 @@
         "projectUniqueName": "E:\\GitS\\.NET-Crash-Course-2023\\dot_net_crash_course\\05_cycles\\05_cycles.csproj",
         "projectName": "05_cycles",
         "projectPath": "E:\\GitS\\.NET-Crash-Course-2023\\dot_net_crash_course\\05_cycles\\05_cycles.csproj",
-        "packagesPath": "C:\\Users\\Микола\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Startex\\.nuget\\packages\\",
         "outputPath": "E:\\GitS\\.NET-Crash-Course-2023\\dot_net_crash_course\\05_cycles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Микола\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Startex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

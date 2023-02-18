@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\bin\Debug\net6.0\Task_class_ctor.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\bin\Debug\net6.0\Task_class_ctor.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\bin\Debug\net6.0\Task_class_ctor.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\bin\Debug\net6.0\Task_class_ctor.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\bin\Debug\net6.0\Task_class_ctor.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\refint\Task_class_ctor.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\Task_class_ctor.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\task_5\Task_class_ctor\obj\Debug\net6.0\ref\Task_class_ctor.dll

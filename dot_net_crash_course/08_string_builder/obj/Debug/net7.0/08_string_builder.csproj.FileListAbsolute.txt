@@ -1,0 +1,15 @@
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\bin\Debug\net7.0\08_string_builder.exe
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\bin\Debug\net7.0\08_string_builder.deps.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\bin\Debug\net7.0\08_string_builder.runtimeconfig.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\bin\Debug\net7.0\08_string_builder.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\bin\Debug\net7.0\08_string_builder.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.csproj.AssemblyReference.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.AssemblyInfoInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.AssemblyInfo.cs
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.csproj.CoreCompileInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\refint\08_string_builder.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\08_string_builder.genruntimeconfig.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\08_string_builder\obj\Debug\net7.0\ref\08_string_builder.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "crash_course_OOP_constructors/1.0.0": {
+        "runtime": {
+          "crash_course_OOP_constructors.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "crash_course_OOP_constructors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

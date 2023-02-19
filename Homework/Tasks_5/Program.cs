@@ -1,14 +1,12 @@
 ﻿using Newtonsoft.Json;
 namespace Tasks_5
 {
-	public class Weapon
+	class Weapon
 	{
-
-		 int range;
-		 float caliber;
-		 int magazine;
-		 int maxSize;
-
+	    int range;
+	    int magazine;
+		int maxSize;
+	    float caliber;
 		public Weapon() { }
 		public Weapon(int range, float caliber, int maxSize)
 		{
@@ -59,10 +57,7 @@ namespace Tasks_5
 		public static Weapon Load()
 		{
 			string path = "Data.json";
-			if (File.Exists(path))
-			{
-				return JsonConvert.DeserializeObject<Weapon>(File.ReadAllText("Data.json"));
-			}
+			if (File.Exists(path)) return JsonConvert.DeserializeObject<Weapon>(File.ReadAllText("Data.json"));
 			else
 			{
 				Console.WriteLine("File does not exist!");
@@ -83,14 +78,14 @@ namespace Tasks_5
 	{
 		static void Main(string[] args)
 		{
-			Weapon weapones = new Weapon(1000,4.56F, 30);
-			weapones.Save();
-
-			//Weapon weapon = Weapon.Load();
-
-			
-			Console.WriteLine(weapones.ToString());
-			
+			Weapon weapon = new Weapon(1000,4.56F, 30);
+			Console.WriteLine(weapon.ToString());
+			weapon.Save();
+			for(int i = 0; i < 5;i++)
+			weapon.Shot();
+			weapon.Recharge();
+			Weapon newWeapon = Weapon.Load();
+			Console.WriteLine(weapon.ToString());			
 			Console.ReadKey();
 		}
 	}

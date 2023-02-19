@@ -1,0 +1,15 @@
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\bin\Debug\net7.0\Tasks_6.exe
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\bin\Debug\net7.0\Tasks_6.deps.json
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\bin\Debug\net7.0\Tasks_6.runtimeconfig.json
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\bin\Debug\net7.0\Tasks_6.dll
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\bin\Debug\net7.0\Tasks_6.pdb
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.csproj.AssemblyReference.cache
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.GeneratedMSBuildEditorConfig.editorconfig
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.AssemblyInfoInputs.cache
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.AssemblyInfo.cs
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.csproj.CoreCompileInputs.cache
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.dll
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\refint\Tasks_6.dll
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.pdb
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\Tasks_6.genruntimeconfig.cache
+C:\GAmes\с#\.NET-Crash-Course-2023\Homework\Tasks_6\obj\Debug\net7.0\ref\Tasks_6.dll

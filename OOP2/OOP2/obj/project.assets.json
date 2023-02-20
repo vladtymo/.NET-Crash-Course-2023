@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\.NET-Crash-Course-2023\\OOP1\\OOP1\\OOP1.csproj",
-      "projectName": "OOP1",
-      "projectPath": "D:\\GitHub\\.NET-Crash-Course-2023\\OOP1\\OOP1\\OOP1.csproj",
+      "projectUniqueName": "D:\\Solutions\\OOP2\\OOP2\\OOP2.csproj",
+      "projectName": "OOP2",
+      "projectPath": "D:\\Solutions\\OOP2\\OOP2\\OOP2.csproj",
       "packagesPath": "C:\\Users\\CKAZO4NIK\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\.NET-Crash-Course-2023\\OOP1\\OOP1\\obj\\",
+      "outputPath": "D:\\Solutions\\OOP2\\OOP2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\CKAZO4NIK\\AppData\\Roaming\\NuGet\\NuGet.Config",

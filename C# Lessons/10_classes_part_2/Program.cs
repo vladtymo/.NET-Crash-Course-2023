@@ -6,17 +6,15 @@ namespace _10_classes_part_2
     {
         private int height;
         private int width;
+        private float square;
 
         public Rectangle() { }
-        public Rectangle(int size) 
-        {
-            this.width = size;
-            this.height = size;
-        }
+        public Rectangle(int size) : this(size, size) { }
         public Rectangle(int width, int height)
         {
             this.width = width;
             this.height = height;
+            square = width * height;
         }
 
         public void Print(char filler = '#') // default parameter value

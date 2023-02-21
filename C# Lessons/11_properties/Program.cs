@@ -31,6 +31,13 @@ namespace _11_properties
             }
         }
 
+        // use lambda expressions with properties
+        public float MaxSpeed
+        {
+            get => maxSpeed;
+            set => maxSpeed = value >= 0 ? value : 0;
+        }
+
         // readonly property - has get block only
         public int FreePlaces 
         { 

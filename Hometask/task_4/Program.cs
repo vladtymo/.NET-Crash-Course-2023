@@ -5,7 +5,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Task6();
+        Task5();
     }
 
     public static void Task1()
@@ -72,17 +72,5 @@ internal class Program
         
         Console.WriteLine($"Word after commas: {stringBuilder}");
 
-    }
-
-    public static void Task6()
-    {
-        string wordsString = Console.ReadLine();
-        string[] wordsArray = wordsString.Split('.');
-
-        StringBuilder builder = new StringBuilder();
-        builder.Append(wordsArray[0] + '.');
-        builder.Append(wordsArray[1].Replace(' ', '\0'));
-        builder.Append('.' + wordsArray[2]);
-        Console.WriteLine(builder.ToString());
     }
 }

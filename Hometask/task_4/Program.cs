@@ -1,8 +1,11 @@
-﻿internal class Program
+﻿using System.Net.Http.Headers;
+using System.Text;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Task4();
+        Task6();
     }
 
     public static void Task1()
@@ -53,5 +56,33 @@
             abbreviation += st[0];
         }
         Console.WriteLine($"Abbreviation: {abbreviation.ToUpper()}");
+    }
+
+    public static void Task5() 
+    {
+        StringBuilder stringBuilder = new StringBuilder();
+        do
+        {
+            Console.WriteLine("Enter word: ");
+            stringBuilder.Append( Console.ReadLine());
+            if(!stringBuilder[stringBuilder.Length - 1].Equals('.'))
+                stringBuilder.Append(", ");
+        }
+        while (!stringBuilder[stringBuilder.Length-1].Equals('.'));
+        
+        Console.WriteLine($"Word after commas: {stringBuilder}");
+
+    }
+
+    public static void Task6()
+    {
+        string wordsString = Console.ReadLine();
+        string[] wordsArray = wordsString.Split('.');
+
+        StringBuilder builder = new StringBuilder();
+        builder.Append(wordsArray[0] + '.');
+        builder.Append(wordsArray[1].Replace(' ', '\0'));
+        builder.Append('.' + wordsArray[2]);
+        Console.WriteLine(builder.ToString());
     }
 }

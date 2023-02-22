@@ -1,0 +1,15 @@
+D:\Solutions\Task7\Task7\bin\Debug\net6.0\Task7.exe
+D:\Solutions\Task7\Task7\bin\Debug\net6.0\Task7.deps.json
+D:\Solutions\Task7\Task7\bin\Debug\net6.0\Task7.runtimeconfig.json
+D:\Solutions\Task7\Task7\bin\Debug\net6.0\Task7.dll
+D:\Solutions\Task7\Task7\bin\Debug\net6.0\Task7.pdb
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.csproj.AssemblyReference.cache
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.GeneratedMSBuildEditorConfig.editorconfig
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.AssemblyInfoInputs.cache
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.AssemblyInfo.cs
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.csproj.CoreCompileInputs.cache
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.dll
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\refint\Task7.dll
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.pdb
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\Task7.genruntimeconfig.cache
+D:\Solutions\Task7\Task7\obj\Debug\net6.0\ref\Task7.dll

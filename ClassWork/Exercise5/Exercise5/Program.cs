@@ -36,7 +36,7 @@
         // Функція для виводу інформації про візи
         public void DisplayVisas()
         {
-            Console.WriteLine("Visas:");
+            Console.WriteLine("Вiзи:");
             foreach (var visa in Visas)
             {
                 Console.WriteLine($"- {visa.Country}, {visa.Type}, {visa.Validity}");
@@ -60,31 +60,31 @@
             // Створюємо новий закордонний паспорт
             ForeignPassport passport = new ForeignPassport
             {
-                FullName = "Ivan Ivanov",
+                FullName = "Iван Чаїв",
                 PassportNumber = "AA123456",
                 DateOfBirth = new DateTime(1980, 1, 1),
-                Nationality = "Ukrainian",
-                IssuingAuthority = "Passport Office",
+                Nationality = "Українець",
+                IssuingAuthority = "Паспортний стiл",
                 DateOfIssue = new DateTime(2020, 1, 1),
                 DateOfExpiration = new DateTime(2030, 1, 1),
             };
 
             // Додаємо візи
-            passport.AddVisa(new Visa { Country = "USA", Type = "Tourist", Validity = "Valid until 2025" });
-            passport.AddVisa(new Visa { Country = "France", Type = "Student", Validity = "Valid until 2024" });
+            passport.AddVisa(new Visa { Country = "США", Type = "Турист", Validity = "Дiйсна до 2025" });
+            passport.AddVisa(new Visa { Country = "Францiя", Type = "Студент", Validity = "Дiйсна до 2024" });
 
             // Виводимо інформацію про закордонний паспорт та візи
-            Console.WriteLine("Foreign Passport Information:");
-            Console.WriteLine($"Full Name: {passport.FullName}");
-            Console.WriteLine($"Passport Number: {passport.PassportNumber}");
-            Console.WriteLine($"Date of Birth: {passport.DateOfBirth.ToString("dd.MM.yyyy")}");
-            Console.WriteLine($"Nationality: {passport.Nationality}");
-            Console.WriteLine($"Issuing Authority: {passport.IssuingAuthority}");
-            Console.WriteLine($"Date of Issue: {passport.DateOfIssue.ToString("dd.MM.yyyy")}");
-            Console.WriteLine($"Date of Expiration: {passport.DateOfExpiration.ToString("dd.MM.yyyy")}");
+            Console.WriteLine("Iнформацiя про закордонний паспорт:");
+            Console.WriteLine($"Повне iм'я: {passport.FullName}");
+            Console.WriteLine($"Номер паспорту: {passport.PassportNumber}");
+            Console.WriteLine($"Дата народження: {passport.DateOfBirth.ToString("dd.MM.yyyy")}");
+            Console.WriteLine($"Нацiональнiсть: {passport.Nationality}");
+            Console.WriteLine($"Орган який видав документ: {passport.IssuingAuthority}");
+            Console.WriteLine($"Дата випуску: {passport.DateOfIssue.ToString("dd.MM.yyyy")}");
+            Console.WriteLine($"Дата закiнчення: {passport.DateOfExpiration.ToString("dd.MM.yyyy")}");
             passport.DisplayVisas();
 
-    
+
         }
     }
 }

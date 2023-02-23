@@ -1,4 +1,4 @@
-﻿internal class Plane
+﻿/*internal class Plane
 {
     private const int maxTakeOffWeight = 20;
     private readonly String? model = "Unknown";
@@ -175,3 +175,4 @@ class Task6
     }
 
 }
+*/

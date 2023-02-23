@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson_5_classes", "lesson_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson_6_constructors", "lesson_6_constructors\lesson_6_constructors.csproj", "{0C6578F0-FA0A-42BC-90AE-4203E8B162CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lessonTask_properties", "lessonTask_properties\lessonTask_properties.csproj", "{BA5B55B5-C230-48A4-B830-D7375535D1F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lessonTask_properties", "lessonTask_properties\lessonTask_properties.csproj", "{BA5B55B5-C230-48A4-B830-D7375535D1F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,9 +13,17 @@ namespace Exercise4
         public DateTime BirthDate { get; set; }
         public decimal Salary { get; set; }
 
+        public Employee(string name, string surname, DateTime birthDate, decimal salary)
+        {
+            Name = name;
+            Surname = surname;
+            BirthDate = birthDate;
+            Salary = salary;
+        }
+
         public override string ToString()
         {
-            return $"Employee name: {Name} {Surname}, Birth date: {BirthDate.ToShortDateString()}, Salary: {Salary}";
+            return $"Employee: {Name} {Surname}, BirthDate: {BirthDate.ToString("dd/MM/yyyy")}, Salary: {Salary}";
         }
     }
 }

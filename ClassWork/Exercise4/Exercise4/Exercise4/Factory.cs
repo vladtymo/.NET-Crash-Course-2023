@@ -9,24 +9,21 @@ namespace Exercise4
     internal class Factory
     {
         public string Name { get; set; }
-        public Employee[] Employees { get; set; }
-        public Product[] Products { get; set; }
+        public List<Employee> Employees { get; set; }
+        public List<Product> Products { get; set; }
+
+        // нові властивості
         public decimal AvgSalary
         {
             get
             {
-                if (Employees == null || Employees.Length == 0)
-                {
-                    return 0;
-                }
-
+                if (Employees.Count == 0) return 0;
                 decimal totalSalary = 0;
-                foreach (var employee in Employees)
+                foreach (var emp in Employees)
                 {
-                    totalSalary += employee.Salary;
+                    totalSalary += emp.Salary;
                 }
-
-                return totalSalary / Employees.Length;
+                return totalSalary / Employees.Count;
             }
         }
 
@@ -34,12 +31,12 @@ namespace Exercise4
         {
             get
             {
-                if (Employees == null || Employees.Length == 0)
+                decimal totalSalary = 0;
+                foreach (var emp in Employees)
                 {
-                    return 0;
+                    totalSalary += emp.Salary;
                 }
-
-                return Employees.Sum(e => e.Salary);
+                return totalSalary;
             }
         }
 
@@ -47,32 +44,41 @@ namespace Exercise4
         {
             get
             {
-                if (Employees == null || Employees.Length == 0 || Products == null || Products.Length == 0)
+                decimal totalProductValue = 0;
+                foreach (var product in Products)
                 {
-                    return 0;
+                    totalProductValue += product.Price;
                 }
-
-                decimal totalValue = Products.Sum(p => p.Price);
-                return totalValue / Employees.Length;
+                if (Employees.Count == 0) return 0;
+                return totalProductValue / Employees.Count;
             }
         }
 
         public int EmpCount
         {
-            get
-            {
-                if (Employees == null)
-                {
-                    return 0;
-                }
+            get { return Employees.Count; }
+        }
 
-                return Employees.Length;
-            }
+        public Factory(string name, int employeeCount, int productCount)
+        {
+            Name = name;
+            Employees = new List<Employee>();
+            Products = new List<Product>();
+        }
+
+        public void AddEmployee(Employee employee)
+        {
+            Employees.Add(employee);
+        }
+
+        public void AddProduct(Product product)
+        {
+            Products.Add(product);
         }
 
         public override string ToString()
         {
-            return $"Factory name: {Name}, Number of employees: {Employees.Length}, Number of products: {Products.Length}";
+            return $"Factory {Name} with {EmpCount} employees and {Products.Count} products.";
         }
     }
 }

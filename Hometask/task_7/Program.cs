@@ -4,7 +4,7 @@ namespace task_7
 {
     struct Product
     {
-        public enum CategoryType {}
+        public enum CategoryType {Sport = 1, Cloth, IT}
         readonly private DateTime manufactureDate;
 
         public string Name { get; set; }
@@ -51,36 +51,39 @@ namespace task_7
             //___________Employee______________
             for (int i=0; i<employeeCount; i++) 
             {
-                Console.WriteLine("Enter name: ");
+                Console.WriteLine("Enter name employee: ");
                 string name = Console.ReadLine();
-                Console.WriteLine("Enter surname: ");
+                Console.WriteLine("Enter surname employee: ");
                 string surname = Console.ReadLine();
-                Console.WriteLine("Enter birth date: ");
+                Console.WriteLine("Enter birth date employee: ");
                 DateTime birthDate = DateTime.Parse(Console.ReadLine());
-                Console.WriteLine("Enter salary: ");
+                Console.WriteLine("Enter salary employee: ");
                 decimal selary = decimal.Parse(Console.ReadLine());
             }
             //___________Product_______________
-            for (int i = 0; i < employeeCount; i++)
+            for (int i = 0; i < productCount; i++)
             {
-                Console.WriteLine("Enter name: ");
+                Console.WriteLine("Enter name product: ");
                 string name = Console.ReadLine();
-                Console.WriteLine("Enter price: ");
+                Console.WriteLine("Enter price product: ");
                 decimal price = decimal.Parse(Console.ReadLine());
                 Console.WriteLine("Enter manufacture date: ");
                 DateTime birthDate = DateTime.Parse(Console.ReadLine());
                 for(int j=1; j<=3;j++) 
                 {
                     Console.WriteLine($"Enter category type {j}: ");
-                    CategoryType category = (CategoryType)Enum.Parse(typeof(CategoryType), Console.ReadLine());
+                    Product.CategoryType category = (Product.CategoryType)Enum.Parse(typeof(Product.CategoryType), Console.ReadLine());
                 }        
             }
 
             Factory factory = new Factory(nameFactory, employees, products);
 
             factory.ToString();
-            employees.ToString();
-            products.ToString();
+            foreach (Product product in products)
+                Console.WriteLine(product.ToString());
+            foreach (Employee employee in employees)
+                Console.WriteLine(employee.ToString());
+            
             Console.WriteLine($"Averege salary: {factory.AvgSalary}");
             Console.WriteLine($"Employees count: {factory.EmpCount}");
             Console.WriteLine($"GDP per employees: {factory.GDP}");

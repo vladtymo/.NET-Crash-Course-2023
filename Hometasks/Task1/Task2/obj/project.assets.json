@@ -9,19 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\kkoly\\.nuget\\packages\\": {},
-    "E:\\Visual Studio SDK\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kkoly\\Source\\Repos\\NikHusachenko\\.NET-Crash-Course-2023\\Hometasks\\Task1\\Task2\\Task2.csproj",
+      "projectUniqueName": "C:\\Users\\kkoly\\source\\repos\\.NET-Crash-Course-2023\\Hometasks\\Task1\\Task2\\Task2.csproj",
       "projectName": "Task2",
-      "projectPath": "C:\\Users\\kkoly\\Source\\Repos\\NikHusachenko\\.NET-Crash-Course-2023\\Hometasks\\Task1\\Task2\\Task2.csproj",
+      "projectPath": "C:\\Users\\kkoly\\source\\repos\\.NET-Crash-Course-2023\\Hometasks\\Task1\\Task2\\Task2.csproj",
       "packagesPath": "C:\\Users\\kkoly\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kkoly\\Source\\Repos\\NikHusachenko\\.NET-Crash-Course-2023\\Hometasks\\Task1\\Task2\\obj\\",
+      "outputPath": "C:\\Users\\kkoly\\source\\repos\\.NET-Crash-Course-2023\\Hometasks\\Task1\\Task2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\Visual Studio SDK\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\kkoly\\AppData\\Roaming\\NuGet\\NuGet.Config",

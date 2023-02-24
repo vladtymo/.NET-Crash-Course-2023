@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\bin\Debug\net6.0\Passport.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\bin\Debug\net6.0\Passport.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\bin\Debug\net6.0\Passport.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\bin\Debug\net6.0\Passport.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\bin\Debug\net6.0\Passport.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\refint\Passport.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\Passport.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Passport\obj\Debug\net6.0\ref\Passport.dll

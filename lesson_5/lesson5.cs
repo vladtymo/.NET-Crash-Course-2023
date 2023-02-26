@@ -7,7 +7,6 @@ class Weapon
     private float caliber;
     private int bulletsInMagazine;
     private int maxMagazineSize;
-
     public void Initialize(int range, float cal, int maxSize)
     {
         if (range <= 0 || cal <= 0 || maxSize <= 0)

@@ -1,8 +1,8 @@
 ﻿internal class MainClass
-{
+{/*
     static void Main()
     {
-        /*
+        
         Product product1 = new(DateTime.Now, "Mars", CategoryType.Food, 20);
         Product product2 = new(DateTime.Now, "Mars", CategoryType.Food, 20);
         Product product3 = new(DateTime.Now, "Mars", CategoryType.Food, 20);
@@ -24,8 +24,7 @@
         Console.WriteLine(factory1.EmpCount);
         Console.WriteLine(factory1.ToString());
         Console.WriteLine("\n");
-        */
-        /*
+        
         Factory factory2 = new();
         String name, surname;
         decimal salary, price;
@@ -94,6 +93,6 @@
         Console.WriteLine(factory2.EmpCount);
         Console.WriteLine(factory2.ToString());
         Console.WriteLine("\n");
-        */
-    }
+      
+    }*/
 }

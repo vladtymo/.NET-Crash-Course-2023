@@ -5,7 +5,6 @@ namespace String {
         static void Main( string[] args) {
             Console.WriteLine( " Enter a string: ");
             string stringInput = Console.ReadLine();
-
             int lower, upper = 0;
 
             foreach (char ch in stringInput) {

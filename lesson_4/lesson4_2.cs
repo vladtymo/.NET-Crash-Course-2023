@@ -17,7 +17,6 @@ namespace SpaceCounter
                     spaceCount++;
                 }
             }
-
             Console.WriteLine("The number of spaces in the string is: " + spaceCount);
         }
     }

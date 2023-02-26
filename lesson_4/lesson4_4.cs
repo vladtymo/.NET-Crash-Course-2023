@@ -5,7 +5,6 @@ namespace Abbrevation{
       static void Main(string[]args){
          Console.WriteLine(GenerationAbbr("cascading style sheets"));
       }
-      
       static string GenerationAbbr(string str){
          string[] words = str.Split(' ');
          string abbreviation = "";

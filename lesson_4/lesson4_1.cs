@@ -10,7 +10,6 @@ namespace ReverseWords
             string input = Console.ReadLine();
 
             string[] words = input.Split(' ');
-
             Array.Reverse(words);
 
             string output = string.Join(" ", words);

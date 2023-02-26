@@ -6,7 +6,6 @@ namespace Word {
             Console.WriteLine("Enter words:");
             string inputStr = Console.ReadLine();
             string resultStr = "";
-
             while (!inputStr.EndsWith(".")){
                 resultStr += inputStr + ", ";
                 inputStr = Console.ReadLine();

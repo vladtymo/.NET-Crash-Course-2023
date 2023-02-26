@@ -7,6 +7,7 @@ namespace DemoApplication
  { 
   static void Main() 
   {
+    
     int year;
     Console.Write("Input an year : ");
     year = Convert.ToInt32(Console.ReadLine());

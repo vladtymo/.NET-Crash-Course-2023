@@ -7,7 +7,6 @@ namespace ArrayProgram
         static void Main(string[] args)
         {
             int[] numbers = new int[20];
-
             Random random = new Random();
             for (int i = 0; i < numbers.Length; i++)
             {

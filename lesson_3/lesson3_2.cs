@@ -15,7 +15,6 @@ namespace GuessTheNumber
                 Console.Write("Guess the number: ");
                 int guess = int.Parse(Console.ReadLine());
                 attempts++;
-                
                 if (guess == randomNumber)
                 {
                     Console.WriteLine("You got it! The number was {0}.", randomNumber);

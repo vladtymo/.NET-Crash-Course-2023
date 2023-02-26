@@ -13,7 +13,6 @@ namespace FillArrayWithRandomNumbers
             {
                 array[i] = random.Next();
             }
-
             Console.WriteLine("Array filled with random numbers:");
             foreach (int num in array)
             {

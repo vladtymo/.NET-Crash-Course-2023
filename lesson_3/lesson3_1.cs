@@ -9,7 +9,6 @@ namespace CharacterLine
         {
             Console.WriteLine("Enter a character: ");
             char character = Console.ReadLine()[0]; // Read the first character of the input
-
             Console.WriteLine("Enter a number: ");
             int number = int.Parse(Console.ReadLine()); 
 

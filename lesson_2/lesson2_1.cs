@@ -18,7 +18,6 @@ class Program
     {
         Console.WriteLine("Enter a number representing a day of the week:");
         int dayNumber = Convert.ToInt32(Console.ReadLine());
-
         DaysOfWeek day = (DaysOfWeek)dayNumber;
 
         switch (day)

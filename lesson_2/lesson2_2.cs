@@ -16,7 +16,6 @@ namespace CurrencyConverter
         {
             Console.WriteLine("Enter the number of UAN:");
             double uan = Convert.ToDouble(Console.ReadLine());
-
             Console.WriteLine("Select the target currency: ");
             Console.WriteLine("1. USD");
             Console.WriteLine("2. EUR");

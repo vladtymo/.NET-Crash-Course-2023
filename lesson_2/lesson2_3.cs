@@ -16,7 +16,6 @@ namespace CircleCalculator
             Console.WriteLine("Enter the diameter of the circle:");
             double diameter = Convert.ToDouble(Console.ReadLine());
             double radius = diameter / 2;
-
             Console.WriteLine("Select the action to be calculated: ");
             Console.WriteLine("1. Calculate the radius of the circle");
             Console.WriteLine("2. Calculate the area of the circle");

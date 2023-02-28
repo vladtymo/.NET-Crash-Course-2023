@@ -1,0 +1,15 @@
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.csproj.AssemblyReference.cache
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.GeneratedMSBuildEditorConfig.editorconfig
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.AssemblyInfoInputs.cache
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.AssemblyInfo.cs
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.csproj.CoreCompileInputs.cache
+/home/maks/Стільниця/c#.NET/dz8/bin/Debug/net6.0/dz8
+/home/maks/Стільниця/c#.NET/dz8/bin/Debug/net6.0/dz8.deps.json
+/home/maks/Стільниця/c#.NET/dz8/bin/Debug/net6.0/dz8.runtimeconfig.json
+/home/maks/Стільниця/c#.NET/dz8/bin/Debug/net6.0/dz8.dll
+/home/maks/Стільниця/c#.NET/dz8/bin/Debug/net6.0/dz8.pdb
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.dll
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/refint/dz8.dll
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.pdb
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/dz8.genruntimeconfig.cache
+/home/maks/Стільниця/c#.NET/dz8/obj/Debug/net6.0/ref/dz8.dll

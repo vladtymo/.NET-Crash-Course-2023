@@ -11,5 +11,10 @@
         {
             ManufactureDate = manufactureDate;
         }
+        public override string ToString()
+        {
+            return $"Name: {Name}\nManufacture Date: {ManufactureDate.ToLongDateString()}\n" +
+                $"Category: {Category}\nPrice: {Price}";
+        }
     }
 }

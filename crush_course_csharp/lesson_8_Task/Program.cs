@@ -58,7 +58,12 @@
             }
 
         }
-        
+        public void ShowInfo()
+        {
+            Console.WriteLine($"Name: {Name}\nSurname: {Surname}\nBirthDate: {BirthDate.ToLongDateString()}" +
+                $"\nNationality: {Nationality}\nDate Issues: {DateIssues.ToLongDateString()}\nNumber: {NumberForeignPassport}");
+        }
+
     }
     class Visa
     {

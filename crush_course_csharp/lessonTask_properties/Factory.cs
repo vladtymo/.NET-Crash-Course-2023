@@ -72,5 +72,11 @@
                 Console.WriteLine(new String('-', 25) + "\n");
             }
         }
+        public override string ToString()
+        {
+            return $"Name: {Name}\nCount Empoyers: {EmpCount}\n" +
+                $"Average Salary: {AvgSalary}\nGDP: {GDP}";
+        }
+
     }
 }

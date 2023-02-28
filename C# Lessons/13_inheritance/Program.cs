@@ -20,6 +20,10 @@
         {
             Console.WriteLine("I am moving...");
         }
+        public void SaySomething()
+        {
+            Console.WriteLine("I am an Aspirant. blaergaerglarleglfalrelgaregihaerifa!");
+        }
 
         public void ShowInfo()
         {

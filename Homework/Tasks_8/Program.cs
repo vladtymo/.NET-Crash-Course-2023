@@ -121,26 +121,18 @@
 		static void Main(string[] args)
 		{
 			List<Animal> zoo = new List<Animal>();
-
 			Bird bird = new Bird("Bird of prey", "Aquila audax", 5.5, "Australia", 26, Animal.DietType.Carnivore, 2000, 300, 2.3);
 			Reptile reptile = new Reptile("Sea turtle", "Leatherback sea turtle (Dermochelys coriacea)", 900, "All oceans", 50, Animal.DietType.Carnivore, true, false, false);
 			Fish fish = new Fish("Coelacanth", "Latimeria chalumnae and Latimeria menadoensis", 90, "Deep underwater caves", 100, Animal.DietType.Carnivore, 1.6, Fish.WaterType.Saltwater);
 			zoo.Add(bird);
 			zoo.Add(fish);
 			zoo.Add(reptile);
-
 			foreach(Animal item in zoo)
 			{
 				item.MakeSound();
 				item.Move();
 				Console.WriteLine(item.ToString());
-				
 			}
-
-		//	Console.WriteLine(bird.ToString());
-			//Console.WriteLine(reptile.ToString());
-			//Console.WriteLine(fish.ToString());
-
 			Console.ReadKey();
 		}
 	}

@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\bin\Debug\net6.0\Animals_Zoo.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\bin\Debug\net6.0\Animals_Zoo.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\bin\Debug\net6.0\Animals_Zoo.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\bin\Debug\net6.0\Animals_Zoo.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\bin\Debug\net6.0\Animals_Zoo.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\refint\Animals_Zoo.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\Animals_Zoo.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Animals_Zoo\obj\Debug\net6.0\ref\Animals_Zoo.dll

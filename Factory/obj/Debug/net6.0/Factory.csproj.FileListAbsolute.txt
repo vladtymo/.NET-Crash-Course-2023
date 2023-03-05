@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\bin\Debug\net6.0\Factory.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\bin\Debug\net6.0\Factory.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\bin\Debug\net6.0\Factory.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\bin\Debug\net6.0\Factory.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\bin\Debug\net6.0\Factory.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\refint\Factory.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\Factory.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Factory\obj\Debug\net6.0\ref\Factory.dll

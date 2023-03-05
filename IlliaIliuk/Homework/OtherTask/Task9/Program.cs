@@ -1,7 +1,7 @@
 ﻿namespace OtherTask.Task9
 {
     internal class Program
-    {
+    {/*
         static void Main()
         {
             Comp comp = new(2, 2);
@@ -19,6 +19,6 @@
             Console.WriteLine(comp.PrintDevice[1].GetName());
             Console.WriteLine(comp.ReadInfo("f"));
         }
-        
+        */
     }
 }

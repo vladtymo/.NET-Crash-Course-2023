@@ -20,19 +20,19 @@ public class Task
             Weight = weight;
         }
         
-        public string GetName()
+        public  string GetName()
         { return Name; }
-        public void Move()
+        public virtual void Move()
         {
             Console.WriteLine("The animal is moving");
         }
-        public  void MakeSound()
+        public virtual void MakeSound()
         {
             Console.WriteLine("*shhshshshs*");
         }
-        public  void Show()
+        public virtual void Show()
         {
-            Console.WriteLine($"\n\t\t Name:{Name??"Noname"}|Kind:{Kind} |Speed:{Speed} |Habitat:{Habitat} |Weight:{Weight}");
+            Console.WriteLine($"\n\t\t Name:{Name??"Noname"}|Kind:{Kind} |Speed:{Speed}km/h |Habitat:{Habitat} kg|Weight:{Weight}");
         }
 
     }
@@ -42,21 +42,21 @@ public class Task
     {
         private readonly bool the_ability_to_fly;
 
-        Bird(string name, string kind, int speed, string habitat, float weight,bool the_ability_to_fly)
+        public Bird(string name, string kind, int speed, string habitat, float weight,bool the_ability_to_fly)
             :base( name,  kind,  speed,  habitat,  weight)
         {
             this.the_ability_to_fly = the_ability_to_fly;
         }
 
-        public new void Move()
+        public override void Move()
         {
             Console.WriteLine($"Bird {GetName()} flies");
         }
-        public new void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("*birdsong*");
         }
-        public new void Show()
+        public override void Show()
         {
             base.Show();
             Console.Write($"|the ability to fly:{the_ability_to_fly}");
@@ -73,15 +73,15 @@ public class Task
         }
 
 
-        public new void Move()
+        public override void Move()
         {
             Console.WriteLine($"The reptile {GetName()} crawls");
         }
-        public new void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("*the sound of a reptile*");
         }
-        public new void Show()
+        public override void Show()
         {
             base.Show();
             Console.Write($"|color:{color}");
@@ -92,21 +92,21 @@ public class Task
     {
         private readonly bool the_presence_of_scales;
 
-        Fish(string name, string kind, int speed, string habitat, float weight, bool the_presence_of_scales)
+       public Fish(string name, string kind, int speed, string habitat, float weight, bool the_presence_of_scales)
             : base(name, kind, speed, habitat, weight)
         {
             this.the_presence_of_scales = the_presence_of_scales;
         }
 
-        public new void Move()
+        public override void Move()
         {
             Console.WriteLine($"Fish {GetName()} swims");
         }
-        public new void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine("*silence, bul bul*");
         }
-        public new void Show()
+        public override void Show()
         {
             base.Show();
             Console.Write($"|the presence of scales:{the_presence_of_scales}");
@@ -116,6 +116,19 @@ public class Task
 
     public static void Main(string[] args)
     {
+        Bird bird = new Bird("Raven", "bird", 20, "mountain forest", 1.3F, true);
+        Reptile reptile = new Reptile("Pangolin", "reptile", 3, "jungle", 0.8F, "green");
+        Fish fish = new Fish("Doroty", "fish", 13, "sea", 0.2F, true);
+
+        Animal[] zoo = {bird, reptile, fish};
+
+        for (int i = 0; i < zoo.Length; i++)
+        {
+            zoo[i].Show();
+            zoo[i].MakeSound();
+            zoo[i].Move();
+        }
+
     }
 
 }

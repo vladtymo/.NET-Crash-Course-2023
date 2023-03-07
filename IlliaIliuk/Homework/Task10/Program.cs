@@ -20,7 +20,7 @@ namespace Task10
 
     internal class Program
     {
-        static void Main()
+        public static void Main()
         {
             Movie[] movies = {
                 new("The hangover", new("Todd", "Phillips"), "USA", Genre.Comedy, 2009, 77),
@@ -42,6 +42,12 @@ namespace Task10
             cinema.Sort(new CompareByRating());
             Console.WriteLine("------------------");
             cinema.ShowMovies();
+
+            Console.WriteLine("------------------");
+            foreach (var item in cinema)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

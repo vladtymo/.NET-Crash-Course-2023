@@ -11,8 +11,6 @@
     }
     
 
-
-
     internal class Movie :ICloneable, IComparable<Movie>
     {
         private string title;

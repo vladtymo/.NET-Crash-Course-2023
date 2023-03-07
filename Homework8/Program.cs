@@ -26,8 +26,7 @@ namespace lab_08_inheritance
             catfish.MakeSound();
             catfish.MakeNewSound();
             catfish.TypeWater();
-
-            List<Animal> zoo = new List<Animal>();
+            /*List<Animal> zoo = new List<Animal>();
             zoo.Add(parrot);
             zoo.Add(catfish);
             zoo.Add(turtles);
@@ -35,7 +34,19 @@ namespace lab_08_inheritance
             {
                 zoo[i].Show();
             }
-         
+            */
+            Animal[] zoo = new Animal[3];
+
+            zoo[0] = parrot;
+            zoo[1] = catfish;
+            zoo[2] = turtles;
+
+            foreach (Animal animal in zoo) {
+                animal.Show();
+                animal.MakeSound();
+                animal.Move();
+
+        
         }
     }
 }

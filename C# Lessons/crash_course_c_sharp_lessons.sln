@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_inheritance", "13_inheri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_interfaces", "14_interfaces\14_interfaces.csproj", "{C8CFAD42-4443-4624-A77E-B1C05645C682}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_system_interfaces", "15_system_interfaces\15_system_interfaces.csproj", "{7E9903BE-6A3D-49F5-B1B8-4C395EE9915C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_system_interfaces", "15_system_interfaces\15_system_interfaces.csproj", "{7E9903BE-6A3D-49F5-B1B8-4C395EE9915C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16_interfaces_2", "16_interfaces_2\16_interfaces_2.csproj", "{DED091F5-8BC7-4F51-A10C-6C07821B954D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16_interfaces_2", "16_interfaces_2\16_interfaces_2.csproj", "{DED091F5-8BC7-4F51-A10C-6C07821B954D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_polymorphism", "17_polymorphism\17_polymorphism.csproj", "{A7408D4E-CDB4-4618-8305-B2B44641F93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{DED091F5-8BC7-4F51-A10C-6C07821B954D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED091F5-8BC7-4F51-A10C-6C07821B954D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED091F5-8BC7-4F51-A10C-6C07821B954D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

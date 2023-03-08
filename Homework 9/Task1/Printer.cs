@@ -8,6 +8,15 @@ namespace lab_09_task1
 {
     internal class Printer: IPrintInformation
     {
+        public void GetName()
+        {
+            Console.WriteLine("Printer Name");
+        }
+
+        public void Print(string str)
+        {
+            Console.WriteLine(str);
+        }
 
     }
 }

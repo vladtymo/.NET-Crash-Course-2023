@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace lab_09_task1
 {
-    internal class Monitor
+    internal class Monitor: IPrintInformation
     {
+        public void GetName()
+        {
+            Console.WriteLine("Monitor Name");
+        }
+
+        public void Print(string str)
+        {
+            Console.WriteLine(str);
+        }
     }
 }

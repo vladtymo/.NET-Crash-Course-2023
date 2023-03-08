@@ -9,5 +9,8 @@ namespace lab_09_task1
     internal class HDD: Disk
     {
         public void GetName()
+        {
+           Console.WriteLine("HDD Name");
+        }
     }
 }

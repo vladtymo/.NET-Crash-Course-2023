@@ -10,6 +10,7 @@ namespace HomeWork8
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using static HomeWork8.Cinema;
 
     public class Director : ICloneable
     {
@@ -118,6 +119,7 @@ namespace HomeWork8
             movies.Sort(new CompareByYear());
         }
 
+
         private class CompareByRating : IComparer<Movie>
         {
             public int Compare(Movie x, Movie y)
@@ -134,16 +136,17 @@ namespace HomeWork8
             }
         }
     }
-
     internal class Program
     {
         static void Main(string[] args)
         {
             Cinema cinema = new Cinema();
 
+
+
             // Sort movies by rating
             cinema.SortByRating();
-
+            
             // Print all movies
             Console.WriteLine("All movies sorted by rating:");
             foreach (Movie movie in cinema)

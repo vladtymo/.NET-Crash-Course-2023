@@ -27,8 +27,6 @@ namespace Task11
             DrowShape(polyline);
             DrowShape(rectangle);
 
-
-            Thread.Sleep(10000);
         }
     }
 }

@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "15_system_interfaces", "15_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "16_interfaces_2", "16_interfaces_2\16_interfaces_2.csproj", "{DED091F5-8BC7-4F51-A10C-6C07821B954D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_polymorphism", "17_polymorphism\17_polymorphism.csproj", "{A7408D4E-CDB4-4618-8305-B2B44641F93A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17_polymorphism", "17_polymorphism\17_polymorphism.csproj", "{A7408D4E-CDB4-4618-8305-B2B44641F93A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18_abstract", "18_abstract\18_abstract.csproj", "{405EC5AD-00FB-421E-903E-7EEA73D14845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7408D4E-CDB4-4618-8305-B2B44641F93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405EC5AD-00FB-421E-903E-7EEA73D14845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405EC5AD-00FB-421E-903E-7EEA73D14845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405EC5AD-00FB-421E-903E-7EEA73D14845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405EC5AD-00FB-421E-903E-7EEA73D14845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

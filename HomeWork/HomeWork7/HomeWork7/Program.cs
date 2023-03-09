@@ -38,8 +38,8 @@ namespace HomeWork7
     }
     class Disk : IDisk
     {
-        string memory;
         int memSize;
+        string memory;
         public string Memory { get; set; }
         public int MemSize { get; set; }
         public Disk()

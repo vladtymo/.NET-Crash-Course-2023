@@ -34,7 +34,7 @@ namespace lab_10_system_interfaces
        {
            return new Movie(Title, (Director)Director.Clone(), Country, Genre, Year, Rating);
        }
-       public int CompareTo(Movie otherMovie)
+       public int CompareToTitle(Movie otherMovie)
         {
             return Title.CompareTo(otherMovie.Title);
         }

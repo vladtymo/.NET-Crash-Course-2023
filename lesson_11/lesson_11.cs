@@ -9,7 +9,6 @@ public enum Genre{
     Drama,
     Action, 
     Romance,
-    Triller
 }
 
 public class Movie:ICloneable, IComparable<Movie>{
@@ -28,7 +27,7 @@ public class Movie:ICloneable, IComparable<Movie>{
         this.Year = Year;
         this.Rating = Rating;
     }
-    //...
+    
     public override string ToString(){
         return $"{Title} {Director} {Country} {Year} {Rating}";
     }
@@ -60,7 +59,7 @@ public class Director: ICloneable{
     }
 
     public object Clone(){
-        return new Director(FirstName, LastName);
+        return new Director(FirstName, LastName); 
     }
 
     public override string ToString(){
@@ -76,16 +75,16 @@ public class Cinema : IEnumerable<Movie>{
     public void Sort(){movies.Sort();}
     public void Sort(IComparer<Movie> comparer){movies.Sort(comparer);}
     public IEnumerator<Movie> GetEnumerator(){return movies.GetEnumerator();}
-    IEnumerator IEnumerable.GetEnumerator(){return GetEnumerator();}
+    IEnumerator IEnumerable.GetEnumerator(){return GetEnumerator();} 
 }
 
 class lesson_11{
     static void Main(string[] args){
         Director director0 = new Director("Zubko", "Karina");
-        Director director1 = new Director("Oooo", "Tgggg");
-        Director director2 = new Director("Oppp", "Zqqqq");
+        Director director1 = new Director("Mark", "Markovs");
+        Director director2 = new Director("Alex", "Zumberg");
 
-        Movie movie0 = new Movie("Titanic", director0, "Ukraine", Genre.Romance, 2000, 9);
+        Movie movie0 = new Movie("Titanic", director0, "USA", Genre.Romance, 2000, 9);
 
         Movie copyMovie0 = (Movie)movie0.Clone();
         Director copyDirector0 = (Director)director0.Clone();
@@ -101,5 +100,20 @@ class lesson_11{
 
         Console.WriteLine("\ncopy of director: ");
         Console.WriteLine(copyDirector0);
+
+        Cinema cinema = new Cinema();
+        cinema.AddMovie(new Movie("Shrek", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("A Space Odyssey", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("The Godfather", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("Citizen Kane ", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("Jeanne Dielman", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("Raiders of the Lost Ark", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("La Dolce Vita", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("Seven Samurai ", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+        cinema.AddMovie(new Movie("In the Mood for Love", new Director("Mark", "Markov"), "Ukraine", Genre.Drama, 1999, 9));
+
+        foreach (Movie movie in cinema){
+            Console.WriteLine(movie.ToString());
+        }
     }
 }

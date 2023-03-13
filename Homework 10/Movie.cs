@@ -28,11 +28,11 @@ namespace lab_10_system_interfaces
        }
        public override string ToString()
        {
-           return $"Title: {Title}, Genre: {Genre}, Year: {Year}, Rating: {Rating}.";
+           return $"Title: {Title}, Genre: {Ganre}, Year: {Year}, Rating: {Rating}.";
        }
        public object Clone()
        {
-           return new Movie(Title, (Director)Director.Clone(), Country, Genre, Year, Rating);
+           return new Movie(Title, (Director)Director.Clone(), Country, Ganre, Year, Rating);
        }
        public int CompareToTitle(Movie otherMovie)
         {

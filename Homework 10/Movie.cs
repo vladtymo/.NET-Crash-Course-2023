@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace lab_10_system_interfaces
 {
     public enum Ganre{Comedy,Horror,Adventure,Drama,Historical,Fantasy}

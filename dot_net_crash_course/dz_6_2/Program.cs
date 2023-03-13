@@ -1,13 +1,12 @@
-﻿using System.Reflection;
-using System.Text;
+﻿using System.Text;
 
-namespace dz_6
+namespace dz_6_2
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Rocket[] r1 = { new Rocket(), new Rocket("Falcon",10), new Rocket("Rorshah-9", 25, "Mars")};
+            Rocket[] r1 = { new Rocket(), new Rocket("Falcon", 10, null), new Rocket("Rorshah-9", 25, "Mars") };
 
             foreach (Rocket r in r1)
             {
@@ -39,7 +38,7 @@ namespace dz_6
         int fuelLevel;
         string rocketLocation;
         const string defaultRocketLocation = "Earth";
-        StringBuilder planetList = new StringBuilder(); //list
+        List<string> planetList = new List<string>();
 
         public void FlyTo(string rl = defaultRocketLocation)
         {
@@ -48,10 +47,10 @@ namespace dz_6
                 Console.WriteLine($"Not enough fuel for space travel by route \"{rocketLocation} -> {rl}\".");
             }
             else
-            {   
+            {
                 Console.WriteLine($"Space travel by route \"{rocketLocation} -> {rl}\" is completed!");
                 fuelLevel -= rl.Length;
-                planetList.Append(" -> " + rl);
+                planetList.Add(" -> " + rl);
                 rocketLocation = rl;
             }
         }
@@ -63,16 +62,16 @@ namespace dz_6
 
         public void ShowRocketInfo()
         {
-            Console.WriteLine($"{new string('-',10)}\n" + 
+            Console.WriteLine($"{new string('-', 10)}\n" +
                               $"Name {(rocketName == null ? "noName" : rocketName)}\n" +
                               $"Current location: {rocketLocation}\n" +
                               $"Fuel: {fuelLevel}/{maxFuelLevel}\n" +
-                              $"{new string('-',10)}");
+                              $"{new string('-', 10)}");
         }
 
         public void ShowFuelInfo()
         {
-            Console.WriteLine($"Fuel level: {new string('+', fuelLevel)}{new string('-', (maxFuelLevel-fuelLevel))}");
+            Console.WriteLine($"Fuel level: {new string('+', fuelLevel)}{new string('-', (maxFuelLevel - fuelLevel))}");
         }
 
         public void Refuel()
@@ -81,22 +80,13 @@ namespace dz_6
             fuelLevel = maxFuelLevel;
         }
 
-        public Rocket(string? rN, int mFL, string rL)
+        public Rocket(string? rN, int mFL, string? rL)
         {
             rocketName = rN;
             maxFuelLevel = mFL;
             fuelLevel = maxFuelLevel;
-            rocketLocation = rL;
-            planetList.Append(rL);
-        }
-
-        public Rocket(string rocketName, int maxFuelLevel)
-        {
-            this.rocketName = rocketName;
-            this.maxFuelLevel = maxFuelLevel;
-            fuelLevel = maxFuelLevel;
-            rocketLocation = defaultRocketLocation; // ??
-            planetList.Append(defaultRocketLocation);
+            rocketLocation = rL ?? defaultRocketLocation;
+            planetList.Append(rocketLocation);
         }
 
         public Rocket()
@@ -104,7 +94,7 @@ namespace dz_6
             rocketLocation = defaultRocketLocation;
             planetList.Append(defaultRocketLocation);
             maxFuelLevel = 20;
-            fuelLevel = maxFuelLevel; 
+            fuelLevel = maxFuelLevel;
         }
 
     }

@@ -13,7 +13,7 @@ namespace lab_10_system_interfaces
        public string Title {get; set;}
        public Director Director {get; set;}
        public string Country{get; set;}
-       public Genre Genre{get; set;}
+       public Ganre Ganre{get; set;}
        public int Year{get; set;}
        public short Rating{get; set;}
        

@@ -40,7 +40,7 @@ namespace lab_10_system_interfaces
         }
        public int CompareToYear(Movie otherMovie)
        {
-           if(other_movie == null){ return 1;}
+           if(otherMovie == null){ return 1;}
            return Year.CompareTo(otherMovie.Year);
        }
        public int CompareToRating(Movie otherMovie)

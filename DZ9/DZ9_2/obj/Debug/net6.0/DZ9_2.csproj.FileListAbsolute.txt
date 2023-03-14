@@ -1,0 +1,15 @@
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.csproj.AssemblyReference.cache
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.AssemblyInfoInputs.cache
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.AssemblyInfo.cs
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.csproj.CoreCompileInputs.cache
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/bin/Debug/net6.0/DZ9_2
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/bin/Debug/net6.0/DZ9_2.deps.json
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/bin/Debug/net6.0/DZ9_2.runtimeconfig.json
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/bin/Debug/net6.0/DZ9_2.dll
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/bin/Debug/net6.0/DZ9_2.pdb
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.dll
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/refint/DZ9_2.dll
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.pdb
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/DZ9_2.genruntimeconfig.cache
+/home/maks/Стільниця/c#.NET/DZ9/DZ9_2/obj/Debug/net6.0/ref/DZ9_2.dll

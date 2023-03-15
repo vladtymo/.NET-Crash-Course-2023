@@ -81,7 +81,7 @@
         {
             foreach (Employee employer in Employers)
             {
-                Console.WriteLine(employer.ToString());
+                Console.WriteLine(employer);
             }
         }
 
@@ -110,7 +110,7 @@
         {
             foreach (Product product in Products)
             {
-                Console.WriteLine(product.ToString()); 
+                Console.WriteLine(product); 
             }
         }
 

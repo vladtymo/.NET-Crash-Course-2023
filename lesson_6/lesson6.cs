@@ -6,7 +6,6 @@ class Airplane{
     private double fuelСapacity;
     private readonly double maxSpeed;
     private bool isThePlaneFlying;
-
     public Airplane(string model, int? passengerCapacity, double fuelСapacity, double maxSpeed){
         this.model = model;
         this.passengerCapacity = passengerCapacity;
@@ -14,35 +13,27 @@ class Airplane{
         this.maxSpeed = maxSpeed;
         isThePlaneFlying = false;
     }
-
     public Airplane(string model, double fuelСapacity, double maxSpeed):this(model, null, fuelСapacity, maxSpeed){
         //this for an explicit constructor call
     }
-
     public string GetModel(){
         return model;
     }
-
     public int? GetPassengerCapacity(){
         return passengerCapacity;
     }
-
     public void SetPassengerCapacity(int? passengerCapacity){
         this.passengerCapacity = passengerCapacity;
     }
-
     public double GetFuelCapacity(){
         return fuelСapacity;
     }
-
     public void SetFuelCapacity(double fuelСapacity){
         this.fuelСapacity = fuelСapacity;
     }
-
     public double GetMaxSpeed(){
         return maxSpeed;
     }
-
     public void TakeOff(){
         if(isThePlaneFlying){
             Console.WriteLine("The plane is flying now");
@@ -51,7 +42,6 @@ class Airplane{
             Console.WriteLine("Plane takes off");
         }
     }
-
     public void Landing(){
         if(isThePlaneFlying){
             isThePlaneFlying = false;
@@ -60,7 +50,6 @@ class Airplane{
             Console.WriteLine("The plane has already landed");
         }
     }
-
     public void Refueling(double amount){
         fuelСapacity += amount;
         Console.WriteLine($"The plane refueled on {amount} liters");

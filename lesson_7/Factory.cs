@@ -1,69 +1,48 @@
 using System;
 
-namespace EnterpriseStructure
-{
-    class Factory
-    {
+namespace Structure{
+    class Factory{
         public string Name { get; set; }
         public Employee[] Employees { get; set; }
         public Product[] Products { get; set; }
-
-        public decimal AvgSalary
-        {
-            get
-            {
+        public decimal AvgSalary{
+            get{
                 decimal totalSalary = 0;
-                foreach (Employee employee in Employees)
-                {
+                foreach (Employee employee in Employees){
                     totalSalary += employee.Salary;
                 }
                 return totalSalary / Employees.Length;
             }
         }
-
-        public decimal TotalSalary
-        {
-            get
-            {
+        public decimal TotalSalary{
+            get{
                 decimal totalSalary = 0;
-                foreach (Employee employee in Employees)
-                {
+                foreach (Employee employee in Employees){
                     totalSalary += employee.Salary;
                 }
                 return totalSalary;
             }
         }
-
-        public decimal GDP
-        {
-            get
-            {
+        public decimal GDP{
+            get{
                 decimal totalCost = 0;
-                foreach (Product product in Products)
-                {
+                foreach (Product product in Products){
                     totalCost += product.Price;
                 }
                 return totalCost / Employees.Length;
             }
         }
-
-        public int EmpCount
-        {
-            get
-            {
+        public int EmpCount{
+            get{
                 return Employees.Length;
             }
         }
-
-        public Factory(string name, Employee[] employees, Product[] products)
-        {
+        public Factory(string name, Employee[] employees, Product[] products){
             Name = name;
             Employees = employees;
             Products = products;
         }
-
-        public override string ToString()
-        {
+        public override string ToString(){
             return $"Factory: {Name}";
         }
     }

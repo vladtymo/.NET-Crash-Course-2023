@@ -10,7 +10,6 @@ namespace Word {
                 resultStr += inputStr + ", ";
                 inputStr = Console.ReadLine();
             }
-
             resultStr += inputStr.TrimEnd('.');
             Console.WriteLine("Result : " + resultStr);
         }

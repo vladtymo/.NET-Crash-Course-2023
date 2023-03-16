@@ -6,6 +6,7 @@ namespace DemoApplication
  { 
   static void Main(string[] args) 
   {
+   
    Console.Write("Enter 2 sides of the rectangle: ");
    Console.Write("\nWidth: ");
    double width = Convert.ToDouble(Console.ReadLine());

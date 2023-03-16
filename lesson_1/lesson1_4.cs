@@ -6,7 +6,6 @@ namespace DemoApplication
  { 
   static void Main(string[] args) 
   {
-    
    Console.Write("Enter number of seconds: ");
    int seconds = Convert.ToInt32(Console.ReadLine());
    TimeSpan time = TimeSpan.FromSeconds(seconds);

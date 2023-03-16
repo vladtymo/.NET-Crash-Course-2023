@@ -6,6 +6,7 @@ namespace DemoApplication
  { 
   static void Main(string[] args) 
   {
+   
    Console.Write("Enter your current date: ");
    Console.Write("\nDay: ");
    int day =   Convert.ToInt32(Console.ReadLine());

@@ -1,9 +1,7 @@
 using System;
 
-namespace DayOfWeek
-{
-   enum DaysOfWeek
-   {
+namespace DayOfWeek{
+   enum DaysOfWeek{
       Monday = 1,
       Tuesday,
       Wednesday,
@@ -12,16 +10,12 @@ namespace DayOfWeek
       Saturday,
       Sunday
    }
-class Program
-{
-    static void Main(string[] args)
-    {
+class Program{
+    static void Main(string[] args){
         Console.WriteLine("Enter a number representing a day of the week:");
         int dayNumber = Convert.ToInt32(Console.ReadLine());
         DaysOfWeek day = (DaysOfWeek)dayNumber;
-
-        switch (day)
-        {
+        switch (day){
             case DaysOfWeek.Monday:
                 Console.WriteLine("Monday");
                 break;

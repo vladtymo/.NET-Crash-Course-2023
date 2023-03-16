@@ -1,19 +1,14 @@
 using System;
 
-namespace CurrencyConverter
-{
-    class Program
-    {
-        enum Currency
-        {
+namespace CurrencyConverter{
+    class Program{
+        enum Currency{
             USD = 1,
-            EUR = 2,
-            UAN = 3,
-            PLN = 4
+            EUR,
+            UAN,
+            PLN
         }
-
-        static void Main(string[] args)
-        {
+        static void Main(string[] args){
             Console.WriteLine("Enter the number of UAN:");
             double uan = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Select the target currency: ");
@@ -21,13 +16,10 @@ namespace CurrencyConverter
             Console.WriteLine("2. EUR");
             Console.WriteLine("3. UAN");
             Console.WriteLine("4. PLN");
-
             int choice = Convert.ToInt32(Console.ReadLine());
             double result = 0;
             Currency targetCurrency = (Currency)choice;
-
-            switch (targetCurrency)
-            {
+            switch (targetCurrency){
                 case Currency.USD:
                     result = uan / 36.74;
                     Console.WriteLine($"{uan} UAN is equal to {result} USD");
@@ -47,7 +39,6 @@ namespace CurrencyConverter
                     Console.WriteLine("Invalid choice");
                     break;
             }
-
             Console.ReadLine();
         }
     }

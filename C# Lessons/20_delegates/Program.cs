@@ -54,6 +54,14 @@
             //Operation operation = new Operation(Add);
             Operation operation = Add;
 
+            // Delegate inherites MulticastDelegate
+            // add methods
+            operation += Divide;
+            operation += (a, b) => Console.WriteLine("Result: " + (a * b));
+
+            // remove methods
+            operation -= Divide;
+
             operation.Invoke(5, 6);
             operation(7, 8);
 

@@ -1,10 +1,7 @@
 using System;
 using System.Collections.Generic;
 enum Suit{
-    Hearts,
-    Diamonds,
-    Clubs,
-    Spades
+    Hearts, Diamonds, Clubs, Spades
 }
 enum Rank{
     Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
@@ -49,7 +46,7 @@ class Deck{
     }
     public Card Draw(){
         if (_cards.Count == 0){
-            throw new InvalidOperationException("The deck is empty.");
+            throw new InvalidOperationException("Is empty");
         }
         return _cards.Dequeue();
     }
@@ -67,14 +64,14 @@ class Deck{
 class Program{
     static void Main(string[] args){
         Deck deck = new Deck();
-        Console.WriteLine("Draw one card:");
+        Console.WriteLine("Draw one:");
         Console.WriteLine(deck.Draw());
-        Console.WriteLine("\nDeal six cards:");
+        Console.WriteLine("\nDeal six:");
         List<Card> dealtCards = deck.Deal(6);
         foreach (Card card in dealtCards){
             Console.WriteLine(card);
         }
-        Console.WriteLine("\nShuffle and deal six cards:");
+        Console.WriteLine("\nShuffle and deal six:");
         deck.Shuffle();
         dealtCards = deck.Deal(6);
         foreach (Card card in dealtCards){

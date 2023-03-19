@@ -71,7 +71,7 @@ namespace lesson_9_HW_Task1
                 if (pd.GetName() == device) 
                 { 
                     pdObj = pd;
-                    Console.WriteLine($"Name: {pd.GetName()}");
+                    Console.WriteLine($"{text}\nName: {pd.GetName()}");
                     return true;
                 }
             }
@@ -107,7 +107,7 @@ namespace lesson_9_HW_Task1
             {
                 if (pd.GetName() == ShowDevice)
                 {
-                    Console.WriteLine($"{text}\nName: {pd.GetName()}" + new string('-', 35));
+                    Console.WriteLine($"{text}\nName: {pd.GetName()}\n" + new string('-', 35));
                     return true;
                 }
             }

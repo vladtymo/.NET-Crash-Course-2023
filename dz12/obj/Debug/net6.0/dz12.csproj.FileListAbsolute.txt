@@ -1,0 +1,15 @@
+/home/maks/Стільниця/c#.NET/dz12/bin/Debug/net6.0/dz12
+/home/maks/Стільниця/c#.NET/dz12/bin/Debug/net6.0/dz12.deps.json
+/home/maks/Стільниця/c#.NET/dz12/bin/Debug/net6.0/dz12.runtimeconfig.json
+/home/maks/Стільниця/c#.NET/dz12/bin/Debug/net6.0/dz12.dll
+/home/maks/Стільниця/c#.NET/dz12/bin/Debug/net6.0/dz12.pdb
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.csproj.AssemblyReference.cache
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.GeneratedMSBuildEditorConfig.editorconfig
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.AssemblyInfoInputs.cache
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.AssemblyInfo.cs
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.csproj.CoreCompileInputs.cache
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.dll
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/refint/dz12.dll
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.pdb
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/dz12.genruntimeconfig.cache
+/home/maks/Стільниця/c#.NET/dz12/obj/Debug/net6.0/ref/dz12.dll

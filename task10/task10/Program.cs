@@ -7,8 +7,7 @@ namespace task10
     {
         static void Main(string[] args)
         {
-            Director dr = new Director("Antony", "Hilltone");
-            dr.ToString();
+       
         }
     }
 

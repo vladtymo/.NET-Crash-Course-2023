@@ -153,14 +153,13 @@
         public void AddDevice(int index, IPrintInformation sl)
         {
             Console.WriteLine("Add device");
-            printDevice[index] = sl;
 
 
         }
         public void AddDisk(int index, Disk d)
         {
             Console.WriteLine("Add disk");
-            disk[index]= d;
+
         }
 
         public bool CheckDisk(string device)

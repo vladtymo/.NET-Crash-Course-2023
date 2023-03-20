@@ -1,0 +1,15 @@
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\bin\Debug\net7.0\task10.exe
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\bin\Debug\net7.0\task10.deps.json
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\bin\Debug\net7.0\task10.runtimeconfig.json
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\bin\Debug\net7.0\task10.dll
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\bin\Debug\net7.0\task10.pdb
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.csproj.AssemblyReference.cache
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.AssemblyInfoInputs.cache
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.AssemblyInfo.cs
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.csproj.CoreCompileInputs.cache
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.dll
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\refint\task10.dll
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.pdb
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\task10.genruntimeconfig.cache
+D:\GitHub\.NET-Crash-Course-2023\task10\task10\obj\Debug\net7.0\ref\task10.dll

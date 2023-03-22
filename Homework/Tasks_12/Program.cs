@@ -17,11 +17,7 @@ namespace Tasks_12
 
 		public bool isDestroyed()
 		{
-			if (HealthPoints < 1)
-			{
-				return true;
-			}
-			return false;
+			return HealthPoints < 1;
 		}
 
 		public void ShowInfo()

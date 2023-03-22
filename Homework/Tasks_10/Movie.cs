@@ -8,6 +8,7 @@
 		public int year;
 		public short rating;
 
+		
 		public string Title 
 		{
 			get => title;
@@ -32,7 +33,6 @@
 				else description = "Unknown";
 			}
 		}
-		public Director Director { get; set; }
 		public string Country 
 		{
 			get => country;
@@ -45,6 +45,7 @@
 			}
 		}
 		public Genre Genre { get; set; }
+		public Director Director { get; set; }
 	    public int Year 
 		{
 			get => year;

@@ -4,7 +4,6 @@
 	{
 		public int X { get; set; }
 		public int Y { get; set; }
-
 		public Cordinates(int x, int y)
 		{
 			X = x; Y = y;
@@ -13,15 +12,11 @@
 	public abstract class Shape
 	{
 		public string Name { get; set; }
-		
 		public Shape(string name)
 		{
 			Name = name;
-			
-
 		}
 		public abstract void Print();
-		
 	}
 
 	public class Rectangle : Shape
@@ -29,19 +24,16 @@
 		public Cordinates UpperLeftCornerCordinate { get; set; }
 		public int Width { get; set; }
 		public int Height { get; set; }
-
 		public Rectangle(Cordinates UpperLeftCornerCordinate, int Width,int Height) : base("Rectangle") 
 		{
 			this.UpperLeftCornerCordinate = UpperLeftCornerCordinate;
 			this.Width = Width;
 			this.Height = Height;
 		}
-
 		public double GetSquare()
 		{
 			return Width * Height;
 		}
-
 		public override void Print()
 		{
 			Console.WriteLine($"Rectangle\n" + $"Upper-Left Corner Cordinates: X = {UpperLeftCornerCordinate.X} Y = {UpperLeftCornerCordinate.Y}\n" + $"Width - {Width}\n" + $"Height - {Height}\n" + $"");
@@ -67,21 +59,17 @@
 				$"End at X = {EndCordinate.X} Y = {EndCordinate.Y}\n");
 		}
 	}
-
 	public class Polyline : Shape
 	{
 		public List<Cordinates> cordinatesArr;
-
 		public Polyline() : base("Polyline")
 		{
 			cordinatesArr = new List<Cordinates>();
 		}
-
 		public void AddPoint(Cordinates cordinates)
 		{
 			cordinatesArr.Add(cordinates);
 		}
-
 		public override void Print()
 		{
 			Console.WriteLine("Polyline\n");

@@ -14,7 +14,7 @@ public class Program {
         //1
         int[] randomArray = new int[15];
         Initialization(randomArray, index => randomValue.Next(0, 101));
-        //2
+        //2 (math.pow(2, index) return double) use (int)
         int[] powerOfTwoArray = new int[10];
         Initialization(powerOfTwoArray, index => (int)Math.Pow(2, index));
         //3
@@ -23,10 +23,10 @@ public class Program {
         //4
         int[] fibonacciArray = new int[10];
         Initialization(fibonacciArray, index => index < 2 ? index : fibonacciArray[index - 1] + fibonacciArray[index - 2]);
-
-        Console.WriteLine("Random array:" + string.Join(", ", randomArray));
-        Console.WriteLine("Power of two array:" + string.Join(", ", powerOfTwoArray));
-        Console.WriteLine("Step increase by tree array:" + string.Join(", ", stepIncreaseByTreeArray));
-        Console.WriteLine("Fibonacci array:" + string.Join(", ", fibonacciArray));
+        //output
+        Console.WriteLine("random array:" + string.Join(", ", randomArray));
+        Console.WriteLine("power of two array:" + string.Join(", ", powerOfTwoArray));
+        Console.WriteLine("step increase by tree array:" + string.Join(", ", stepIncreaseByTreeArray));
+        Console.WriteLine("fibonacci array:" + string.Join(", ", fibonacciArray));
     }
 }

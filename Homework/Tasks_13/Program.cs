@@ -31,7 +31,7 @@
 			}
 			Console.WriteLine("The longest word: " + longestWord);
 		}
-		public class PhoneBook <Tkey,Tvalue>
+		public class PhoneBook <Tkey,Tvalue>//передбачити додавання, зміну, пошук та видалення записів.
 		{
 			public PhoneBook() 
 			{
@@ -41,13 +41,8 @@
 		}
 		public static void Task2()
 		{
+			PhoneBook<string, string> phoneBook = new PhoneBook<string, string>();
 
-		}
-		static void Main(string[] args)
-		{
-			Task1();
-			PhoneBook<string,string> phoneBook= new PhoneBook<string,string>();
-			// Add some phone numbers
 			phoneBook.PhoneNumbers.Add("John Smith", "(555) 123-4567");
 			phoneBook.PhoneNumbers.Add("Jane Doe", "(555) 987-6543");
 
@@ -55,6 +50,12 @@
 			{
 				Console.WriteLine("{0}: {1}", entry.Key, entry.Value);
 			}
+
+		}
+		static void Main(string[] args)
+		{
+			Task1();
+			Task2();
 
 			Console.ReadLine();
 		}

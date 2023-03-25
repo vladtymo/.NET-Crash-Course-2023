@@ -37,7 +37,6 @@ namespace Tasks_12
 		public double ReloadingTime { get; set; }
 		public double FireAccuracy { get; set; }
 		public double ArmorThickness { get; set; }
-
 		public Tank(string Type, string Model, double Health,double ReloadingTime,double FireAccuracy,double ArmorThickness)
 			:base(Type,Model,Health)
 		{
@@ -183,19 +182,35 @@ namespace Tasks_12
 			for(int i=0; i<5; i++)
 			{
 				//	armyOne.Add(new Tank("pdf", "mod", 10, 2, 1, 43));
-				armyOne.Add(new Tank("pdf", "mod", 10, 2, 1, 43));
-				armyTwo.Add(new Tank("pdf", "mod", 9, 23, 12, 30));
+				armyOne.Add(new Tank("pdf", "mod", 10, 2, 1, 4));
+				armyTwo.Add(new Tank("pdf", "mod", 90, 3, 2, 3));
 			}
-		    while(armyOneIsDestroyed == false || armyTwoIsDestroyed == false)
+		    while(!armyOneIsDestroyed && !armyTwoIsDestroyed)
 			{
-				for (int i = 0; i < armyOne.Count; i++)
+				for (int i = 0; i < 5; i++)
 				{
-					if (Round(armyOne[i], armyTwo[i]))
+					Round(armyOne[i], armyTwo[i]);
+				}
+				int armyOneDestroyedCount = 0;
+				int armyTwoDestroyedCount = 0;
+				for (int y = 0; y < 5; y++)
+				{
+					if (armyOne[y].isDestroyed())
 					{
-						armyTwoIsDestroyed = true;
+						armyOneDestroyedCount++;
 					}
-					else armyOneIsDestroyed = true;
-					Console.WriteLine("1");
+					if (armyTwo[y].isDestroyed())
+					{
+						armyTwoDestroyedCount++;
+					}
+				}
+				if (armyOneDestroyedCount == armyOne.Count)
+				{
+					armyOneIsDestroyed = true;
+				}
+				if (armyTwoDestroyedCount == armyTwo.Count)
+				{
+					armyTwoIsDestroyed = true;
 				}
 			}
 

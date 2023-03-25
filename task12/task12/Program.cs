@@ -6,9 +6,9 @@ namespace task12
 
     public abstract class CombatVehicle
     {
-        public string type;
-        public string model;
-        public int health;
+        public string type { get; set; }
+        public string model { get; set; }
+        public int health { get; set; }
 
         public CombatVehicle(string type, string model, int health)
         {
@@ -19,7 +19,8 @@ namespace task12
 
         public virtual bool IsDestroyed()
         {
-            return health <= 0;
+            if (health > 0) return false;
+            else return true;
         }
 
         public virtual void ShowInfo()
@@ -123,14 +124,20 @@ namespace task12
         }
     }
 
-    public class ClassWarsGame
+    public class Program
     {
         public static void Main()
         {
-            Random random = new Random();
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.InputEncoding = System.Text.Encoding.Unicode;
 
-            // Армія 1
-            List<CombatVehicle> army1 = new List<CombatVehicle>();
+            BattleRound();
+        }
+
+        static List<CombatVehicle> CreateArmy()
+        {
+            Random random = new Random();
+            List<CombatVehicle> army = new List<CombatVehicle>();
             int numVehicles1 = random.Next(5, 11);
             for (int i = 0; i < numVehicles1; i++)
             {
@@ -159,7 +166,7 @@ namespace task12
                             int S = random.Next(50, 101);
 
                             ArmoredCar armoredCar = new ArmoredCar(model, health, C, S);
-                            army1.Add(armoredCar);
+                            army.Add(armoredCar);
                             break;
                         }
                     case 2:
@@ -185,7 +192,7 @@ namespace task12
                             int M = random.Next(1, 11);
 
                             AirDefenseVehicle airDefenseVehicle = new AirDefenseVehicle(model, health, L, R, M);
-                            army1.Add(airDefenseVehicle);
+                            army.Add(airDefenseVehicle);
                             break;
                         }
                     case 3:
@@ -211,109 +218,71 @@ namespace task12
                             int T = random.Next(1, 20);
 
                             Tank tank = new Tank(model, health, R, A, T);
-                            army1.Add(tank);
+                            army.Add(tank);
                             break;
                         }
                 }
             }
+            return army;
+          
+            }
+        static void BattleRound()
+        {
+            Console.WriteLine("Зброя гравця №1");
+            List<CombatVehicle> army1 = CreateArmy();
+            Console.WriteLine("Зброя гравця №2");
+            List<CombatVehicle> army2 = CreateArmy();
+            Random rnd = new Random();
 
-            // Армія 2
-            List<CombatVehicle> army2 = new List<CombatVehicle>();
-            int numVehicles2 = random.Next(5, 11);
-            for (int i = 0; i < numVehicles2; i++)
+            int numOfRound = 1;
+            while (army1.Count > 0 && army2.Count > 0)
             {
-                int vehicleType = random.Next(1, 4);
-                switch (vehicleType)
+                Console.WriteLine(new string('-', 10) + "Раунд " + numOfRound + new string('-', 10));
+
+                int randomChoose = rnd.Next(1, 3);
+                int numVehicle1 = rnd.Next(army1.Count);
+                int numVehicle2 = rnd.Next(army2.Count);
+                if (randomChoose == 1)
                 {
-                    case 1:
-                        {
-                            int modelNum = random.Next(1, 4);
-                            string model = "";
-                            switch (modelNum)
-                            {
-                                case 1:
-                                    model = "Stryker";
-                                    break;
-                                case 2:
-                                    model = "LAV-25";
-                                    break;
-                                case 3:
-                                    model = "Patria AMV";
-                                    break;
-                            }
+                    Console.WriteLine("Армія 1");
+                    army1[numVehicle1].ShowInfo();
+                    Console.WriteLine("\nАрмія 2");
+                    army2[numVehicle2].ShowInfo();
 
-                            int health = random.Next(100, 201);
-                            int C = random.Next(1, 6);
-                            int S = random.Next(50, 101);
+                    int damage = army1[numVehicle1].Attack();
+                    army2[numVehicle2].Defense(damage);
 
-                            ArmoredCar armoredCar = new ArmoredCar(model, health, C, S);
-                            army2.Add(armoredCar);
-                            break;
-                        }
-                    case 2:
-                        {
-                            int modelNum = random.Next(1, 4);
-                            string model = "";
-                            switch (modelNum)
-                            {
-                                case 1:
-                                    model = "Bofors 40mm";
-                                    break;
-                                case 2:
-                                    model = "ZSU-23-4 Shilka";
-                                    break;
-                                case 3:
-                                    model = "Pantsir-S1";
-                                    break;
-                            }
-                        
-                            int health = random.Next(100, 201);
-                            int L = random.Next(100, 201);
-                            int R = random.Next(1, 6);
-                            int M = random.Next(1, 11);
-
-                            AirDefenseVehicle airDefenseVehicle = new AirDefenseVehicle(model, health, L, R, M);
-                            army2.Add(airDefenseVehicle);
-                            break;
-                        }
-                    case 3:
-                        {
-                            int modelNum = random.Next(1, 4);
-                            string model = "";
-                            switch (modelNum)
-                            {
-                                case 1:
-                                    model = "M1A2 Abrams";
-                                    break;
-                                case 2:
-                                    model = "M2/M3 Bradley";
-                                    break;
-                                case 3:
-                                    model = "M1128 Stryker";
-                                    break;
-                            }
-
-                            int health = random.Next(100, 201);
-                            int A = random.Next(1, 8);
-                            int R = random.Next(1, 10);
-                            int T = random.Next(1, 20);
-
-                            Tank tank = new Tank(model, health, R, A, T);
-                            army2.Add(tank);
-                            break;
-                        }
+                    damage = army2[numVehicle2].Attack();
+                    army1[numVehicle1].Defense(damage);
                 }
+                else
+                {
+                    Console.WriteLine("Армія 1");
+                    army2[numVehicle2].ShowInfo();
+                    Console.WriteLine("\nАрмія 2");
+                    army1[numVehicle1].ShowInfo();
+
+                    int damage = army2[numVehicle2].Attack();
+                    army1[numVehicle1].Defense(damage);
+
+                    damage = army1[numVehicle1].Attack();
+                    army2[numVehicle2].Defense(damage);
+                }
+
+                if (army1[numVehicle1].IsDestroyed())
+                    army1.Remove(army1[numVehicle1]);
+                else if (army2[numVehicle2].IsDestroyed())
+                    army2.Remove(army2[numVehicle2]);
+
+                numOfRound++;
             }
-            
-            Console.WriteLine("Army 1:");
-            foreach (CombatVehicle vehicle in army1)
+            if (army1.Count == 0)
             {
-                vehicle.ShowInfo();
+                Console.WriteLine("Друга армія перемогла!");
             }
-            Console.WriteLine("Army 2:");
-            foreach (CombatVehicle vehicle in army2)
+            else
             {
-                vehicle.ShowInfo();
+                Console.WriteLine("Перша армія перемогла");
             }
         }
     }

@@ -65,7 +65,7 @@ namespace Tasks_12
 				HealthPoints -= damage - ArmorThickness;
 		}
 
-		public new void ShowInfo()//
+		public new void ShowInfo()
 		{
 			base.ShowInfo();
 			Console.WriteLine(
@@ -181,7 +181,6 @@ namespace Tasks_12
 			List<CombatVehicle> armyTwo = new List<CombatVehicle>();
 			for(int i=0; i<5; i++)
 			{
-				//	armyOne.Add(new Tank("pdf", "mod", 10, 2, 1, 43));
 				armyOne.Add(new Tank("pdf", "mod", 10, 2, 1, 4));
 				armyTwo.Add(new Tank("pdf", "mod", 90, 3, 2, 3));
 			}

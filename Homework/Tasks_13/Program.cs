@@ -31,13 +31,17 @@
 			}
 			Console.WriteLine("The longest word: " + longestWord);
 		}
-		public class PhoneBook <Tkey,Tvalue>//передбачити додавання, зміну, пошук та видалення записів.
+		public class PhoneBook <Tkey,Tvalue>
 		{
 			public PhoneBook() 
 			{
 				PhoneNumbers = new Dictionary<Tkey, Tvalue>();
 			}
 			public Dictionary<Tkey,Tvalue> PhoneNumbers { get; set; }
+			public void Add(Tkey key, Tvalue value) => PhoneNumbers.Add(key, value);
+			public void Remove(Tkey key)=> PhoneNumbers.Remove(key);
+			public void Clear() => PhoneNumbers.Clear();
+			public bool Contains(Tkey key)  => PhoneNumbers.ContainsKey(key);
 		}
 		public static void Task2()
 		{

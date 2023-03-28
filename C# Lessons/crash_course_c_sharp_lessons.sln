@@ -45,7 +45,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "20_delegates", "20_delegate
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "21_events", "21_events\21_events.csproj", "{E5598D62-A9B5-463F-B625-1C4FD238C364}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "22_serialization", "22_serialization\22_serialization.csproj", "{5A6E6C83-CA24-47BA-BE3E-275C8160A092}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "22_serialization", "22_serialization\22_serialization.csproj", "{5A6E6C83-CA24-47BA-BE3E-275C8160A092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "23_ef_base", "23_ef_base\23_ef_base.csproj", "{B4DB49A4-9C97-43E1-980F-B265B2C7934B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{5A6E6C83-CA24-47BA-BE3E-275C8160A092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A6E6C83-CA24-47BA-BE3E-275C8160A092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A6E6C83-CA24-47BA-BE3E-275C8160A092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4DB49A4-9C97-43E1-980F-B265B2C7934B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4DB49A4-9C97-43E1-980F-B265B2C7934B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4DB49A4-9C97-43E1-980F-B265B2C7934B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4DB49A4-9C97-43E1-980F-B265B2C7934B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

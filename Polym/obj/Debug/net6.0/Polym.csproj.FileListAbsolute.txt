@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\bin\Debug\net6.0\Polym.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\bin\Debug\net6.0\Polym.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\bin\Debug\net6.0\Polym.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\bin\Debug\net6.0\Polym.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\bin\Debug\net6.0\Polym.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\refint\Polym.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\Polym.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Polym\obj\Debug\net6.0\ref\Polym.dll

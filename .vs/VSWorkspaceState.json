@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\task_1",
-    "\\task_3\\task_randomize_array"
+    "\\task_3\\task_randomize_array",
+    "\\task_4\\Abbreviation",
+    "\\task_4\\task_delet_space",
+    "\\task_5\\Task_class_ctor"
   ],
-  "SelectedNode": "\\task_1\\task_1.sln",
+  "SelectedNode": "\\Animals_Zoo",
   "PreviewInSolutionExplorer": false
 }

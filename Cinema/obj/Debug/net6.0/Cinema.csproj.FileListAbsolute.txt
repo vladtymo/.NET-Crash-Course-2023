@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\bin\Debug\net6.0\Cinema.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\bin\Debug\net6.0\Cinema.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\bin\Debug\net6.0\Cinema.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\bin\Debug\net6.0\Cinema.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\bin\Debug\net6.0\Cinema.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\refint\Cinema.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\Cinema.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Cinema\obj\Debug\net6.0\ref\Cinema.dll

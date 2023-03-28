@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\bin\Debug\net6.0\Combat.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\bin\Debug\net6.0\Combat.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\bin\Debug\net6.0\Combat.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\bin\Debug\net6.0\Combat.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\bin\Debug\net6.0\Combat.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\refint\Combat.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\Combat.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Combat\obj\Debug\net6.0\ref\Combat.dll

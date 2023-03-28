@@ -1,0 +1,15 @@
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\bin\Debug\net6.0\Colections.exe
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\bin\Debug\net6.0\Colections.deps.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\bin\Debug\net6.0\Colections.runtimeconfig.json
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\bin\Debug\net6.0\Colections.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\bin\Debug\net6.0\Colections.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.AssemblyInfo.cs
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\refint\Colections.dll
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.pdb
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\Colections.genruntimeconfig.cache
+C:\Users\PC\Desktop\.NET-Crash-Course-2023\Colections\obj\Debug\net6.0\ref\Colections.dll

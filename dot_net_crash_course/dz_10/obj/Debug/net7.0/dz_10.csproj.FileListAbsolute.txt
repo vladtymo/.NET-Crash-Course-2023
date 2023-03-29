@@ -1,0 +1,15 @@
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\bin\Debug\net7.0\dz_10.exe
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\bin\Debug\net7.0\dz_10.deps.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\bin\Debug\net7.0\dz_10.runtimeconfig.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\bin\Debug\net7.0\dz_10.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\bin\Debug\net7.0\dz_10.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.csproj.AssemblyReference.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.AssemblyInfoInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.AssemblyInfo.cs
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.csproj.CoreCompileInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\refint\dz_10.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\dz_10.genruntimeconfig.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\dz_10\obj\Debug\net7.0\ref\dz_10.dll

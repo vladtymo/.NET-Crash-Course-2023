@@ -47,9 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz_8", "dz_8\dz_8.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13_inheritance", "13_inheritance\13_inheritance.csproj", "{011A60E0-539A-4F77-8930-78A6E9143D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_interfaces", "14_interfaces\14_interfaces.csproj", "{A14E86B9-E3DC-45B5-95CC-F38D8BFAAA0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14_interfaces", "14_interfaces\14_interfaces.csproj", "{A14E86B9-E3DC-45B5-95CC-F38D8BFAAA0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_9", "dz_9\dz_9.csproj", "{DE2F6B2A-B5C7-488F-B8BD-1BC9A88362E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dz_9", "dz_9\dz_9.csproj", "{DE2F6B2A-B5C7-488F-B8BD-1BC9A88362E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dz_10", "dz_10\dz_10.csproj", "{84031851-F61B-4FCB-AD3F-3242ED399688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{DE2F6B2A-B5C7-488F-B8BD-1BC9A88362E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE2F6B2A-B5C7-488F-B8BD-1BC9A88362E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE2F6B2A-B5C7-488F-B8BD-1BC9A88362E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84031851-F61B-4FCB-AD3F-3242ED399688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84031851-F61B-4FCB-AD3F-3242ED399688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84031851-F61B-4FCB-AD3F-3242ED399688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84031851-F61B-4FCB-AD3F-3242ED399688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

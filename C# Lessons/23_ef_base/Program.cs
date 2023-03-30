@@ -6,13 +6,11 @@ namespace _23_ef_base
     {
         static void Main(string[] args)
         {
-            LibraryDbContext context = new LibraryDbContext();
+            LibraryManager manager = new LibraryManager(new LibraryDbContext());
 
             // ------------ READ
-            var result = context.Authors.ToList();
-
             Console.WriteLine("----------- Authors:");
-            foreach (var item in result)
+            foreach (var item in manager.GetAuthors())
             {
                 Console.WriteLine($"[{item.Id}] - {item.FirstName} {item.LastName}, {item.Country}");
             }
@@ -21,7 +19,7 @@ namespace _23_ef_base
             Console.WriteLine("Enter author id to find:");
             int id = int.Parse(Console.ReadLine());
 
-            var author = context.Authors.Find(id);
+            var author = manager.GetAuthor(id);
 
             if (author == null) Console.WriteLine("Author with your id not found!");
             else
@@ -30,30 +28,29 @@ namespace _23_ef_base
             // ------------ INSERT
             Console.WriteLine("------- Add New Book");
 
-            Console.Write("Enter book info (title, price, pages, author id):");
+            Console.Write("Enter book info (title, price, pages, rating, author id):");
             Book newBook = new Book()
             {
                 Title = Console.ReadLine(),
                 Price = decimal.Parse(Console.ReadLine()),
                 Pages = int.Parse(Console.ReadLine()),
+                Rating = float.Parse(Console.ReadLine()),
                 AuthorId = int.Parse(Console.ReadLine()),
             };
-            context.Books.Add(newBook);
+            manager.AddBook(newBook);
 
             // ------------ UPDATE
             if (author != null)
-                author.FirstName += " de";
+                manager.UpdateAuthor(author);
 
             // ------------ DELETE
             if (author != null)
-                context.Authors.Remove(author);
-
-            context.SaveChanges(); // submit all changes to db
+                manager.DeleteAuthor(author.Id);
 
             // ---------------------------- LINQ
-            var myBooks = context.Books.Where(x => x.Price < 1000).OrderByDescending(x => x.Pages).ToList();
+            var myBooks = manager.GetBooksByRating(3);
 
-            Console.WriteLine("Found books count: " + myBooks.Count);
+            Console.WriteLine("Found books count: " + myBooks.Count());
         }
     }
 }

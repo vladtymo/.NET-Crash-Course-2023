@@ -5,13 +5,13 @@ namespace _23_ef_base
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             LibraryManager manager = new LibraryManager(new LibraryDbContext());
 
             // ------------ READ
             Console.WriteLine("----------- Authors:");
-            foreach (var item in manager.GetAuthors())
+            foreach (var item in await manager.GetAuthors())
             {
                 Console.WriteLine($"[{item.Id}] - {item.FirstName} {item.LastName}, {item.Country}");
             }
@@ -20,7 +20,7 @@ namespace _23_ef_base
             Console.WriteLine("Enter author id to find:");
             int id = int.Parse(Console.ReadLine());
 
-            var author = manager.GetAuthor(id);
+            var author = await manager.GetAuthor(id);
 
             if (author == null) Console.WriteLine("Author with your id not found!");
             else
@@ -38,18 +38,18 @@ namespace _23_ef_base
                 Rating = float.Parse(Console.ReadLine()),
                 AuthorId = int.Parse(Console.ReadLine()),
             };
-            manager.AddBook(newBook);
+            await manager.AddBook(newBook);
 
             // ------------ UPDATE
             if (author != null)
-                manager.UpdateAuthor(author);
+                await manager.UpdateAuthor(author);
 
             // ------------ DELETE
             if (author != null)
-                manager.DeleteAuthor(author.Id);
+                await manager.DeleteAuthor(author.Id);
 
             // ---------------------------- LINQ
-            var myBooks = manager.GetBooksByRating(3);
+            var myBooks = await manager.GetBooksByRating(3);
 
             Console.WriteLine("Found books count: " + myBooks.Count());
         }

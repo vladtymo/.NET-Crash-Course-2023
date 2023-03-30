@@ -20,6 +20,7 @@ namespace _23_ef_base.Data
         {
             base.OnConfiguring(optionsBuilder);
 
+            // TODO: move conn str to a app settigns/configuration file
             // connection string contains all neccessary info for connect to the db
             optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Library_DB_Crash;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }

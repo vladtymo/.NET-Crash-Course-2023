@@ -1,5 +1,6 @@
 ﻿using _23_ef_base.Data;
 using _23_ef_base.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,43 +18,43 @@ namespace _23_ef_base
         }
 
         // ----------- public interface -----------
-        public IEnumerable<Author> GetAuthors()
+        public async Task<IEnumerable<Author>> GetAuthors()
         {
-            return context.Authors.ToList();
+            return await context.Authors.ToListAsync();
         }
 
-        public void AddBook(Book newBook)
+        public async Task AddBook(Book newBook)
         {
-            context.Books.Add(newBook);
-            context.SaveChanges(); // submit all changes to db
+            await context.Books.AddAsync(newBook);
+            await context.SaveChangesAsync(); // submit all changes to db
         }
 
-        public Author? GetAuthor(int id)
+        public async Task<Author?> GetAuthor(int id)
         {
-            return context.Authors.Find(id);
+            return await context.Authors.FindAsync(id);
         }
-        public void DeleteAuthor(int id)
+        public async Task DeleteAuthor(int id)
         {
-            var item = context.Authors.Find(id);
+            var item = await context.Authors.FindAsync(id);
 
             if (item == null) return;
 
             context.Authors.Remove(item);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
-        public void UpdateAuthor(Author author)
+        public async Task UpdateAuthor(Author author)
         {
             context.Authors.Update(author);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
 
-        public IEnumerable<Book> GetBooksByRating(int? top = null)
+        public async Task<IEnumerable<Book>> GetBooksByRating(int? top = null)
         {
             IQueryable<Book> query = context.Books.OrderByDescending(x => x.Rating);
 
             if (top != null) query = query.Take(top.Value);
 
-            return query.ToList();
+            return await query.ToListAsync();
         }
     }
 }

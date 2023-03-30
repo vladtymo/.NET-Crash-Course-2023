@@ -1,4 +1,5 @@
 ﻿using _23_ef_base.Data;
+using _23_ef_base.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

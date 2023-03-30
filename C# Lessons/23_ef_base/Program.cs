@@ -1,4 +1,5 @@
 ﻿using _23_ef_base.Data;
+using _23_ef_base.Entities;
 
 namespace _23_ef_base
 {

@@ -30,7 +30,6 @@
 		}
 
 		public event EventHandler<PriceChangedEventArgs> PriceChanged;
-
 	}
 	public class Coin
 	{
@@ -65,10 +64,7 @@
 		public List<Coin> CurrencyAmount { get; set; }
 		public double Balance
 		{ 
-			get 
-			{
-				return _balance;
-			}
+			get => _balance;
 			set
 			{
 				double oldBalance = _balance;
@@ -76,7 +72,6 @@
 				BalanceChanged?.Invoke(this, new BalanceChangedEventArgs(Name, oldBalance,_balance));
 			}
 		}
-
 		public Customer(string Name,List<Coin> coins)
 		{
 			this.Name = Name;
@@ -133,8 +128,6 @@
 		private static void Stock_PriceChanged(object sender, PriceChangedEventArgs e)
 		{
 			Console.WriteLine($"Price changed from {e.OldPrice} to {e.NewPrice} at {e.ChangeTime:T}");
-
-			// Update the value of the user's coins
 			foreach (Coin coin in customer.CurrencyAmount)
 			{
 				if (coin.Name == exchange.Coin.Name)
@@ -143,11 +136,9 @@
 					coin.ValueUsd = e.NewPrice;
 					double newCoinValue = coin.ValueUsd;
 
-					// Invoke the BalanceChanged event with the updated balance
 					double oldBalance = customer.Balance;
 					double newBalance = oldBalance - oldCoinValue + newCoinValue;
 					customer.Balance = newBalance;
-				//	Balance_Changed(customer, new BalanceChangedEventArgs(customer.Name, oldBalance, newBalance));
 					break;
 				}
 			}

@@ -2,14 +2,26 @@
 {
     internal class Program
     {
+        #region interface
         public interface IEditor
         {
             void Add();
              void Remove();
             void Edit();
         }
+        #endregion
 
-    
+        #region salon
+        class Beauty_Salon
+        {
+            public string Name { get; set; }
+
+            public ICollection<Person> Persons { get; set; }
+            public ICollection<Product> Products { get; set; }
+        }
+        #endregion
+
+        #region services
         public abstract class Service : IEditor
         {
             public string Name { get; set; }
@@ -19,8 +31,7 @@
             public abstract void Remove();
             public abstract void Edit();
         }
-
-
+        
 
         class Haircut : Service
         {
@@ -90,8 +101,9 @@
                 throw new NotImplementedException();
             }
         }
+        #endregion
 
-
+        #region persons
         public abstract class Person : IEditor
         {
             public string FirstName { get; set; }
@@ -138,7 +150,9 @@
                 throw new NotImplementedException();
             }
         }
+        #endregion
 
+        #region products
         public abstract class Product : IEditor
         {
             public string Name { get; set; }
@@ -147,7 +161,7 @@
             public abstract void Remove();
             public abstract void Edit();
         }
-
+        #endregion
 
 
 

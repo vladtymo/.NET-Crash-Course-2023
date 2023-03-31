@@ -1,4 +1,5 @@
 ﻿using HomeWork14.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace HomeWork14
 {
@@ -41,7 +42,106 @@ namespace HomeWork14
                 context.Artists.Add(artist2);
 
                 context.SaveChanges();
+
+                var result = context.Tracks.ToList();
+
+                Console.WriteLine("----------- Tracks:");
+                foreach (var item in result)
+                {
+                    Console.WriteLine($"{item.TrackId}: {item.Name} ({item.Duration})");
+                }
+
+                Console.WriteLine("What would you like to do? (I)nsert playlist or (D)elete playlist?");
+                var input = Console.ReadLine();
+
+                if (input.ToLower() == "i")
+                {
+                    // INSERT
+
+                    Console.Write("Enter playlist name:");
+                    var playlistName = Console.ReadLine();
+                    Console.Write("Enter playlist category:");
+                    var playlistCategory = Console.ReadLine();
+                    var newPlaylist = new Playlist()
+                    {
+                        Name = playlistName,
+                        Category = playlistCategory,
+                        Tracks = new List<Track>()
+                    };
+                    context.Playlists.Add(newPlaylist);
+                    context.SaveChanges();
+
+
+
+                    string response;
+
+                    do
+                    {
+                        Console.Write("Enter track name and duration (mm:ss):");
+                        var track = new Track()
+                        {
+                            Name = Console.ReadLine(),
+                            Duration = TimeSpan.Parse($"00:{Console.ReadLine()}")
+                        };
+                        newPlaylist.Tracks.Add(track);
+
+                        Console.WriteLine($"Track {track.Name} has been added to the playlist.");
+                        Console.WriteLine($"There are now {newPlaylist.Tracks.Count} tracks in the playlist.");
+
+
+   
+
+                        Console.WriteLine("Add another track (y/n)?");
+                        response = Console.ReadLine();
+                    } while (response.ToLower() == "y");
+
+                    // UPDATE
+                    if (artist1 != null)
+                    {
+                        artist1.FirstName += " de";
+                        context.SaveChanges();
+                    }
+                }
+
+
+
+                if (input.ToLower() == "d")
+                {
+                    // DELETE
+                    Console.Write("Enter the ID of the track you want to delete:");
+                    // get by id
+                    Console.WriteLine("Enter Tracks id to find:");
+                    int id = int.Parse(Console.ReadLine());
+
+                    var tracks = context.Tracks.Find(id);
+
+                    if (tracks == null) Console.WriteLine("Tracks with your id not found!");
+                    else
+                        Console.WriteLine($"Found tracks: {tracks.TrackId} {tracks.Name}!");
+
+                    if (tracks != null)
+                    { 
+                    int trackId = id;
+                    var trackToDelete = context.Tracks.Find(trackId);
+                    if (trackToDelete != null)
+                    {
+                        context.Tracks.Remove(trackToDelete);
+                        context.SaveChanges();
+ 
+                        Console.WriteLine($"Track {trackId} has been deleted from the playlist.");
+
+                    }
+                    }
+                }
+
+
+
+
             }
+
+
+
+
         }
     }
 

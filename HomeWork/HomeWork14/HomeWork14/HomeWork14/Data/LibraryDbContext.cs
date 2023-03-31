@@ -37,8 +37,7 @@ namespace HomeWork14.Data
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Country { get; set; }
-        public ICollection<Artist> Albums { get; set; }
-
+        public ICollection<Album> Albums { get; set; }
     }
     // ...
     // Relationship: One to Many (1...*)

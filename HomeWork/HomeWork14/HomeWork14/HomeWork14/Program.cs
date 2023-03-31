@@ -11,7 +11,6 @@ namespace HomeWork14
                 var artist1 = new Artist { FirstName = "Freddie", LastName = "Mercury", Country = "UK", Albums = new List<Album>() };
                 var artist2 = new Artist { FirstName = "John", LastName = "Lennon", Country = "UK", Albums = new List<Album>() };
 
-
                 var album1 = new Album { Name = "A Night at the Opera", Artist = artist1, Year = 1976, Genre = "Rock", Tracks = new List<Track>() };
                 var album2 = new Album { Name = "Imagine", Artist = artist2, Year = 1971, Genre = "Rock", Tracks = new List<Track>() };
 

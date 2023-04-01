@@ -14,7 +14,7 @@ namespace Exam.Services.GoodsServices
         Task<List<GoodsEntity>> GetBuyed();
         Task<List<GoodsEntity>> GetNotBuyed();
 
-        Task<ResponseService<int>> AppendGoods(int id, int count);
-        Task<ResponseService<int>> BuyGoods(int id, int count);
+        Task<ResponseService<int>> Append(int id, int count);
+        Task<ResponseService<int>> Buy(int id, int count);
     }
 }

@@ -15,7 +15,7 @@ namespace Exam.Services.GoodsServices
             _goodsRepository = goodsRepository;
         }
 
-        public async Task<ResponseService<int>> AppendGoods(int id, int count)
+        public async Task<ResponseService<int>> Append(int id, int count)
         {
             GoodsEntity dbRecord = await _goodsRepository.GetById(id);
             if(dbRecord == null)
@@ -36,7 +36,7 @@ namespace Exam.Services.GoodsServices
             }
         }
 
-        public async Task<ResponseService<int>> BuyGoods(int id, int count)
+        public async Task<ResponseService<int>> Buy(int id, int count)
         {
             GoodsEntity dbRecord = await _goodsRepository.GetById(id);
             if (dbRecord == null)
@@ -68,7 +68,7 @@ namespace Exam.Services.GoodsServices
             }
             catch (Exception ex)
             {
-                return ResponseService.Error($"GoodsService Create exception: {ex.Message}")
+                return ResponseService.Error($"GoodsService Create exception: {ex.Message}");
             }
 
             return ResponseService.Ok();

@@ -62,14 +62,17 @@ namespace Exam.Services.ProductServices
                 return ResponseService.Error(Errors.NOT_FOUND_ERROR);
             }
 
-            try
+            dbRecord.DeletedOn = DateTime.Now;
+            dbRecord.UpdatedOn = DateTime.Now;
+
+            var result = await _productRepository.Update(dbRecord);
+            if (result)
             {
-                await _productRepository.Delete(dbRecord);
-                return ResponseService.Error(Errors.DELETE_ERROR);
+                return ResponseService.Ok();
             }
-            catch (Exception ex)
+            else
             {
-                return ResponseService.Error($"ProductService Delete exception: {ex.Message}");
+                return ResponseService.Error(Errors.UPDATE_ERROR);
             }
         }
 

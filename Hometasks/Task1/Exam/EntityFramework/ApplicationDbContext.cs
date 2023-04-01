@@ -9,8 +9,6 @@ namespace Exam.EntityFramework
         public DbSet<GoodsEntity> Goods { get; set; }
         public DbSet<ProductEntity> Products { get; set; }
         public DbSet<SupermarketEntity> Supermarkets { get; set; }
-        public DbSet<SupermarketGoodsEntity> SupermarketGoods { get; set; }
-        public DbSet<SupermarketProductsEntity> SupermarketProducts { get; set; }
 
         public ApplicationDbContext()
         {
@@ -27,8 +25,6 @@ namespace Exam.EntityFramework
             modelBuilder.ApplyConfiguration(new GoodsConfigurations());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
             modelBuilder.ApplyConfiguration(new SupermarketConfiguration());
-            modelBuilder.ApplyConfiguration(new SupermarketGoodsConfiguration());
-            modelBuilder.ApplyConfiguration(new SupermarketProductsConfiguration());
         }
     }
 }

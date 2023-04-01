@@ -2,6 +2,55 @@
 {
     internal class Program
     {
+        #region Task
+        /*
+         ------------------- Перукарня -------------------
+            Створити ієрархію класів для подання інформації про  послуги перукарні
+            	стрижка(вид, ціна)
+            	Фарбування(вид, ціна)
+            	Манікюр(вид, ціна, додаткові)
+            	Косметична процедура( вид, тривалість, ціна)
+            Створити програму для роботи перукарні
+            	Вивід усіх послуг перукарні,  впорядковуючи за видом та назвою послуги
+            	Додавання(вилучення, редагування)  послуги  у(з)  базу
+            	Додавання(вилучення, редагування)   клієнта перукарні
+            	Додавання(вилучення. редагування)   майстра(перукаря, косметолога у(з)  базу
+            	Додавання(вилучення. редагування)  продуктів у(з)  базу
+            	Можливість  попереднього замовлення послуги 
+            	Реєстрація виконання послуги(клієнт, послуга, дата, виконавець)
+        ----------------------------------------------------------------------------
+         */
+        #endregion
+        public enum Names 
+        {
+            Alexander = 1,
+            Dale = 2,
+            Clyde = 3,
+            Ian = 4,
+            Max = 5,
+            Justine = 6,
+            Merry = 7,
+            Nellie = 8,
+            Natalia = 9,
+            Louisa = 10,
+            Mabel = 11,
+            Margaret = 12
+
+        }
+
+        public enum Surnames
+        {
+            Adamson = 1,
+            Bush = 2,
+            Cooper = 3,
+            Ford = 4,
+            King = 5,
+            Wesley = 6,
+            Wood = 7,
+            Smith = 8
+   
+        }
+
         #region interface
         public interface IEditor
         {
@@ -14,7 +63,7 @@
         #region salon
         class Beauty_Salon
         {
-            public string Name { get; set; }
+            public string Name { get; set; } = "Victoria";
 
             public ICollection<Person> Persons { get; set; }
             public ICollection<Product> Products { get; set; }
@@ -30,8 +79,10 @@
             public abstract void Add();
             public abstract void Remove();
             public abstract void Edit();
+
+            
         }
-        
+
 
         class Haircut : Service
         {
@@ -106,14 +157,31 @@
         #region persons
         public abstract class Person : IEditor
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
+            public string Name { get; set; }
+            public string Surname { get; set; }
             public string PhoneNumber { get; set; }
             public string Email { get; set; }
 
             public abstract void Add();
             public abstract void Remove();
             public abstract void Edit();
+            public abstract void ToString();
+
+            public Person()
+            {
+                Random rand = new Random();
+                Names randomName = (Names)Enum.GetValues(typeof(Names)).GetValue(rand.Next(Enum.GetValues(typeof(Names)).Length));
+                Name = randomName.ToString();
+
+                Surnames surname = (Surnames)Enum.GetValues(typeof(Surnames)).GetValue(rand.Next(Enum.GetValues(typeof(Surnames)).Length));
+                Surname = surname.ToString();
+
+
+                PhoneNumber = "+380"; 
+                PhoneNumber += rand.Next(66, 99).ToString(); 
+                PhoneNumber += rand.Next(1000000, 9999999).ToString(); 
+
+            }
         }
 
         class Client : Person
@@ -132,6 +200,11 @@
             {
                 throw new NotImplementedException();
             }
+
+            public override void ToString()
+            {
+                Console.WriteLine($"Name: {Name}\t| Surname: {Surname}\t| Phonenumber: {PhoneNumber}\t| ");
+            }
         }
         class Master : Person
         {
@@ -148,6 +221,11 @@
             public override void Remove()
             {
                 throw new NotImplementedException();
+            }
+
+            public override void ToString()
+            {
+                Console.WriteLine($"Name: {Name}\t| Surname: {Surname}\t| Phonenumber: {PhoneNumber}\t| ");
             }
         }
         #endregion
@@ -168,7 +246,11 @@
 
         static void Main(string[] args)
         {
-            
+            Client client = new Client();
+
+            Master master = new Master();   
+
+
         }
     }
 }

@@ -61,13 +61,25 @@
         #endregion
 
         #region salon
-        class Beauty_Salon
+        class BeautySalon
         {
-            public string Name { get; set; } = "Victoria";
+        
+           public string Name { get; set; } = "Victoria";   
 
-            public ICollection<Person> Persons { get; set; }
-            public ICollection<Product> Products { get; set; }
+           public List<Person> Persons { get; set; } = new List<Person>();   
+
+           public List<Product> Products { get; set; } = new List<Product>();   
+
+           public List<Service> Services { get; set; } = new List<Service>(); 
+
+           public List<Order> Orders { get; set; } = new List<Order>(); 
+
+
         }
+
+
+        class Order
+        { }
         #endregion
 
         #region services
@@ -75,82 +87,109 @@
         {
             public string Name { get; set; }
             public int Price { get; set; }
+            public Service(string name, int price)
+            {
+                Name = name;
+                Price = price;
+            }
 
+            public virtual void PrintInfo() 
+            {
+                Console.WriteLine($"{Name}: {Price} грн");
+            }
             public abstract void Add();
             public abstract void Remove();
             public abstract void Edit();
+          
 
             
+
         }
 
 
         class Haircut : Service
         {
-            public override void Add()
+            public string Type { get; set; } 
+
+            public Haircut(string type, int price) : base("Стрижка", price)
             {
-                throw new NotImplementedException();
+                Type = type;
             }
 
-            public override void Edit()
+            public override void PrintInfo()
             {
-                throw new NotImplementedException();
+                Console.WriteLine($"{Name} ({Type}): {Price} грн");
             }
+            public override void Add() { }
+            
 
-            public override void Remove()
-            {
-                throw new NotImplementedException();
-            }
+            public override void Edit() { }
+
+
+            public override void Remove() { }
+            
         }
-        class Dyeing : Service
+        class Coloring : Service
         {
-            public override void Add()
+            public string Type { get; set; } 
+
+            public Coloring(string type, int price) : base("Фарбування", price)
             {
-                throw new NotImplementedException();
+                Type = type;
             }
 
-            public override void Edit()
+            public override void PrintInfo()
             {
-                throw new NotImplementedException();
+                Console.WriteLine($"{Name} ({Type}): {Price} грн");
             }
+            public override void Add() { }
 
-            public override void Remove()
-            {
-                throw new NotImplementedException();
-            }
+            public override void Edit() { }
+
+            public override void Remove() { }
+
         }
         class Manicure : Service
         {
-            public override void Add()
+            public string Type { get; set; } 
+            public string AdditionalServices { get; set; } 
+
+            public Manicure(string type, int price, string additionalServices) : base("Манікюр", price)
             {
-                throw new NotImplementedException();
+                Type = type;
+                AdditionalServices = additionalServices;
             }
 
-            public override void Edit()
+            public override void PrintInfo()
             {
-                throw new NotImplementedException();
+                Console.WriteLine($"{Name} ({Type}): {Price} грн, Додаткові послуги: {AdditionalServices}");
             }
+            public override void Add() { }
 
-            public override void Remove()
-            {
-                throw new NotImplementedException();
-            }
+            public override void Edit() { }
+
+            public override void Remove() { }
         }
-        class Cosmetic_procedure : Service
+        class CosmeticProcedure : Service
         {
-            public override void Add()
+            public string Type { get; set; } 
+            public int Duration { get; set; } 
+
+            public CosmeticProcedure(string type, int duration, int price) : base("Косметична процедура", price)
             {
-                throw new NotImplementedException();
+                Type = type;
+                Duration = duration;
             }
 
-            public override void Edit()
+            public override void PrintInfo()
             {
-                throw new NotImplementedException();
+                Console.WriteLine($"{Name} ({Type}, {Duration} хв): {Price} грн");
             }
+            public override void Add() { }
 
-            public override void Remove()
-            {
-                throw new NotImplementedException();
-            }
+            public override void Edit() { }
+
+            public override void Remove() { }
         }
         #endregion
 
@@ -250,7 +289,7 @@
 
             Master master = new Master();   
 
-
+           
         }
     }
 }

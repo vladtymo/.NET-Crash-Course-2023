@@ -56,14 +56,16 @@
 
             public List<Order> Orders { get; set; } = new List<Order>();
 
-            public void ShowPerson()
+            public void ShowItems<T>(List<T> items, Action<T> printMethod)
             {
-                Console.WriteLine("Список Персон");
-                foreach (Person person in Persons)
+                Console.WriteLine($"Список елементів типу {typeof(T).Name}:");
+                foreach (T item in items)
                 {
-                    person.PrintInfo();
+                    printMethod(item);
                 }
             }
+
+            public void ShowPerson(){ShowItems(Persons, p => p.PrintInfo());}
             public void AddPerson()
             {
                 ShowPerson();
@@ -79,14 +81,7 @@
 
             }
 
-            public void ShowProduct()
-            {
-                Console.WriteLine("Список продуктів");
-                foreach (Product product in Products)
-                {
-                    product.PrintInfo();
-                }
-            }
+            public void ShowProduct() { ShowItems(Products, p => p.PrintInfo()); }
             public void AddProduct()
             {
                 ShowProduct();
@@ -100,14 +95,7 @@
                 Products.RemoveAt(idRemoveProduct);
             }
 
-            public void ShowService()
-            {
-                Console.WriteLine("Список послуг");
-                foreach (Service service in Services)
-                {
-                    service.PrintInfo();
-                }
-            }
+            public void ShowService() { ShowItems(Services, p => p.PrintInfo()); }
             public void AddService() 
             {
                 ShowService();
@@ -121,14 +109,7 @@
                 Services.RemoveAt(idRemoveService);
             }
 
-            public void ShowOrder()
-            {
-                Console.WriteLine("Список замовлень");
-                foreach (Order order in Orders)
-                {
-                    order.PrintInfo();
-                }
-            }
+            public void ShowOrder() { ShowItems(Orders, p => p.PrintInfo()); }
             public void AddOrder() 
             {
                 ShowOrder();

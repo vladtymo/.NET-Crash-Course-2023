@@ -99,6 +99,7 @@ namespace Exam.Services.GoodsServices
         public async Task<List<GoodsEntity>> GetAll()
         {
             return await _goodsRepository.GetAsQueryable()
+                .OrderBy(goods => goods.Category)
                 .ToListAsync();
         }
 
@@ -123,6 +124,17 @@ namespace Exam.Services.GoodsServices
         {
             return await _goodsRepository.GetAsQueryable(goods => goods.Count > 0)
                 .ToListAsync();
+        }
+
+        public async Task<ResponseService<GoodsEntity>> Search(string name)
+        {
+            GoodsEntity dbRecord = await _goodsRepository.GetBy(goods => goods.Name.Contains(name));
+            if (dbRecord == null)
+            {
+                return ResponseService<GoodsEntity>.Error(Errors.NOT_FOUND_ERROR);
+            }
+
+            return ResponseService<GoodsEntity>.Ok(dbRecord);
         }
 
         public async Task<ResponseService> Update(GoodsEntity entity)

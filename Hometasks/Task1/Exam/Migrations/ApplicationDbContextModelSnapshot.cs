@@ -30,11 +30,17 @@ namespace Exam.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
 
+                    b.Property<float>("Amount")
+                        .HasColumnType("real");
+
                     b.Property<DateTime>("CreatedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("DeletedOn")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsClosed")
+                        .HasColumnType("bit");
 
                     b.Property<long>("SupermarketFK")
                         .HasColumnType("bigint");
@@ -60,7 +66,7 @@ namespace Exam.Migrations
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
-                    b.Property<long>("CheckFK")
+                    b.Property<long?>("CheckFK")
                         .HasColumnType("bigint");
 
                     b.Property<int>("Count")
@@ -106,7 +112,7 @@ namespace Exam.Migrations
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
-                    b.Property<long>("CheckFK")
+                    b.Property<long?>("CheckFK")
                         .HasColumnType("bigint");
 
                     b.Property<int>("Count")
@@ -190,9 +196,7 @@ namespace Exam.Migrations
                 {
                     b.HasOne("Exam.Database.Enitites.CheckEntity", "Check")
                         .WithMany("Goods")
-                        .HasForeignKey("CheckFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CheckFK");
 
                     b.HasOne("Exam.Database.Enitites.SupermarketEntity", "Supermarket")
                         .WithMany("Goods")
@@ -209,9 +213,7 @@ namespace Exam.Migrations
                 {
                     b.HasOne("Exam.Database.Enitites.CheckEntity", "Check")
                         .WithMany("Products")
-                        .HasForeignKey("CheckFK")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CheckFK");
 
                     b.HasOne("Exam.Database.Enitites.SupermarketEntity", "Supermarket")
                         .WithMany("Products")

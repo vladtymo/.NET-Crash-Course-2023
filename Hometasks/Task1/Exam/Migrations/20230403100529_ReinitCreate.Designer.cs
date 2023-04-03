@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Exam.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230401215056_AddDateProperties")]
-    partial class AddDateProperties
+    [Migration("20230403100529_ReinitCreate")]
+    partial class ReinitCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,6 +25,36 @@ namespace Exam.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Exam.Database.Enitites.CheckEntity", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<DateTime>("CreatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsClosed")
+                        .HasColumnType("bit");
+
+                    b.Property<long>("SupermarketFK")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime?>("UpdatedOn")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SupermarketFK");
+
+                    b.ToTable("Checks", (string)null);
+                });
+
             modelBuilder.Entity("Exam.Database.Enitites.GoodsEntity", b =>
                 {
                     b.Property<long>("Id")
@@ -35,6 +65,9 @@ namespace Exam.Migrations
 
                     b.Property<int>("Category")
                         .HasColumnType("int");
+
+                    b.Property<long?>("CheckFK")
+                        .HasColumnType("bigint");
 
                     b.Property<int>("Count")
                         .HasColumnType("int");
@@ -61,6 +94,8 @@ namespace Exam.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CheckFK");
+
                     b.HasIndex("SupermarketFK");
 
                     b.ToTable("Goods", (string)null);
@@ -76,6 +111,9 @@ namespace Exam.Migrations
 
                     b.Property<int>("Category")
                         .HasColumnType("int");
+
+                    b.Property<long?>("CheckFK")
+                        .HasColumnType("bigint");
 
                     b.Property<int>("Count")
                         .HasColumnType("int");
@@ -109,6 +147,8 @@ namespace Exam.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CheckFK");
+
                     b.HasIndex("SupermarketFK");
 
                     b.ToTable("Products", (string)null);
@@ -141,30 +181,62 @@ namespace Exam.Migrations
                     b.ToTable("Supermarkets", (string)null);
                 });
 
+            modelBuilder.Entity("Exam.Database.Enitites.CheckEntity", b =>
+                {
+                    b.HasOne("Exam.Database.Enitites.SupermarketEntity", "Supermarket")
+                        .WithMany("Checks")
+                        .HasForeignKey("SupermarketFK")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Supermarket");
+                });
+
             modelBuilder.Entity("Exam.Database.Enitites.GoodsEntity", b =>
                 {
+                    b.HasOne("Exam.Database.Enitites.CheckEntity", "Check")
+                        .WithMany("Goods")
+                        .HasForeignKey("CheckFK");
+
                     b.HasOne("Exam.Database.Enitites.SupermarketEntity", "Supermarket")
                         .WithMany("Goods")
                         .HasForeignKey("SupermarketFK")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Check");
+
                     b.Navigation("Supermarket");
                 });
 
             modelBuilder.Entity("Exam.Database.Enitites.ProductEntity", b =>
                 {
+                    b.HasOne("Exam.Database.Enitites.CheckEntity", "Check")
+                        .WithMany("Products")
+                        .HasForeignKey("CheckFK");
+
                     b.HasOne("Exam.Database.Enitites.SupermarketEntity", "Supermarket")
                         .WithMany("Products")
                         .HasForeignKey("SupermarketFK")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Check");
+
                     b.Navigation("Supermarket");
+                });
+
+            modelBuilder.Entity("Exam.Database.Enitites.CheckEntity", b =>
+                {
+                    b.Navigation("Goods");
+
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Exam.Database.Enitites.SupermarketEntity", b =>
                 {
+                    b.Navigation("Checks");
+
                     b.Navigation("Goods");
 
                     b.Navigation("Products");

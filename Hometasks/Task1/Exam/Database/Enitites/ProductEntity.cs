@@ -16,7 +16,7 @@ namespace Exam.Database.Enitites
         public DateTime? UpdatedOn { get; set; }
         public DateTime? DeletedOn { get; set; }
 
-        public long CheckFK { get; set; }
+        public long? CheckFK { get; set; }
         public CheckEntity Check { get; set; }
 
         public long SupermarketFK { get; set; }

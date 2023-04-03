@@ -5,11 +5,16 @@ namespace Exam.Services.SupermarketServices
 {
     public interface ISupermarketService
     {
-        public Task<ResponseService> Create(SupermarketEntity entity);
-        public Task<ResponseService> Update(SupermarketEntity entity);
-        public Task<ResponseService> Delete(long id);
+        Task<ResponseService> Create(SupermarketEntity entity);
+        Task<ResponseService> Update(SupermarketEntity entity);
+        Task<ResponseService> Delete(long id);
 
-        public Task<ResponseService<GoodsEntity>> BuyGoods(long id, float money);
-        public Task<ResponseService<ProductEntity>> BuyProduct(long id, float money);
+        Task<ResponseService<long>> OpenCheck(long supermarketId);
+        Task<ResponseService<float>> CloseCheck(long id);
+        
+        Task<ResponseService<float>> BuyGoods(long checkId, params GoodsEntity[] goods);
+        Task<ResponseService<float>> BuyGoods(long checkId, params int[] goodsIds);
+        Task<ResponseService<float>> BuyProducts(long checkId, params ProductEntity[] products);
+        Task<ResponseService<float>> BuyProducts(long checkId, params long[] ProductsIds);
     }
 }

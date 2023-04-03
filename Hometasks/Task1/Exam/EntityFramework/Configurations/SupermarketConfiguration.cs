@@ -14,13 +14,11 @@ namespace Exam.EntityFramework.Configurations
 
             builder.HasMany<GoodsEntity>(sumermarket => sumermarket.Goods)
                 .WithOne(goods => goods.Supermarket)
-                .HasForeignKey(goods => goods.SupermarketFK)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(goods => goods.SupermarketFK);
 
             builder.HasMany<ProductEntity>(supermarket => supermarket.Products)
                 .WithOne(products => products.Supermarket)
-                .HasForeignKey(product => product.SupermarketFK)
-                .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey(product => product.SupermarketFK);
 
             builder.HasMany<CheckEntity>(supermarket => supermarket.Checks)
                 .WithOne(check => check.Supermarket)

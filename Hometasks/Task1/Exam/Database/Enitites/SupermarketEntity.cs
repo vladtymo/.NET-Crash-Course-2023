@@ -2,6 +2,13 @@
 {
     public class SupermarketEntity
     {
+        public SupermarketEntity()
+        {
+            Goods = new List<GoodsEntity>();
+            Products = new List<ProductEntity>();
+            Checks = new List<CheckEntity>();
+        }
+
         public long Id { get; set; }
         public string Name { get; set; }
 

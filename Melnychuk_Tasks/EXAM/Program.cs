@@ -1,4 +1,7 @@
-﻿namespace Exam
+﻿using System;
+using System.Globalization;
+
+namespace Exam
 {
     internal class Program
     {
@@ -65,11 +68,25 @@
                 }
             }
 
+            //Console.Clear();
+            //////////////////////////////
             public void ShowPerson(){ShowItems(Persons, p => p.PrintInfo());}
             public void AddPerson()
             {
                 ShowPerson();
                 Console.WriteLine("Виберіть кого ви хочете додати:");
+                Console.Write("Якщо хочете додати Майстра введіть 1/Клієнта 2:");
+                int b = int.Parse(Console.ReadLine());
+                if (b==1)
+                {
+                    Master master = new Master();
+                    Persons.Add(master);
+                }
+                else if(b==2)
+                {
+                    Client client = new Client();
+                    Persons.Add(client);
+                }
             }
             public void RemovePerson()
             {
@@ -85,6 +102,8 @@
             public void AddProduct()
             {
                 ShowProduct();
+              //  Product product = new Product();
+              //  Products.Add(product);
             }
             public void RemoveProduct()
             {
@@ -94,11 +113,41 @@
                 int idRemoveProduct = int.Parse(Console.ReadLine());
                 Products.RemoveAt(idRemoveProduct);
             }
-
+            //////////////////////////////
             public void ShowService() { ShowItems(Services, p => p.PrintInfo()); }
-            public void AddService() 
+            public void AddService()
             {
                 ShowService();
+                Console.WriteLine("Виберіть що ви хочете додати:");
+       
+                Console.Write("Якщо хочете додати Haircut введіть 1/Coloring 2/Manicure 3/CosmeticProcedure 4 :");
+                int b = int.Parse(Console.ReadLine());
+                Console.WriteLine("Введіть прайс :");
+                int price = int.Parse(Console.ReadLine());
+                Console.WriteLine("Введіть тип:");
+                string type = Console.ReadLine();
+                switch (b)
+                {
+                    case 1:
+                        Haircut haircut = new Haircut(type, price);
+                        Services.Add(haircut);
+                        break;
+                    case 2:
+                        Coloring coloring = new Coloring(type, price);
+                        Services.Add(coloring);
+                        break;
+                    case 3:
+                        string additionalServices = Console.ReadLine();
+                        Manicure manicure = new Manicure(type, price, additionalServices);
+                        Services.Add(manicure);
+                        break;
+                    case 4:
+                        int duration = int.Parse(Console.ReadLine());
+                        CosmeticProcedure cosmeticProcedure = new CosmeticProcedure(type, price, duration);
+                        Services.Add(cosmeticProcedure);
+                        break;
+                    default: break;
+                }
             }
             public void RemoveService() 
             {
@@ -108,7 +157,7 @@
                 int idRemoveService = int.Parse(Console.ReadLine());
                 Services.RemoveAt(idRemoveService);
             }
-
+            //////////////////////////////
             public void ShowOrder() { ShowItems(Orders, p => p.PrintInfo()); }
             public void AddOrder() 
             {
@@ -126,11 +175,27 @@
         }
 
 
-        class Order
+        public class Order
         {
-            public Order(){}
-            public void PrintInfo() { }
+            public Person Client { get; set; }
+            public Service Service { get; set; }
+            public DateTime Date { get; set; }
+            public Person Performer { get; set; }
+
+            public Order(Person client, Service service, DateTime date, Person performer)
+            {
+                Client = client;
+                Service = service;
+                Date = date;
+                Performer = performer;
+            }
+
+            public void PrintInfo()
+            {
+                Console.WriteLine($"Клієнт: {Client.Name} {Client.Surname} | Послуга: {Service.Name} | Дата: {Date.ToString("dd/MM/yyyy")} | Виконавець: {Performer.Name} {Performer.Surname}");
+            }
         }
+
         #endregion
 
         #region services
@@ -138,10 +203,12 @@
         {
             public string Name { get; set; }
             public int Price { get; set; }
-            public Service(string name, int price)
+            public string Type { get; set; }
+            public Service(string name, int price, string type)
             {
                 Name = name;
                 Price = price;
+                Type = type;
             }
 
             public virtual void PrintInfo() 
@@ -162,12 +229,7 @@
 
         class Haircut : Service
         {
-            public string Type { get; set; } 
-
-            public Haircut(string type, int price) : base("Стрижка", price)
-            {
-                Type = type;
-            }
+            public Haircut(string type, int price) : base("Стрижка", price, type) { }
 
             public override void PrintInfo()
             {
@@ -183,12 +245,7 @@
         }
         class Coloring : Service
         {
-            public string Type { get; set; } 
-
-            public Coloring(string type, int price) : base("Фарбування", price)
-            {
-                Type = type;
-            }
+            public Coloring(string type, int price) : base("Фарбування", price, type) { }
 
             public override void PrintInfo()
             {
@@ -204,12 +261,10 @@
         }
         class Manicure : Service
         {
-            public string Type { get; set; } 
             public string AdditionalServices { get; set; } 
 
-            public Manicure(string type, int price, string additionalServices) : base("Манікюр", price)
+            public Manicure(string type, int price, string additionalServices) : base("Манікюр", price, type)
             {
-                Type = type;
                 AdditionalServices = additionalServices;
             }
 
@@ -229,13 +284,11 @@
 
         }
         class CosmeticProcedure : Service
-        {
-            public string Type { get; set; } 
+        { 
             public int Duration { get; set; } 
 
-            public CosmeticProcedure(string type, int duration, int price) : base("Косметична процедура", price)
+            public CosmeticProcedure(string type, int duration, int price) : base("Косметична процедура", price, type)
             {
-                Type = type;
                 Duration = duration;
             }
 

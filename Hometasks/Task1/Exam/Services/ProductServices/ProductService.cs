@@ -76,14 +76,14 @@ namespace Exam.Services.ProductServices
             }
         }
 
-        public async Task<List<ProductEntity>> GetAll()
+        public async Task<ICollection<ProductEntity>> GetAll()
         {
             return await _productRepository.GetAsQueryable()
                 .OrderBy(product => product.Category)
                 .ToListAsync();
         }
 
-        public async Task<List<ProductEntity>> GetBuyed()
+        public async Task<ICollection<ProductEntity>> GetBuyed()
         {
             return await _productRepository
                 .GetAsQueryable(product => product.Count == 0)
@@ -101,7 +101,7 @@ namespace Exam.Services.ProductServices
             return ResponseService<ProductEntity>.Ok(dbRecord);
         }
 
-        public async Task<List<ProductEntity>> GetExpired()
+        public async Task<ICollection<ProductEntity>> GetExpired()
         {
             return await _productRepository
                 .GetAsQueryable(product => 
@@ -111,7 +111,7 @@ namespace Exam.Services.ProductServices
                 .ToListAsync();
         }
 
-        public async Task<List<ProductEntity>> GetNotBuyed()
+        public async Task<ICollection<ProductEntity>> GetNotBuyed()
         {
             return await _productRepository.GetAsQueryable(product => product.Count > 0)
                 .ToListAsync();

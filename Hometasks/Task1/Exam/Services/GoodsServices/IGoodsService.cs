@@ -11,9 +11,9 @@ namespace Exam.Services.GoodsServices
 
         Task<ResponseService<GoodsEntity>> GetById(long id);
         Task<ResponseService<GoodsEntity>> Search(string name);
-        Task<List<GoodsEntity>> GetAll();
-        Task<List<GoodsEntity>> GetBuyed();
-        Task<List<GoodsEntity>> GetNotBuyed();
+        Task<ICollection<GoodsEntity>> GetAll();
+        Task<ICollection<GoodsEntity>> GetBuyed();
+        Task<ICollection<GoodsEntity>> GetNotBuyed();
 
         Task<ResponseService<int>> Append(int id, int count);
         Task<ResponseService<int>> Buy(int id, int count);

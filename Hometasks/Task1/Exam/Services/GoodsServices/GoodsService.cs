@@ -96,14 +96,14 @@ namespace Exam.Services.GoodsServices
             }
         }
 
-        public async Task<List<GoodsEntity>> GetAll()
+        public async Task<ICollection<GoodsEntity>> GetAll()
         {
             return await _goodsRepository.GetAsQueryable()
                 .OrderBy(goods => goods.Category)
                 .ToListAsync();
         }
 
-        public async Task<List<GoodsEntity>> GetBuyed()
+        public async Task<ICollection<GoodsEntity>> GetBuyed()
         {
             return await _goodsRepository.GetAsQueryable(goods => goods.Count == 0)
                 .ToListAsync();
@@ -120,7 +120,7 @@ namespace Exam.Services.GoodsServices
             return ResponseService<GoodsEntity>.Ok(dbRecord);
         }
 
-        public async Task<List<GoodsEntity>> GetNotBuyed()
+        public async Task<ICollection<GoodsEntity>> GetNotBuyed()
         {
             return await _goodsRepository.GetAsQueryable(goods => goods.Count > 0)
                 .ToListAsync();

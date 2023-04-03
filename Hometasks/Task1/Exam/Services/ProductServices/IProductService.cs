@@ -11,10 +11,10 @@ namespace Exam.Services.ProductServices
 
         Task<ResponseService<ProductEntity>> GetById(long id);
         Task<ResponseService<ProductEntity>> Search(string name);
-        Task<List<ProductEntity>> GetAll();
-        Task<List<ProductEntity>> GetBuyed();
-        Task<List<ProductEntity>> GetNotBuyed();
-        Task<List<ProductEntity>> GetExpired();
+        Task<ICollection<ProductEntity>> GetAll();
+        Task<ICollection<ProductEntity>> GetBuyed();
+        Task<ICollection<ProductEntity>> GetNotBuyed();
+        Task<ICollection<ProductEntity>> GetExpired();
 
         Task<ResponseService<int>> Buy(long id, int count);
     }

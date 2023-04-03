@@ -21,6 +21,10 @@ namespace Exam.EntityFramework.Configurations
                 .WithOne(products => products.Supermarket)
                 .HasForeignKey(product => product.SupermarketFK)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany<CheckEntity>(supermarket => supermarket.Checks)
+                .WithOne(check => check.Supermarket)
+                .HasForeignKey(check => check.SupermarketFK);
         }
     }
 }

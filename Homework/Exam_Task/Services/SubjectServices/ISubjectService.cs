@@ -6,7 +6,7 @@ namespace Exam_Task.Services.SubjectServices
 	{
 		Task Create(SubjectEntity subject);
 		Task Update (SubjectEntity subject);
-		Task<ICollection<SubjectEntity>> GetAll();
+		Task<List<SubjectEntity>> GetAll();
 		Task<SubjectEntity> GetById(int id);
 		Task<bool> EnterMark(int studentId, int subjectId, int mark);
 	}

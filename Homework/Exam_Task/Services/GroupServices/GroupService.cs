@@ -1,25 +1,25 @@
 ﻿using Exam_Task.Database;
 using Exam_Task.Database.Entities;
+using Exam_Task.Database.GenericRepository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Exam_Task.Services.GroupServices
 {
 	public class GroupService : IGroupService
-	{
-		private readonly ApplicationDbContext _dbContext;
-		public GroupService(ApplicationDbContext dbContext)
+	{ 
+		private readonly IGenericRepository<GroupEntity> _groupRepository;
+		public GroupService(IGenericRepository<GroupEntity> groupRepository)
 		{
-			_dbContext = dbContext;
+			_groupRepository = groupRepository;
 		}
 		public async Task Create(GroupEntity group)
 		{
-			await _dbContext.Groups.AddAsync(group);
-			await _dbContext.SaveChangesAsync();
+			await _groupRepository.Create(group);
 		}
 
 		public async Task<List<GroupEntity>> GetAll()
 		{
-			List<GroupEntity> dbRecord = await _dbContext.Groups
+			List<GroupEntity> dbRecord = await _groupRepository.Table
 				.Include(student => student.Students)
 				.ThenInclude(subj => subj.Subjects)
 				.ThenInclude(lect => lect.Lecturer)
@@ -34,8 +34,8 @@ namespace Exam_Task.Services.GroupServices
 
 		public async Task<GroupEntity> GetById(int id)
 		{
-			GroupEntity dbRecord = await _dbContext.Groups
-				.FindAsync(id);
+			GroupEntity dbRecord = await _groupRepository.Table
+				.FirstOrDefaultAsync(group => group.Id == id);
 
 			if (dbRecord == null)
 			{
@@ -46,8 +46,7 @@ namespace Exam_Task.Services.GroupServices
 
 		public async Task Update(GroupEntity group)
 		{
-			_dbContext.Groups.Update(group);
-			await _dbContext.SaveChangesAsync();
+			await _groupRepository.Update(group);
 		}
 	}
 }

@@ -10,7 +10,7 @@ namespace Exam.Services.ProductServices
         Task<ResponseService> Update(ProductEntity entity);
 
         Task<ResponseService<ProductEntity>> GetById(long id);
-        Task<ResponseService<ProductEntity>> Search(string name);
+        Task<ICollection<ProductEntity>> GetByName(string name); // TODO Implementation
         Task<ICollection<ProductEntity>> GetAll();
         Task<ICollection<ProductEntity>> GetBuyed();
         Task<ICollection<ProductEntity>> GetNotBuyed();

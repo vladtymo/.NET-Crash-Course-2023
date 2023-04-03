@@ -5,6 +5,8 @@ using Exam.Services.CheckServices;
 using Exam.Services.GoodsServices;
 using Exam.Services.ProductServices;
 using Exam.Services.Response;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Exam.Services.SupermarketServices
 {
@@ -181,6 +183,87 @@ namespace Exam.Services.SupermarketServices
             dbRecord.DeletedOn = DateTime.Now;
 
             return await Update(dbRecord);
+        }
+
+        public async Task<ResponseService> DeriverGoods(long id, ICollection<GoodsEntity> goods)
+        {
+            SupermarketEntity dbRecord = await _supermarketRepository.GetById(id);
+            if (dbRecord == null)
+            {
+                return ResponseService.Error(Errors.NOT_FOUND_ERROR);
+            }
+            
+            foreach (GoodsEntity _goods in goods)
+            {
+                _goods.SupermarketFK = dbRecord.Id;
+
+                var response = await _goodsService.Update(_goods);
+                if (response.IsError)
+                {
+                    return response;
+                }
+            }
+
+            return ResponseService.Ok();
+        }
+
+        public async Task<ResponseService> DeriverProducts(long id, ICollection<ProductEntity> products)
+        {
+            SupermarketEntity dbRecord = await _supermarketRepository.GetById(id);
+            if (dbRecord == null)
+            {
+                return ResponseService.Error(Errors.NOT_FOUND_ERROR);
+            }
+
+            foreach (ProductEntity product in products)
+            {
+                product.SupermarketFK = dbRecord.Id;
+
+                var result = await _productService.Update(product);
+                if (result.IsError)
+                {
+                    return result;
+                }
+            }
+
+            return ResponseService.Ok();
+        }
+
+        public async Task<ICollection<SupermarketEntity>> GetAll()
+        {
+            return await _supermarketRepository.GetAsQueryable()
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<SupermarketEntity>> GetByGoodsName(string name)
+        {
+            return await _supermarketRepository
+                .GetAsQueryable(supermarket => supermarket.Goods.Any(goods => goods.Name == name))
+                .ToListAsync();
+        }
+
+        public async Task<ResponseService<SupermarketEntity>> GetById(long id)
+        {
+            SupermarketEntity dbRecord = await _supermarketRepository.GetById(id);
+            if (dbRecord == null)
+            {
+                return ResponseService<SupermarketEntity>.Error(Errors.NOT_FOUND_ERROR);
+            }
+
+            return ResponseService<SupermarketEntity>.Ok(dbRecord);
+        }
+
+        public async Task<ICollection<SupermarketEntity>> GetByName(string name)
+        {
+            return await _supermarketRepository.GetAsQueryable(supermarket => supermarket.Name == name)
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<SupermarketEntity>> GetByProductName(string name)
+        {
+            return await _supermarketRepository
+                .GetAsQueryable(supermarket => supermarket.Products.Any(product => product.Name == name))
+                .ToListAsync();
         }
 
         public async Task<ResponseService<long>> OpenCheck(long supermarketId)

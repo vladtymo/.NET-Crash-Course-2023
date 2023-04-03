@@ -126,15 +126,10 @@ namespace Exam.Services.GoodsServices
                 .ToListAsync();
         }
 
-        public async Task<ResponseService<GoodsEntity>> Search(string name)
+        public async Task<ICollection<GoodsEntity>> GetByName(string name)
         {
-            GoodsEntity dbRecord = await _goodsRepository.GetBy(goods => goods.Name.Contains(name));
-            if (dbRecord == null)
-            {
-                return ResponseService<GoodsEntity>.Error(Errors.NOT_FOUND_ERROR);
-            }
-
-            return ResponseService<GoodsEntity>.Ok(dbRecord);
+            return await _goodsRepository.GetAsQueryable(goods => goods.Name == name)
+                .ToListAsync();
         }
 
         public async Task<ResponseService> Update(GoodsEntity entity)

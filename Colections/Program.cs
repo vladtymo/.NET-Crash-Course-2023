@@ -161,12 +161,14 @@ class Program
         {
             PhoneBook phoneBook = new PhoneBook();
             phoneBook.Add("Evgen", "380987654321");
+
             phoneBook.Add("Artem", "12345678901");
             Console.WriteLine($"Evgen's phone number: {phoneBook.Search("Evgen")}");
             phoneBook.Change("Artem", "380988877722");
             Console.WriteLine($"Artem new phone number: {phoneBook.Search("Artem")}");
+            phoneBook.Add("artem", phoneBook.Search("Artem"));
             phoneBook.Delete("Artem");
-            phoneBook.Search("Artem");
+            phoneBook.Search("artem");
         }
         //task3
         Console.WriteLine("____________________task3____________________");
@@ -192,7 +194,7 @@ class Program
         Console.WriteLine("____________________task4____________________");
         {
             {
-                int numDisks = 5;
+                int numDisks = 3;
                 HanoiTower[] towers = new HanoiTower[3];
                 for (int i = 0; i < 3; i++) towers[i] = new HanoiTower();
                 for (int i = numDisks; i >= 1; i--) towers[0].Disks.Push(i);

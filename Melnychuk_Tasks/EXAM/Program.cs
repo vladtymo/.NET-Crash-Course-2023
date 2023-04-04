@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Globalization;
+
 
 namespace Exam
 {
@@ -37,6 +39,7 @@ namespace Exam
             Smith = 8
    
         }
+        
 
         #region interface
         public interface IEditor
@@ -73,50 +76,65 @@ namespace Exam
             public void ShowPerson(){ShowItems(Persons, p => p.PrintInfo());}
             public void AddPerson()
             {
+                Console.Clear();
                 ShowPerson();
                 Console.WriteLine("Виберіть кого ви хочете додати:");
                 Console.Write("Якщо хочете додати Майстра введіть 1/Клієнта 2:");
                 int b = int.Parse(Console.ReadLine());
-                if (b==1)
+                if (b == 1)
                 {
                     Master master = new Master();
                     Persons.Add(master);
                 }
-                else if(b==2)
+                else if (b == 2)
                 {
-                    Client client = new Client();
+                    Console.WriteLine("Введіть кількість грошей:");
+                    int money = int.Parse(Console.ReadLine());
+                    Client client = new Client(money);
                     Persons.Add(client);
                 }
+                Console.Clear();
             }
             public void RemovePerson()
             {
+                Console.Clear();
                 ShowPerson();
                 Console.WriteLine("Виберіть кого ви хочете видалити");
                 Console.Write($"Введіть індекс:");
                 int idRemovePerson = int.Parse(Console.ReadLine());
                 Persons.RemoveAt(idRemovePerson);
-
+                Console.Clear();
             }
 
             public void ShowProduct() { ShowItems(Products, p => p.PrintInfo()); }
             public void AddProduct()
             {
+                Console.Clear();
+
                 ShowProduct();
-              //  Product product = new Product();
-              //  Products.Add(product);
+                Console.WriteLine("Введіть нове ім'я:");
+                string name = Console.ReadLine();
+                Console.WriteLine("Введіть нову варітсть:");
+                int price = int.Parse(Console.ReadLine());
+                Product product = new Product(name,price);
+                Products.Add(product);
+                Console.Clear();
             }
             public void RemoveProduct()
             {
+                Console.Clear();
                 ShowProduct();
                 Console.WriteLine("Виберіть що ви хочете видалити");
                 Console.Write($"Введіть індекс:");
                 int idRemoveProduct = int.Parse(Console.ReadLine());
                 Products.RemoveAt(idRemoveProduct);
+                Console.Clear();
             }
             //////////////////////////////
             public void ShowService() { ShowItems(Services, p => p.PrintInfo()); }
             public void AddService()
             {
+                Console.Clear();
                 ShowService();
                 Console.WriteLine("Виберіть що ви хочете додати:");
        
@@ -148,28 +166,56 @@ namespace Exam
                         break;
                     default: break;
                 }
+                Console.Clear();
             }
             public void RemoveService() 
             {
+                Console.Clear();
                 ShowService();
                 Console.WriteLine("Виберіть що ви хочете видалити");
                 Console.Write($"Введіть індекс:");
                 int idRemoveService = int.Parse(Console.ReadLine());
                 Services.RemoveAt(idRemoveService);
+                Console.Clear();
             }
             //////////////////////////////
             public void ShowOrder() { ShowItems(Orders, p => p.PrintInfo()); }
-            public void AddOrder() 
+            public void AddOrder()
             {
+                Console.Clear();
                 ShowOrder();
+                Console.WriteLine("Виберіть клієнта в списку усіх персон:");
+                ShowPerson();
+                int c = int.Parse(Console.ReadLine());
+                Client client = (Client)Persons[c];
+                ////////
+                Console.WriteLine("Виберіть послугу в списку усіх персон:");
+                ShowService();
+                int s = int.Parse(Console.ReadLine());
+                Service service = Services[s];
+                ////////
+                Console.WriteLine("Введіть дату (format: dd/MM/yyyy): ");
+                string input = Console.ReadLine();
+                DateTime date = DateTime.ParseExact(input, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                //////
+                Console.WriteLine("Виберіть клієнта в списку усіх персон:");
+                ShowPerson();
+                int p = int.Parse(Console.ReadLine());
+                Master master = (Master)Persons[c];
+
+
+                Order order = new Order(client, service, date, master);
+                Console.Clear();
             }
             public void RemoveOrder()
             {
+                Console.Clear();
                 ShowOrder();
                 Console.WriteLine("Виберіть що ви хочете видалити");
                 Console.Write($"Введіть індекс:");
                 int idRemoveOrder = int.Parse(Console.ReadLine());
                 Orders.RemoveAt(idRemoveOrder);
+                Console.Clear();
             }
 
         }
@@ -177,12 +223,12 @@ namespace Exam
 
         public class Order
         {
-            public Person Client { get; set; }
+            public Client Client { get; set; }
             public Service Service { get; set; }
             public DateTime Date { get; set; }
-            public Person Performer { get; set; }
+            public Master Performer { get; set; }
 
-            public Order(Person client, Service service, DateTime date, Person performer)
+            public Order(Client client, Service service, DateTime date, Master performer)
             {
                 Client = client;
                 Service = service;
@@ -314,9 +360,21 @@ namespace Exam
             public string Name { get; set; }
             public string Surname { get; set; }
             public string PhoneNumber { get; set; }
-            public string Email { get; set; }
-            public abstract void Edit();
-            public abstract void PrintInfo();
+            public string Type { get; set; }
+            public virtual void Edit()
+            {                
+                PrintInfo();
+                Console.WriteLine("Введіть нове ім'я:");
+                Name = Console.ReadLine();
+                Console.WriteLine("Введіть нове прізвище:");
+                Surname = Console.ReadLine();
+                Console.WriteLine("Введіть новий номер:");
+            }
+            public virtual void PrintInfo()
+            { 
+                Console.WriteLine($"Type: {Type}| Name: {Name}\t| Surname: {Surname}\t| Phonenumber: {PhoneNumber}\t| ");
+
+            }
 
             public Person()
             {
@@ -329,38 +387,63 @@ namespace Exam
 
                 PhoneNumber = "+380"; 
                 PhoneNumber += rand.Next(66, 99).ToString(); 
-                PhoneNumber += rand.Next(1000000, 9999999).ToString(); 
+                PhoneNumber += rand.Next(1000000, 9999999).ToString();
 
             }
         }
 
-        class Client : Person
+        public class Client : Person
         {
-            public override void Edit() { }
-
-            public override void PrintInfo()
+            public Client(int money) : base()
             {
-                Console.WriteLine($"Name: {Name}\t| Surname: {Surname}\t| Phonenumber: {PhoneNumber}\t| ");
+                Type = "Client";
+                Money = money;
+            }
+            public int Money { get; set; }
+
+            public override void Edit()
+            {
+                base.Edit();
+                Console.WriteLine("Введіть кількість грошей:");
+                Money = int.Parse(Console.ReadLine());
             }
         }
-        class Master : Person
+        public class Master : Person
         {
-            public override void Edit() { }
-
-            public override void PrintInfo()
+            public Master(): base()
             {
-                Console.WriteLine($"Name: {Name}\t| Surname: {Surname}\t| Phonenumber: {PhoneNumber}\t| ");
+                Type = "Master"; 
+            }
+            public void Work()
+            {
+                Console.WriteLine($"Майстер {Name} працює.");
             }
         }
         #endregion
 
         #region products
-        public abstract class Product : IEditor
+        public  class Product : IEditor
         {
             public string Name { get; set; }
             public int Price { get; set; }
-            public abstract void Edit();
-            public abstract void PrintInfo();
+
+            public Product(string name,int price)
+            {
+                Name = name;
+                Price = price;
+            }
+            public void Edit()
+            {
+                PrintInfo();
+                Console.WriteLine("Введіть нове ім'я:");
+                Name = Console.ReadLine();
+                Console.WriteLine("Введіть нову варітсть:");
+                Price = int.Parse( Console.ReadLine() );
+            }
+            public  void PrintInfo()
+            {
+                Console.WriteLine($"Name: {Name}\t| Price: {Price}\t| ");
+            }
         }
         #endregion
 

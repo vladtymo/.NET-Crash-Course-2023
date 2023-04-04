@@ -67,8 +67,8 @@ namespace Exam_Task
 			subjectRepository = new GenericRepository<SubjectEntity>(dbContext);
 			lecturerRepository = new GenericRepository<LecturerEntity>(dbContext);
 
-			studentService = new StudentService(studentRepository);
-			lecturerService = new LecturerService(lecturerRepository);
+			studentService = new StudentService(studentRepository,groupRepository);
+			lecturerService = new LecturerService(lecturerRepository,subjectRepository);
 			subjectService = new SubjectService(subjectRepository,studentService);
 			groupService = new GroupService(groupRepository);
 
@@ -78,13 +78,27 @@ namespace Exam_Task
 			//List<GroupEntity> entities = await groupService.GetAll();
 			//List<StudentEntity> students = await studentService.GetAll();
 			//List<SubjectEntity> subjects = await subjectService.GetAll();
-			lecturerService.Create(new LecturerEntity("Savuch", "Josan", "fdff@gmail.com", "31414", DateTime.Now, "Profesor", "FIT"));
-			List<LecturerEntity> lecturers = await lecturerService.GetAllAvaliable();
+			//lecturerService.Create(new LecturerEntity("Savuch", "Josan", "fdff@gmail.com", "31414", DateTime.Now, "Profesor", "FIT"));
+			//List<LecturerEntity> lecturers = await lecturerService.GetAllAvaliable();
+
 			//GroupEntity group = await groupService.GetById(1);
+
 			//StudentEntity student = await studentService.GetById(1);
 			//SubjectEntity subject = await subjectService.GetById(1);
 			//LecturerEntity lecturer = await lecturerService.GetById(1);
 			//subjectService.EnterMark(22,10, 5);
+
+			//StudentEntity student = new("Olegus","Redkus","olegus@gmail.com","24242424",DateTime.Now,null);
+			//await studentService.Create(student);
+			//await studentService.AddStudentToTheGroup(1, 31);
+
+			//SubjectEntity subject = new SubjectEntity("France",null,null);
+			//await subjectService.Create(subject);
+			//await subjectService.AddSubjectToTheStudent(31, 36);
+
+			//LecturerEntity lecturer = new LecturerEntity("Vovik", "Bidok", "vovan@gmail.com", "3142525", DateTime.Now, "Master", "FIT");
+			//await lecturerService.Create(lecturer);
+			await lecturerService.AddLecturerToTheSubject(30, 36);//Додати перевірку на те чи вже має ФК
 			Console.WriteLine("Done");
 			Console.ReadKey();
 		}

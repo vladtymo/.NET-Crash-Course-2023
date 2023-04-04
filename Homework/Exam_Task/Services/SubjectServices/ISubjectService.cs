@@ -9,5 +9,6 @@ namespace Exam_Task.Services.SubjectServices
 		Task<List<SubjectEntity>> GetAll();
 		Task<SubjectEntity> GetById(int id);
 		Task<bool> EnterMark(int studentId, int subjectId, int mark);
+		Task<bool> AddSubjectToTheStudent(int studentId, int subjectId);
 	}
 }

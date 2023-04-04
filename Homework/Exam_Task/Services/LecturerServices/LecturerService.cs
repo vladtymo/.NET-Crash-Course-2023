@@ -1,5 +1,6 @@
 ﻿using Exam_Task.Database.Entities;
 using Exam_Task.Database.GenericRepository;
+using Exam_Task.Services.SubjectServices;
 using Microsoft.EntityFrameworkCore;
 
 namespace Exam_Task.Services.LecturerServices
@@ -7,9 +8,11 @@ namespace Exam_Task.Services.LecturerServices
 	public class LecturerService : ILecturerService
 	{
 		private readonly IGenericRepository<LecturerEntity> _lecturerRepository;
-		public LecturerService(IGenericRepository<LecturerEntity> lecturerRepository)
+		private readonly IGenericRepository<SubjectEntity> _subjectRepository;
+		public LecturerService(IGenericRepository<LecturerEntity> lecturerRepository, IGenericRepository<SubjectEntity> subjectRepository)
 		{
 			_lecturerRepository = lecturerRepository;
+			_subjectRepository= subjectRepository;
 		}
 		public async Task Create(LecturerEntity lecturer)
 		{
@@ -52,6 +55,26 @@ namespace Exam_Task.Services.LecturerServices
 				return null;
 			}
 			return dbRecord;
+		}
+
+		public async Task<bool> AddLecturerToTheSubject(int subjectId, int lecturerId)
+		{
+			var group = await _subjectRepository.GetById(subjectId);
+			if (group == null)
+			{
+				return false;
+			}
+			var student = await GetById(lecturerId);
+			if (student == null)
+			{
+				return false;
+			}
+			else
+			{
+				student.SubjectFK = group.Id;
+				await _lecturerRepository.SaveChangesAsync();
+				return true;
+			}
 		}
 
 	}

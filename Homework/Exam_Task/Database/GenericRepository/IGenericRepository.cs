@@ -9,7 +9,7 @@ namespace Exam_Task.Database.GenericRepository
 		Task<string> Create(T entity);
 		Task<string> Update(T entity);
 		Task<string> Delete(T entity);
-		Task<T> GetById(long id);
+		Task<T> GetById(int id);
 		Task<T> GetBy(Expression<Func<T, bool>> expression);
 		Task<ICollection<T>> GetAll();
 		Task<int> SaveChangesAsync();

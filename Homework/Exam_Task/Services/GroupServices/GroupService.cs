@@ -1,12 +1,11 @@
-﻿using Exam_Task.Database;
-using Exam_Task.Database.Entities;
+﻿using Exam_Task.Database.Entities;
 using Exam_Task.Database.GenericRepository;
 using Microsoft.EntityFrameworkCore;
 
 namespace Exam_Task.Services.GroupServices
 {
 	public class GroupService : IGroupService
-	{ 
+	{
 		private readonly IGenericRepository<GroupEntity> _groupRepository;
 		public GroupService(IGenericRepository<GroupEntity> groupRepository)
 		{
@@ -35,6 +34,9 @@ namespace Exam_Task.Services.GroupServices
 		public async Task<GroupEntity> GetById(int id)
 		{
 			GroupEntity dbRecord = await _groupRepository.Table
+				.Include(student => student.Students)
+				.ThenInclude(subj => subj.Subjects)
+				.ThenInclude(lect => lect.Lecturer)
 				.FirstOrDefaultAsync(group => group.Id == id);
 
 			if (dbRecord == null)

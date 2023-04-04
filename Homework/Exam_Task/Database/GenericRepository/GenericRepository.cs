@@ -47,7 +47,7 @@ namespace Exam_Task.Database.GenericRepository
 			return await Table.ToListAsync();
 		}
 
-		public async Task<T> GetById(long id)
+		public async Task<T> GetById(int id)
 		{
 			return await Table.FindAsync(id);
 		}

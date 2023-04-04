@@ -1,0 +1,27 @@
+﻿<Window x:Class="Exam.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exam"
+        mc:Ignorable="d"
+        Title="Register" Height="425" Width="600" MinHeight="425" MinWidth="600">
+    <Grid>
+        <Label x:Name="sign_in" Content="Sign up" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <StackPanel Margin="159,52,159,0">
+            <Label Content="Username:" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="txtUsername" TextWrapping="Wrap" FontSize="14"/>
+            <Label Content="Email:" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="txtEmail" TextWrapping="Wrap" FontSize="14"/>
+            <Label Content="Phone number:" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="txtPhone" TextWrapping="Wrap" FontSize="14"/>
+            <Label Content="Password:" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="txtPassword" TextWrapping="Wrap" FontSize="14"/>
+            <Label Content="Password verification:" FontWeight="Bold" FontSize="16"/>
+            <TextBox x:Name="txtPasswordVerification" TextWrapping="Wrap" FontSize="14"/>
+            <Label x:Name="lblSignIn" Content="Already have account? Sign in!" HorizontalContentAlignment="Center" MouseLeftButtonDown="lblSignUp_MouseLeftButtonDown"/>
+            <Button x:Name="btnSignIn" Content="Sign up" FontSize="16" FontWeight="Bold" Height="30" Background="#FF00C8FF" Click="btnSignIn_Click"/>
+            <Label x:Name="lblError" Content="" HorizontalContentAlignment="Center" FontSize="10" Foreground="Red"/>
+        </StackPanel>
+    </Grid>
+</Window>

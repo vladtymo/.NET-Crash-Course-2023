@@ -1,0 +1,15 @@
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\bin\Debug\net7.0\ExamMineSweaper.exe
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\bin\Debug\net7.0\ExamMineSweaper.deps.json
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\bin\Debug\net7.0\ExamMineSweaper.runtimeconfig.json
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\bin\Debug\net7.0\ExamMineSweaper.dll
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\bin\Debug\net7.0\ExamMineSweaper.pdb
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.csproj.AssemblyReference.cache
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.AssemblyInfoInputs.cache
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.AssemblyInfo.cs
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.csproj.CoreCompileInputs.cache
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.dll
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\refint\ExamMineSweaper.dll
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.pdb
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ExamMineSweaper.genruntimeconfig.cache
+D:\GitHub\.NET-Crash-Course-2023\ExamMineSweaper\ExamMineSweaper\obj\Debug\net7.0\ref\ExamMineSweaper.dll

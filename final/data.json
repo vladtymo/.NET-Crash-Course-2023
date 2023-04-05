@@ -1,0 +1,64 @@
+[
+  {
+    "ItemType": "Krabsburger",
+    "Name": "Krabsburger",
+    "Price": 2.22,
+    "Description": "Best burger in the world",
+    "Type": "Double"
+  },
+  {
+    "ItemType": "Krabsburger",
+    "Name": "Krabsburger",
+    "Price": 3.33,
+    "Description": "Best burger in the world",
+    "Type": "Tribble"
+  },
+  {
+    "ItemType": "Soda",
+    "Name": "Soda",
+    "Price": 0.5,
+    "Description": "Best soda in the world",
+    "volume": "Volume0_33"
+  },
+  {
+    "ItemType": "Soda",
+    "Name": "Soda",
+    "Price": 0.7,
+    "Description": "Best soda in the world",
+    "volume": "Volume0_5"
+  },
+  {
+    "ItemType": "Soda",
+    "Name": "Soda",
+    "Price": 1.2,
+    "Description": "Best soda in the world",
+    "volume": "Volume1"
+  },
+  {
+    "ItemType": "Soda",
+    "Name": "Soda",
+    "Price": 2.5,
+    "Description": "Best soda in the world",
+    "volume": "Volume1_5"
+  },
+  {
+    "ItemType": "KelpRings",
+    "Name": "Kelp Rings",
+    "Price": 1.30,
+    "Description": "))",
+    "sause": true
+  },
+  {
+    "ItemType": "KelpRings",
+    "Name": "Kelp Rings",
+    "Price": 1.60,
+    "Description": "))",
+    "sause": false
+  },
+  {
+    "ItemType": "KelpShake",
+    "Name": "Kelp Shake",
+    "Price": 2.00,
+    "Description": "Poseidons Shake"
+  }
+]

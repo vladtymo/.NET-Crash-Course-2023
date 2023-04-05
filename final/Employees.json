@@ -1,0 +1,16 @@
+[
+  {
+    "Position": "Chef",
+    "Name": "SpongeBob",
+    "Age": 20,
+    "Salary": 5000.01,
+    "HireDate": "2003-01-01T00:00:00"
+  },
+  {
+    "Position": "Cashier",
+    "Name": "Squidward",
+    "Age": 30,
+    "Salary": 2000.00,
+    "HireDate": "2001-02-03T00:00:00"
+  }
+]

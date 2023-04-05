@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "M4+rYusffuaYjDViWJ7hTZ6MdPl4rah5zTDRghN/I6Wl6dmzCT7weN/YpzJecbVzSshXbbo3tEyFDhkvmPKaKA==",
+  "success": true,
+  "projectFilePath": "/home/maks/Стільниця/c#.NET/final/final.csproj",
+  "expectedPackageFiles": [
+    "/home/maks/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/maks/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/home/maks/.nuget/packages/system.text.json/7.0.2/system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

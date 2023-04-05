@@ -8,14 +8,14 @@ namespace EXAM
 {
     public class Master : Person
     {
-        public int Rank { get; set; }
+       
         public Master(int rank)
         {
 
             Type = "Master";
             Rank = rank;
         }
-
+        public int Rank { get; set; }
         public void Work()
         {
             Console.WriteLine($"Майстер {Name} працює.");

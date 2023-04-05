@@ -172,21 +172,21 @@ namespace EXAM
             ShowPerson();
             int c = int.Parse(Console.ReadLine()) - 1;
             Client client = (Client)Persons[c];
-            ////////
+            
             Console.WriteLine("Виберіть послугу в списку усіх послуг(її номер):");
             ShowService();
             int s = int.Parse(Console.ReadLine()) - 1;
             Service service = Services[s];
-            ////////
+            
             Console.WriteLine("Введіть дату (format: dd/MM/yyyy): ");
             string input = Console.ReadLine();
             DateTime date = DateTime.ParseExact(input, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-            //////
+          
             Console.WriteLine("Виберіть Master в списку усіх персон(його номер):");
             ShowPerson();
             int p = int.Parse(Console.ReadLine()) - 1;
-            Master master = (Master)Persons[c];
-
+          
+            Master master = (Master)Persons[p];
 
             Order order = new Order(client, service, date, master);
             Orders.Add(order);

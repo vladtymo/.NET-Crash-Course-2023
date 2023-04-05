@@ -126,6 +126,7 @@ namespace Exam
                         beauty.Orders[number].Work();
                         beauty.Orders.RemoveAt(number);
                         Console.Clear();
+                        process2 = 0;
                     }
                     break;
                         default:
@@ -145,10 +146,11 @@ namespace Exam
             Console.Clear();
 
             Console.WriteLine("\t\tМеню");
-            Console.WriteLine("Додати - Person  - 1");
-            Console.WriteLine("Додати - Service - 2");
-            Console.WriteLine("Додати - Product - 3");
-            Console.WriteLine("Додати - Order   - 4");
+            Console.WriteLine("Додати - Person   - 1");
+            Console.WriteLine("Додати - Service  - 2");
+            Console.WriteLine("Додати - Product  - 3");
+            Console.WriteLine("Додати - Order    - 4");
+            Console.WriteLine("Повернутись назад - 0");
             Console.Write("\n\n\n\tВаш вибір:");
             int variant = int.Parse(Console.ReadLine());
             switch (variant)

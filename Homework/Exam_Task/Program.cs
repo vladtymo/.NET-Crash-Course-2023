@@ -23,44 +23,6 @@ namespace Exam_Task
 		static async Task Main(string[] args)
 		{
 
-			//List<LecturerEntity> lectures = new List<LecturerEntity>();
-
-			//lectures.Add(new LecturerEntity("Michael", "Smith", $"qwe@gmail.com", "32434234", DateTime.UtcNow, "Rector", "FIT"));
-			//lectures.Add(new LecturerEntity("Angelina", "Smitanth", $"qwe313@gmail.com", "32434234", DateTime.UtcNow, "Rector", "FIT"));
-			//lectures.Add(new LecturerEntity("Roger", "Federer", $"qwefffff@gmail.com", "32434234", DateTime.UtcNow, "Rector", "FIT"));
-
-
-			//List<SubjectEntity> subjects = new List<SubjectEntity>();
-
-			//subjects.Add(new SubjectEntity("OOP", null, lectures[0]));
-			//subjects.Add(new SubjectEntity("Math", null, lectures[0]));
-			//subjects.Add(new SubjectEntity("Ukranian", null, lectures[1]));
-			//subjects.Add(new SubjectEntity("English", null, lectures[2]));
-
-			//List<StudentEntity> students = new List<StudentEntity>();
-			//for (int i = 0; i < 10; i++)
-			//{
-			//	students.Add(
-			//		new StudentEntity(
-			//			$"Jonas_{i + 1}",
-			//			$"Rogers_{i + 1}",
-			//			$"quartus{i}@gmail.com",
-			//			"3804232",
-			//			DateTime.Now,
-			//			new List<SubjectEntity>()
-			//			{
-			//				new SubjectEntity("OOP", null,new LecturerEntity("Michael", "Smith", $"qwe@gmail.com", "32434234", DateTime.UtcNow, "Rector", "FIT")
-			//				),
-			//				new SubjectEntity("Math", null, new LecturerEntity("Angelina", "Smitanth", $"qwe313@gmail.com", "32434234", DateTime.UtcNow, "Rector", "FIT")
-			//				),
-			//				new SubjectEntity("Ukranian", null, new LecturerEntity("Roger", "Federer", $"qwefffff@gmail.com", "32434234", DateTime.UtcNow, "Rector", "FIT")
-			//				),
-			//			}));
-			//}// для кожного студента додати предмети окремо
-			//List<GroupEntity> groups = new List<GroupEntity>
-			//{
-			//	new GroupEntity("KH-13-1", 3, students)
-			//};
 			dbContext = new ApplicationDbContext();
 			groupRepository = new GenericRepository<GroupEntity>(dbContext);
 			studentRepository = new GenericRepository<StudentEntity>(dbContext);
@@ -72,6 +34,41 @@ namespace Exam_Task
 			subjectService = new SubjectService(subjectRepository,studentService);
 			groupService = new GroupService(groupRepository);
 
+			Console.WriteLine("<============> Decanat System <============>");
+			while (true)
+			{
+				Console.WriteLine("1. Add new Entity");
+				Console.WriteLine("2. Delete Entity");
+				Console.WriteLine("3. Show Entity from Db");
+				Console.WriteLine("4. Show Student subjects");
+				Console.WriteLine("5. Give Mark");
+				Console.WriteLine("6. Exit\n");
+				Console.Write("Make choice: ");
+				int choice = int.Parse(Console.ReadLine());
+
+				switch(choice)
+				{
+					case 1:
+						Add();
+						break;
+					case 2:
+						// додати викладача у базу
+						break;
+					case 3:
+						// додати предмет у базу
+						break;
+					case 4:
+						// додати групу у базу
+						break;
+					case 5:
+						break;
+					case 6:
+						return;
+					default:
+						Console.WriteLine("Неправильний вибір. Спробуйте ще раз.");
+						break;
+				}
+			}
 
 			//dbContext.Groups.AddRange(groups);
 			//dbContext.SaveChanges();
@@ -98,9 +95,59 @@ namespace Exam_Task
 
 			//LecturerEntity lecturer = new LecturerEntity("Vovik", "Bidok", "vovan@gmail.com", "3142525", DateTime.Now, "Master", "FIT");
 			//await lecturerService.Create(lecturer);
-			await lecturerService.AddLecturerToTheSubject(30, 36);//Додати перевірку на те чи вже має ФК
+			//await lecturerService.AddLecturerToTheSubject(30, 36);//Додати перевірку на те чи вже має ФК
 			Console.WriteLine("Done");
 			Console.ReadKey();
+		}
+		public static void Add()
+		{
+			while (true)
+			{
+				Console.WriteLine("4. Add new Group");
+				Console.WriteLine("1. Add new Student");
+				Console.WriteLine("3. Add new Subject");
+				Console.WriteLine("2. Add new Lecturer");
+				Console.WriteLine("5. Exit\n");
+
+				int choice = int.Parse(Console.ReadLine());
+
+				switch (choice)
+				{
+					case 1:
+						Console.Write("Enter group abbreviation: ");
+						string name = Console.ReadLine();
+						Console.Write("Enter course number: ");
+						int course = int.Parse(Console.ReadLine());
+						GroupEntity group = new GroupEntity(name, course, null);
+						groupService.Create(group);
+						break;
+					case 2:
+						Console.Write("Enter FirstName: ");
+						string firstName = Console.ReadLine();
+						Console.Write("Enter LastName: ");
+						string lastName = Console.ReadLine();
+						Console.Write("Enter Email: ");
+						string email = Console.ReadLine();
+						Console.Write("Enter Phone: ");
+						string phone = Console.ReadLine();
+						Console.Write("Enter Date of Birth (yyyy.MM.dd): ");
+						DateTime dateTime = DateTime.Parse(Console.ReadLine());
+						StudentEntity student = new StudentEntity(firstName,lastName,email,phone,dateTime,null);
+						studentService.Create(student);	
+						break;
+					case 3:
+						// зберегти базу студентів до файлу
+						break;
+					case 4:
+						// зберегти базу груп до файлу
+						break;
+					case 5:
+						return;
+					default:
+						Console.WriteLine("Неправильний вибір. Спробуйте ще раз.");
+						break;
+				}
+			}
 		}
 	}
 }

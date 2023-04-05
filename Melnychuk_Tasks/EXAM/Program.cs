@@ -1,15 +1,262 @@
-﻿using System;
+﻿using EXAM;
+using System;
 using System.Diagnostics;
 using System.Globalization;
+using System.Threading;
 
 
 namespace Exam
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args){}
+        static void Main(string[] args)
+        {
+            BeautySalon beautySalon = new BeautySalon();
+            Greeting(ref beautySalon);
+        }
 
+        #region methods
+        public static void Greeting(ref BeautySalon beauty)
+        {
+            Console.WriteLine("Привіт ти попав у перукарню");
+            Console.WriteLine("\n\nдля початку тобі потрібно заповнити перукарню.\nтому давай почнемо");
+            Wait();
+            Console.Clear();
+            beauty.AddPerson();
+            Wait();
+            Console.Clear();
+            beauty.AddService();
+            Wait();
+            Console.Clear();
+            beauty.AddProduct();
+            Wait();
+            Console.Clear();
+            int process = 1;
+            while (process != 0) 
+            {
+               process = BarberShopInterface(ref beauty);
+            }
 
+        }
+        public static int Show(ref BeautySalon beauty)
+        {
+            Console.Clear();
+            Console.WriteLine("\t\tМеню");
+            Console.WriteLine("Показати список Persons \t-1");
+            Console.WriteLine("Показати список Services \t-2");
+            Console.WriteLine("Показати список Products \t-3");
+            Console.WriteLine("Показати список Orders \t-4");
+            Console.WriteLine("Повернутись назад \t- 0");
+
+            Console.Write("\n\n\n\tВаш вибір:");
+            int variant = int.Parse(Console.ReadLine());
+            switch (variant)
+            {
+                case 0: return 0;
+                case 1:
+                    Console.Clear();
+                    beauty.ShowPerson();
+                    Wait();
+                    break;
+                case 2:
+                    Console.Clear();
+                    beauty.ShowService();
+                    Wait();
+                    break;
+                    case 3:
+                    Console.Clear();
+                    beauty.ShowProduct();
+                    Wait(); 
+                    break;
+                    case 4:
+                    Console.Clear();
+                    beauty.ShowOrder(); Wait(); break;
+                default:
+                    break;
+            }
+            return 1;
+        }
+        public static int BarberShopInterface(ref BeautySalon beauty)
+        {
+            Console.Clear();
+            Console.WriteLine("\t\tМеню");
+            Console.WriteLine("Відкрити перелік списків об'єктів \t- 1");
+            Console.WriteLine("Додати \t- 2");
+            Console.WriteLine("Редагувати \t - 3");
+            Console.WriteLine("Видалити \t - 4");
+            Console.WriteLine("Виконати замовлення \t - 5");
+            Console.WriteLine("Завершити роботу \t- 0");
+
+            Console.Write("\n\n\n\tВаш вибір:");
+            int variant = int.Parse(Console.ReadLine());
+            int process2 = 1;
+            switch (variant)
+            {
+                case 0: return 0;
+                case 1:                   
+                    while (process2 != 0)
+                    {
+                        process2 = Show(ref beauty);
+                    }                   
+                    break;
+                case 2:                   
+                    while (process2 != 0)
+                    {
+                        process2 = Adder(ref beauty);
+                    }
+                    break;
+                case 3:
+                    while (process2 != 0)
+                    {
+                        process2 = Editor(ref beauty);
+                    }                   
+                    break;
+                case 4:                   
+                    while (process2 != 0)
+                    {
+                        process2 = Remover(ref beauty);
+                    }
+                    break;
+                case 5:
+                    while (process2 != 0)
+                    {
+                        beauty.ShowOrder();
+                        Console.Write("\n\n\n\tВаш вибір(номер ордеру):");
+                        int number = int.Parse(Console.ReadLine()) - 1;
+                        beauty.Orders[number].Work();
+                        beauty.Orders.RemoveAt(number);
+                        Console.Clear();
+                    }
+                    break;
+                        default:
+                    break;
+            }
+
+            return 1;
+        }
+        public static int Index()
+        {
+            Console.Write("Введіть номер об'єкта якого хочете змінити:");
+            
+            return int.Parse(Console.ReadLine()) - 1;
+        }
+        public static int Adder(ref BeautySalon beauty)
+        {
+            Console.Clear();
+
+            Console.WriteLine("\t\tМеню");
+            Console.WriteLine("Додати - Person  - 1");
+            Console.WriteLine("Додати - Service - 2");
+            Console.WriteLine("Додати - Product - 3");
+            Console.WriteLine("Додати - Order   - 4");
+            Console.Write("\n\n\n\tВаш вибір:");
+            int variant = int.Parse(Console.ReadLine());
+            switch (variant)
+            {
+                case 0: return 0;
+                case 1:
+                    beauty.ShowPerson();
+                    beauty.AddPerson();
+                    break;
+                case 2:
+                    beauty.ShowService();
+                    beauty.AddService();
+                    break;
+                case 3:
+                    beauty.ShowProduct();
+                    beauty.AddProduct();
+                    break;
+                case 4:
+                    beauty.ShowOrder();
+                    beauty.AddOrder();
+                    break;
+
+                default:
+                    break;
+            }
+
+            return 1;
+
+        }
+        public static int Remover(ref BeautySalon beauty)
+        {
+            Console.Clear();
+
+            Console.WriteLine("\t\tМеню");
+            Console.WriteLine("Видали - Person  - 1");
+            Console.WriteLine("Видали - Service - 2");
+            Console.WriteLine("Видали - Product - 3");
+            Console.WriteLine("Видали - Order   - 4");
+            Console.Write("\n\n\n\tВаш вибір:");
+            int variant = int.Parse(Console.ReadLine());
+            switch (variant)
+            {
+                case 0: return 0;
+                case 1:
+                    beauty.ShowPerson();
+                    beauty.RemovePerson();
+                    break;
+                case 2:
+                    beauty.ShowService();
+                    beauty.RemoveService();
+                    break;
+                case 3:
+                    beauty.ShowProduct();
+                    beauty.RemoveProduct();
+                    break;
+                case 4:
+                    beauty.ShowOrder();
+                    beauty.RemoveOrder();
+                    break;
+
+                default:
+                    break;
+            }
+
+            return 1;
+
+        }
+        public static int Editor(ref BeautySalon beauty)
+        {
+            Console.Clear();
+
+            Console.WriteLine("\t\tМеню");
+            Console.WriteLine("Редагувати - Person - 1");
+            Console.WriteLine("Редагувати - Service - 2");
+            Console.WriteLine("Редагувати - Product - 3");            
+            Console.Write("\n\n\n\tВаш вибір:");
+            int variant = int.Parse(Console.ReadLine());
+            switch (variant)
+            {
+                case 0: return 0;
+                case 1:
+                    beauty.ShowPerson();
+                    beauty.Persons[Index()].Edit();
+                    break;
+                case 2:
+                    beauty.ShowService();                   
+                    beauty.Services[Index()].Edit();
+                    break;
+                case 3:
+                    beauty.ShowProduct();                    
+                    beauty.Products[Index()].Edit();
+                    break;
+                
+                default:
+                    break;
+            }
+
+            return 1;
+            
+        }
+        public static void Wait()
+        {
+            Console.WriteLine("\n\n\n\n\n\n\t\t\tНатисність будь що для продовження..");
+            Console.ReadKey();
+        }
+        #endregion
+
+        #region Enums
         public enum Names 
         {
             Alexander = 1,
@@ -26,7 +273,6 @@ namespace Exam
             Margaret = 12
 
         }
-
         public enum Surnames
         {
             Adamson = 1,
@@ -38,412 +284,6 @@ namespace Exam
             Wood = 7,
             Smith = 8
    
-        }
-        
-
-        #region interface
-        public interface IEditor
-        {
-            void Edit();
-        }
-        #endregion
-
-        #region salon
-        class BeautySalon
-        {
-
-            public string Name { get; set; } = "Victoria";
-
-            public List<Person> Persons { get; set; } = new List<Person>();
-
-            public List<Product> Products { get; set; } = new List<Product>();
-
-            public List<Service> Services { get; set; } = new List<Service>();
-
-            public List<Order> Orders { get; set; } = new List<Order>();
-
-            public void ShowItems<T>(List<T> items, Action<T> printMethod)
-            {
-                Console.WriteLine($"Список елементів типу {typeof(T).Name}:");
-                foreach (T item in items)
-                {
-                    printMethod(item);
-                }
-            }
-
-            //Console.Clear();
-            //////////////////////////////
-            public void ShowPerson(){ShowItems(Persons, p => p.PrintInfo());}
-            public void AddPerson()
-            {
-                Console.Clear();
-                ShowPerson();
-                Console.WriteLine("Виберіть кого ви хочете додати:");
-                Console.Write("Якщо хочете додати Майстра введіть 1/Клієнта 2:");
-                int b = int.Parse(Console.ReadLine());
-                if (b == 1)
-                {
-                    Master master = new Master();
-                    Persons.Add(master);
-                }
-                else if (b == 2)
-                {
-                    Console.WriteLine("Введіть кількість грошей:");
-                    int money = int.Parse(Console.ReadLine());
-                    Client client = new Client(money);
-                    Persons.Add(client);
-                }
-                Console.Clear();
-            }
-            public void RemovePerson()
-            {
-                Console.Clear();
-                ShowPerson();
-                Console.WriteLine("Виберіть кого ви хочете видалити");
-                Console.Write($"Введіть індекс:");
-                int idRemovePerson = int.Parse(Console.ReadLine());
-                Persons.RemoveAt(idRemovePerson);
-                Console.Clear();
-            }
-
-            public void ShowProduct() { ShowItems(Products, p => p.PrintInfo()); }
-            public void AddProduct()
-            {
-                Console.Clear();
-
-                ShowProduct();
-                Console.WriteLine("Введіть нове ім'я:");
-                string name = Console.ReadLine();
-                Console.WriteLine("Введіть нову варітсть:");
-                int price = int.Parse(Console.ReadLine());
-                Product product = new Product(name,price);
-                Products.Add(product);
-                Console.Clear();
-            }
-            public void RemoveProduct()
-            {
-                Console.Clear();
-                ShowProduct();
-                Console.WriteLine("Виберіть що ви хочете видалити");
-                Console.Write($"Введіть індекс:");
-                int idRemoveProduct = int.Parse(Console.ReadLine());
-                Products.RemoveAt(idRemoveProduct);
-                Console.Clear();
-            }
-            //////////////////////////////
-            public void ShowService() { ShowItems(Services, p => p.PrintInfo()); }
-            public void AddService()
-            {
-                Console.Clear();
-                ShowService();
-                Console.WriteLine("Виберіть що ви хочете додати:");
-       
-                Console.Write("Якщо хочете додати Haircut введіть 1/Coloring 2/Manicure 3/CosmeticProcedure 4 :");
-                int b = int.Parse(Console.ReadLine());
-                Console.WriteLine("Введіть прайс :");
-                int price = int.Parse(Console.ReadLine());
-                Console.WriteLine("Введіть тип:");
-                string type = Console.ReadLine();
-                switch (b)
-                {
-                    case 1:
-                        Haircut haircut = new Haircut(type, price);
-                        Services.Add(haircut);
-                        break;
-                    case 2:
-                        Coloring coloring = new Coloring(type, price);
-                        Services.Add(coloring);
-                        break;
-                    case 3:
-                        string additionalServices = Console.ReadLine();
-                        Manicure manicure = new Manicure(type, price, additionalServices);
-                        Services.Add(manicure);
-                        break;
-                    case 4:
-                        int duration = int.Parse(Console.ReadLine());
-                        CosmeticProcedure cosmeticProcedure = new CosmeticProcedure(type, price, duration);
-                        Services.Add(cosmeticProcedure);
-                        break;
-                    default: break;
-                }
-                Console.Clear();
-            }
-            public void RemoveService() 
-            {
-                Console.Clear();
-                ShowService();
-                Console.WriteLine("Виберіть що ви хочете видалити");
-                Console.Write($"Введіть індекс:");
-                int idRemoveService = int.Parse(Console.ReadLine());
-                Services.RemoveAt(idRemoveService);
-                Console.Clear();
-            }
-            //////////////////////////////
-            public void ShowOrder() { ShowItems(Orders, p => p.PrintInfo()); }
-            public void AddOrder()
-            {
-                Console.Clear();
-                ShowOrder();
-                Console.WriteLine("Виберіть клієнта в списку усіх персон:");
-                ShowPerson();
-                int c = int.Parse(Console.ReadLine());
-                Client client = (Client)Persons[c];
-                ////////
-                Console.WriteLine("Виберіть послугу в списку усіх персон:");
-                ShowService();
-                int s = int.Parse(Console.ReadLine());
-                Service service = Services[s];
-                ////////
-                Console.WriteLine("Введіть дату (format: dd/MM/yyyy): ");
-                string input = Console.ReadLine();
-                DateTime date = DateTime.ParseExact(input, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-                //////
-                Console.WriteLine("Виберіть клієнта в списку усіх персон:");
-                ShowPerson();
-                int p = int.Parse(Console.ReadLine());
-                Master master = (Master)Persons[c];
-
-
-                Order order = new Order(client, service, date, master);
-                Console.Clear();
-            }
-            public void RemoveOrder()
-            {
-                Console.Clear();
-                ShowOrder();
-                Console.WriteLine("Виберіть що ви хочете видалити");
-                Console.Write($"Введіть індекс:");
-                int idRemoveOrder = int.Parse(Console.ReadLine());
-                Orders.RemoveAt(idRemoveOrder);
-                Console.Clear();
-            }
-
-        }
-
-
-        public class Order
-        {
-            public Client Client { get; set; }
-            public Service Service { get; set; }
-            public DateTime Date { get; set; }
-            public Master Performer { get; set; }
-
-            public Order(Client client, Service service, DateTime date, Master performer)
-            {
-                Client = client;
-                Service = service;
-                Date = date;
-                Performer = performer;
-            }
-
-            public void PrintInfo()
-            {
-                Console.WriteLine($"Клієнт: {Client.Name} {Client.Surname} | Послуга: {Service.Name} | Дата: {Date.ToString("dd/MM/yyyy")} | Виконавець: {Performer.Name} {Performer.Surname}");
-            }
-        }
-
-        #endregion
-
-        #region services
-        public abstract class Service : IEditor
-        {
-            public string Name { get; set; }
-            public int Price { get; set; }
-            public string Type { get; set; }
-            public Service(string name, int price, string type)
-            {
-                Name = name;
-                Price = price;
-                Type = type;
-            }
-
-            public virtual void PrintInfo() 
-            {
-                Console.WriteLine($"{Name}: {Price} грн");
-            }
-            public virtual void Edit()
-            {
-                Console.WriteLine("Редагування {0}",Name);
-                Console.Write("Введіть но назву:");
-                this.Name = Console.ReadLine();
-                Console.Write("\nВведіть нову ціну:");
-                this.Price = int.Parse(Console.ReadLine());
-            }   
-
-        }
-
-
-        class Haircut : Service
-        {
-            public Haircut(string type, int price) : base("Стрижка", price, type) { }
-
-            public override void PrintInfo()
-            {
-                Console.WriteLine($"{Name} ({Type}): {Price} грн");
-            }
-
-            public override void Edit()
-            {
-                base.Edit();
-                Console.Write("\nВведіть новий тип:");
-                this.Type = Console.ReadLine();
-            }  
-        }
-        class Coloring : Service
-        {
-            public Coloring(string type, int price) : base("Фарбування", price, type) { }
-
-            public override void PrintInfo()
-            {
-                Console.WriteLine($"{Name} ({Type}): {Price} грн");
-            }
-       
-            public override void Edit() 
-            {
-                base.Edit();
-                Console.Write("\nВведіть новий тип:");
-                this.Type = Console.ReadLine();
-            }
-        }
-        class Manicure : Service
-        {
-            public string AdditionalServices { get; set; } 
-
-            public Manicure(string type, int price, string additionalServices) : base("Манікюр", price, type)
-            {
-                AdditionalServices = additionalServices;
-            }
-
-            public override void PrintInfo()
-            {
-                Console.WriteLine($"{Name} ({Type}): {Price} грн, Додаткові послуги: {AdditionalServices}");
-            }
-
-            public override void Edit() 
-            {
-                base.Edit();
-                Console.Write("\nВведіть новий тип:");
-                this.Type = Console.ReadLine();
-                Console.Write("\nВведіть додаткові параметри:");
-                this.AdditionalServices = Console.ReadLine();
-            }
-
-        }
-        class CosmeticProcedure : Service
-        { 
-            public int Duration { get; set; } 
-
-            public CosmeticProcedure(string type, int duration, int price) : base("Косметична процедура", price, type)
-            {
-                Duration = duration;
-            }
-
-            public override void PrintInfo()
-            {
-                Console.WriteLine($"{Name} ({Type}, {Duration} хв): {Price} грн");
-            }
-           
-            public override void Edit() 
-            {
-                base.Edit();
-                Console.Write("\nВведіть новий тип:");
-                this.Type = Console.ReadLine();
-                Console.Write("\nВведіть нову тривалість процедури:");
-                this.Duration = int.Parse(Console.ReadLine());
-            }         
-        }
-        #endregion
-
-        #region persons
-        public abstract class Person : IEditor
-        {
-            public string Name { get; set; }
-            public string Surname { get; set; }
-            public string PhoneNumber { get; set; }
-            public string Type { get; set; }
-            public virtual void Edit()
-            {                
-                PrintInfo();
-                Console.WriteLine("Введіть нове ім'я:");
-                Name = Console.ReadLine();
-                Console.WriteLine("Введіть нове прізвище:");
-                Surname = Console.ReadLine();
-                Console.WriteLine("Введіть новий номер:");
-            }
-            public virtual void PrintInfo()
-            { 
-                Console.WriteLine($"Type: {Type}| Name: {Name}\t| Surname: {Surname}\t| Phonenumber: {PhoneNumber}\t| ");
-
-            }
-
-            public Person()
-            {
-                Random rand = new Random();
-                Names randomName = (Names)Enum.GetValues(typeof(Names)).GetValue(rand.Next(Enum.GetValues(typeof(Names)).Length));
-                Name = randomName.ToString();
-
-                Surnames surname = (Surnames)Enum.GetValues(typeof(Surnames)).GetValue(rand.Next(Enum.GetValues(typeof(Surnames)).Length));
-                Surname = surname.ToString();
-
-                PhoneNumber = "+380"; 
-                PhoneNumber += rand.Next(66, 99).ToString(); 
-                PhoneNumber += rand.Next(1000000, 9999999).ToString();
-
-            }
-        }
-
-        public class Client : Person
-        {
-            public Client(int money) : base()
-            {
-                Type = "Client";
-                Money = money;
-            }
-            public int Money { get; set; }
-
-            public override void Edit()
-            {
-                base.Edit();
-                Console.WriteLine("Введіть кількість грошей:");
-                Money = int.Parse(Console.ReadLine());
-            }
-        }
-        public class Master : Person
-        {
-            public Master(): base()
-            {
-                Type = "Master"; 
-            }
-            public void Work()
-            {
-                Console.WriteLine($"Майстер {Name} працює.");
-            }
-        }
-        #endregion
-
-        #region products
-        public  class Product : IEditor
-        {
-            public string Name { get; set; }
-            public int Price { get; set; }
-
-            public Product(string name,int price)
-            {
-                Name = name;
-                Price = price;
-            }
-            public void Edit()
-            {
-                PrintInfo();
-                Console.WriteLine("Введіть нове ім'я:");
-                Name = Console.ReadLine();
-                Console.WriteLine("Введіть нову варітсть:");
-                Price = int.Parse( Console.ReadLine() );
-            }
-            public  void PrintInfo()
-            {
-                Console.WriteLine($"Name: {Name}\t| Price: {Price}\t| ");
-            }
         }
         #endregion
 

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Exam.Entities
 {
-    [Serializable]
     public class User
     {
         public int Id { get; set; }

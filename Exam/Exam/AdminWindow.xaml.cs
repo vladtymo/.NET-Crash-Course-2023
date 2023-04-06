@@ -208,7 +208,7 @@ namespace Exam
                 txtUserDescription.Text = "User description";
                 foreach (var user in context.Users)
                     if (txtUserSearch.Text == user.UserName)
-                        lbPizza.Items.Add(user.UserName);
+                        lbUsers.Items.Add(user.UserName);
             }
             else
             {

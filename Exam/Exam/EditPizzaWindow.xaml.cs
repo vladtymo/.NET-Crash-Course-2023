@@ -105,7 +105,7 @@ namespace Exam
                     window.Show();
                     this.Close();
                 }
-                catch(Exception ex) { Console.WriteLine(ex.Message); }
+                catch(Exception ex) { MessageBox.Show(ex.Message); }
             }
         }
 

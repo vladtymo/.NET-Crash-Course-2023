@@ -21,7 +21,6 @@ namespace Exam_Task
 		private static IGroupService groupService;
 		private static IStudentService studentService;
 		private static ILecturerService lecturerService;
-
 		private static IDecanatSystem decanatSystem;
 		static async Task Main(string[] args)
 		{
@@ -40,7 +39,6 @@ namespace Exam_Task
 			decanatSystem = new DecanatService(groupService, studentService,subjectService,lecturerService);
 
 			await decanatSystem.Run();
-		}
-		
+		}	
 	}
 }

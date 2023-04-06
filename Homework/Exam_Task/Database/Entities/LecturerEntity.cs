@@ -18,5 +18,14 @@ namespace Exam_Task.Database.Entities
 
 		public int? SubjectFK { get; set; }
 		public SubjectEntity Subject { get; set; }
+
+		public override string ToString()
+		{
+			return
+				$"ID[{Id}] of Lecturer\n" +
+				base.ToString() +
+				$"Academic Rank: {AcademicRank}\n" +
+				$"Department: {Department}\n";
+		}
 	}
 }

@@ -66,6 +66,10 @@ namespace Exam_Task.Services.StudentServices
 				return true;
 			}
 		}
-	    
+
+		public Task<bool> Delete(int Id)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

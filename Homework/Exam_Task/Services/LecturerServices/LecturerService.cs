@@ -9,14 +9,27 @@ namespace Exam_Task.Services.LecturerServices
 	{
 		private readonly IGenericRepository<LecturerEntity> _lecturerRepository;
 		private readonly IGenericRepository<SubjectEntity> _subjectRepository;
-		public LecturerService(IGenericRepository<LecturerEntity> lecturerRepository, IGenericRepository<SubjectEntity> subjectRepository)
+		private readonly IGenericRepository<StudentEntity> _studentRepository;
+		public LecturerService(IGenericRepository<LecturerEntity> lecturerRepository, IGenericRepository<SubjectEntity> subjectRepository, IGenericRepository<StudentEntity> studentRepository)
 		{
 			_lecturerRepository = lecturerRepository;
 			_subjectRepository= subjectRepository;
+			_studentRepository = studentRepository;
 		}
 		public async Task Create(LecturerEntity lecturer)
 		{
 			await _lecturerRepository.Create(lecturer);
+		}
+		public async Task<bool> Delete(int Id)
+		{
+			LecturerEntity dbRecord = await _lecturerRepository.Table
+				.FirstOrDefaultAsync(g => g.Id == Id);
+			if (dbRecord == null)
+			{
+				return false;
+			}
+			await _lecturerRepository.Delete(dbRecord);
+			return true;
 		}
 		public async Task Update(LecturerEntity subject)
 		{
@@ -32,6 +45,30 @@ namespace Exam_Task.Services.LecturerServices
 				return null;
 			}
 			return dbRecord;
+		}
+		public async Task<List<LecturerEntity>> GetByStudentId(int studentId)
+		{
+			StudentEntity student = await _studentRepository.GetById(studentId);
+			if(student == null)
+			{
+				return null;
+			}
+			List<LecturerEntity> lecturers = new List<LecturerEntity>();
+
+			// Loop through the array of Subject objects that the Student has
+			foreach (SubjectEntity subject in student.Subjects)
+			{
+				// Get the Lecturer object of the Subject
+				LecturerEntity lecturer = await _lecturerRepository.GetById(subject.Lecturer.Id);
+
+				if (lecturer != null)
+				{
+					// Add the Lecturer object to the List<LecturerEntity>
+					lecturers.Add(lecturer);
+				}
+			}
+
+			return lecturers;
 		}
 		public async Task<List<LecturerEntity>> GetAllAvaliable()
 		{

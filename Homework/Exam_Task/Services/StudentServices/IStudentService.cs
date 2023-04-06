@@ -6,6 +6,7 @@ namespace Exam_Task.Services.StudentServices
 	{
 		Task Create(StudentEntity student);
 		Task Update(StudentEntity student);
+		Task<bool> Delete(int Id);
 		Task<List<StudentEntity>> GetAll();
 		Task<StudentEntity> GetById(int id);
 		Task<bool> AddStudentToTheGroup(int groupId, int studentId);

@@ -6,6 +6,7 @@ namespace Exam_Task.Services.GroupServices
 	public interface IGroupService
 	{
 		Task Create(GroupEntity group);
+		Task<bool> Delete(int Id);
 		Task<List<GroupEntity>> GetAll();
 		Task<GroupEntity> GetById(int id);
 		Task Update(GroupEntity group);

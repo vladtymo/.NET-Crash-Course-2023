@@ -16,5 +16,13 @@
 
 		public int? StudentFK { get; set; }
 		public StudentEntity Student { get; set; }
+
+		public override string ToString()
+		{
+			string markString = (Mark.HasValue) ? Mark.Value.ToString() : "Dont Has Mark";
+			return $"ID[{Id}] of Subject\n" +
+				$"Subject Name: {Name}\n" +
+				 $"Mark: {markString}\n";
+		}
 	}
 }

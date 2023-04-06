@@ -104,5 +104,10 @@ namespace Exam_Task.Services.SubjectServices
 				return true;
 			}
 		}
+
+		public Task<bool> Delete(int Id)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

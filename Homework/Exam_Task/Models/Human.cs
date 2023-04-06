@@ -16,5 +16,14 @@
 		public string Email { get; set; }
 		public string Phone { get; set; }
 		public DateTime BirthDate { get; set; }
+		public override string ToString()
+		{
+			return
+				$"First Name: {FirstName}\n" +
+				$"Last Name: {LastName}\n" +
+				$"Email: {Email}\n" +
+				$"Phone: {Phone}\n" +
+				$"Birth Date: {BirthDate:d}\n";
+		}
 	}
 }

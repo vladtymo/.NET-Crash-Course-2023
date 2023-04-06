@@ -30,7 +30,7 @@ namespace Exam_Task
 			lecturerRepository = new GenericRepository<LecturerEntity>(dbContext);
 
 			studentService = new StudentService(studentRepository,groupRepository);
-			lecturerService = new LecturerService(lecturerRepository,subjectRepository);
+			lecturerService = new LecturerService(lecturerRepository,subjectRepository,studentRepository);
 			subjectService = new SubjectService(subjectRepository,studentService);
 			groupService = new GroupService(groupRepository);
 
@@ -38,7 +38,7 @@ namespace Exam_Task
 			while (true)
 			{
 				Console.WriteLine("1. Add new Entity");
-				Console.WriteLine("2. Delete Entity");
+				Console.WriteLine("2. Delete Entity by Id");
 				Console.WriteLine("3. Show Entity from Db");
 				Console.WriteLine("4. Show Student subjects");
 				Console.WriteLine("5. Give Mark");
@@ -52,15 +52,16 @@ namespace Exam_Task
 						Add();
 						break;
 					case 2:
-						// додати викладача у базу
+						Delete();
 						break;
 					case 3:
-						// додати предмет у базу
+						await Show();
 						break;
 					case 4:
-						// додати групу у базу
+						await ShowStudentsSubject();
 						break;
 					case 5:
+						await GiveMark();
 						break;
 					case 6:
 						return;
@@ -99,55 +100,6 @@ namespace Exam_Task
 			Console.WriteLine("Done");
 			Console.ReadKey();
 		}
-		public static void Add()
-		{
-			while (true)
-			{
-				Console.WriteLine("4. Add new Group");
-				Console.WriteLine("1. Add new Student");
-				Console.WriteLine("3. Add new Subject");
-				Console.WriteLine("2. Add new Lecturer");
-				Console.WriteLine("5. Exit\n");
-
-				int choice = int.Parse(Console.ReadLine());
-
-				switch (choice)
-				{
-					case 1:
-						Console.Write("Enter group abbreviation: ");
-						string name = Console.ReadLine();
-						Console.Write("Enter course number: ");
-						int course = int.Parse(Console.ReadLine());
-						GroupEntity group = new GroupEntity(name, course, null);
-						groupService.Create(group);
-						break;
-					case 2:
-						Console.Write("Enter FirstName: ");
-						string firstName = Console.ReadLine();
-						Console.Write("Enter LastName: ");
-						string lastName = Console.ReadLine();
-						Console.Write("Enter Email: ");
-						string email = Console.ReadLine();
-						Console.Write("Enter Phone: ");
-						string phone = Console.ReadLine();
-						Console.Write("Enter Date of Birth (yyyy.MM.dd): ");
-						DateTime dateTime = DateTime.Parse(Console.ReadLine());
-						StudentEntity student = new StudentEntity(firstName,lastName,email,phone,dateTime,null);
-						studentService.Create(student);	
-						break;
-					case 3:
-						// зберегти базу студентів до файлу
-						break;
-					case 4:
-						// зберегти базу груп до файлу
-						break;
-					case 5:
-						return;
-					default:
-						Console.WriteLine("Неправильний вибір. Спробуйте ще раз.");
-						break;
-				}
-			}
-		}
+		
 	}
 }

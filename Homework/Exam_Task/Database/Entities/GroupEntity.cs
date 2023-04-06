@@ -13,5 +13,13 @@
 		public string GroupAbbreviation { get; set; }
 		public int Course { get; set; }
 		public ICollection<StudentEntity> Students { get; set; }
+
+		public override string ToString()
+		{
+			return
+				$"ID[{Id}] of Group\n"+
+				$"Group abbreviation: {GroupAbbreviation}\n" +
+				$"Course: {Course}\n";
+		}
 	}
 }

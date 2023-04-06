@@ -53,7 +53,7 @@ namespace Final_Task
                 if (examGrade > 0 && examGrade <= 5) { examGrades.Add(subject, examGrade); }
                 else Console.WriteLine("The grade for the exam must be >1 and <=5");
             }
-            else Console.WriteLine($"Student {LastName} {FirstName} does ot study the subject \"{subject}\"");
+            else Console.WriteLine($"Student {LastName} {FirstName} does not study the subject \"{subject}\"");
         }
         public void GetExamGrades()
         {
@@ -67,7 +67,7 @@ namespace Final_Task
         public void GetExamGradeBySubject(Subject subject)
         {
             if (examGrades.ContainsKey(subject)) Console.WriteLine($"{subject} exam grade {examGrades[subject]}");
-            else Console.WriteLine($"Student {LastName} {FirstName} does ot study the subject \"{subject}\"");
+            else Console.WriteLine($"Student {LastName} {FirstName} does not study the subject \"{subject}\"");
         }
     }
     

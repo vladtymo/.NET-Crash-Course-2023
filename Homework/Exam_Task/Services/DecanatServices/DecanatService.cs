@@ -3,20 +3,24 @@ using Exam_Task.Services.GroupServices;
 using Exam_Task.Services.LecturerServices;
 using Exam_Task.Services.StudentServices;
 using Exam_Task.Services.SubjectServices;
+using System.ComponentModel;
 
 namespace Exam_Task.Services.DecanatServices
 {
-	public class DecanatService
+	public class DecanatService : IDecanatSystem
 	{
 		private readonly IGroupService groupService;
 		private readonly IStudentService studentService;
 		private readonly ISubjectService subjectService;
 		private readonly ILecturerService lecturerService;
-	    public DecanatService(IGroupService _groupService,IStudentService _studentService)
+	    public DecanatService(IGroupService _groupService,IStudentService _studentService,ISubjectService _subjectService,ILecturerService _lecturerService)
 		{
-
+            groupService = _groupService;
+			studentService = _studentService;
+			subjectService = _subjectService;
+			lecturerService = _lecturerService;
 		}
-		public async Task GiveMark()
+		private async Task GiveMark()
 		{
 			while (true)
 			{
@@ -56,7 +60,7 @@ namespace Exam_Task.Services.DecanatServices
 				}
 			}
 		}
-		public async Task ShowStudentsSubject()
+		private async Task ShowStudentsSubject()
 		{
 			while (true)
 			{
@@ -99,22 +103,68 @@ namespace Exam_Task.Services.DecanatServices
 				Console.WriteLine("2. Display Students");
 				Console.WriteLine("3. Display Subjects");
 				Console.WriteLine("4. Display Lecturers");
-				Console.WriteLine("5. Back\n");
+				Console.WriteLine("5. Display Student`s Subjects");
+				Console.WriteLine("6. Back\n");
+				Console.Write("Make choice: ");
 				int choice = int.Parse(Console.ReadLine());
 
 				switch (choice)
 				{
 					case 1:
-						foreach (GroupEntity group in await groupService.GetAll()) Console.WriteLine(group.ToString());
+						await DisplayGroups();
 						break;
 					case 2:
-						foreach (StudentEntity student in await studentService.GetAll()) Console.WriteLine(student.ToString());
+						await DisplayStudents();
 						break;
 					case 3:
-						foreach (SubjectEntity subject in await subjectService.GetAll()) Console.WriteLine(subject.ToString());
+						await DisplaySubjects();
 						break;
 					case 4:
+						await DisplayLecturers();
+						break;
+					case 5:
+						await ShowStudentsSubject();
+						break;
+					case 6:
+						return;
+					default:
+						Console.WriteLine("Not right choose. Try again.");
+						break;
+				}
+			}
+
+		}
+		private async Task DisplayLecturers()
+		{
+			while (true)
+			{
+				Console.WriteLine("1. Display all Lecturers");
+				Console.WriteLine("2. Display Lecturers by Student Id");
+				Console.WriteLine("3. Display all avaliable");
+				Console.WriteLine("4. Display Lecturer by Id");
+				Console.WriteLine("5. Back\n");
+				Console.Write("Make choice: ");
+				int choiceStudent = int.Parse(Console.ReadLine());
+
+				switch (choiceStudent)
+				{
+					case 1:
 						foreach (LecturerEntity lecturer in await lecturerService.GetAll()) Console.WriteLine(lecturer.ToString());
+						break;
+					case 2:
+						Console.Write("Enter Student Id: ");
+						int studentId = int.Parse(Console.ReadLine());
+						List<LecturerEntity> lctr = await lecturerService.GetByStudentId(studentId);
+						foreach (LecturerEntity lecturer in lctr) Console.WriteLine(lecturer.ToString());
+						break;
+					case 3:
+						foreach (LecturerEntity lect in await lecturerService.GetAllAvaliable()) Console.WriteLine(lect.ToString());
+						break;
+					case 4:
+						Console.Write("Enter Lecturer Id: ");
+						int lecId = int.Parse(Console.ReadLine());
+						LecturerEntity let = await lecturerService.GetById(lecId);
+						Console.WriteLine(let.ToString());
 						break;
 					case 5:
 						return;
@@ -123,7 +173,103 @@ namespace Exam_Task.Services.DecanatServices
 						break;
 				}
 			}
+		}
+		private async Task DisplayGroups()
+		{
+			while (true)
+			{
+				Console.WriteLine("1. Display all Groups");
+				Console.WriteLine("2. Display Group by Id");
+				Console.WriteLine("3. Back\n");
+				Console.Write("Make choice: ");
+				int choiceStudent = int.Parse(Console.ReadLine());
 
+				switch (choiceStudent)
+				{
+					case 1:
+						foreach (GroupEntity group in await groupService.GetAll()) Console.WriteLine(group.ToString());
+						break;
+					case 2:
+						Console.Write("Enter Group Id: ");
+						int groupId = int.Parse(Console.ReadLine());
+						GroupEntity grp = await groupService.GetById(groupId);
+						Console.WriteLine(grp.ToString());
+						break;
+					case 3:
+						return;
+					default:
+						Console.WriteLine("Not right choose. Try again.");
+						break;
+				}
+			}
+		}
+		private async Task DisplayStudents()
+		{
+			while (true)
+			{
+				Console.WriteLine("1. Display all Subjects");
+				Console.WriteLine("2. Display Student by Id");
+				Console.WriteLine("3. Back\n");
+				Console.Write("Make choice: ");
+				int choiceStudent = int.Parse(Console.ReadLine());
+
+				switch (choiceStudent)
+				{
+					case 1:
+						foreach (StudentEntity student in await studentService.GetAll()) Console.WriteLine(student.ToString());
+						break;
+					case 2:
+						Console.Write("Enter Student Id: ");
+						int studentId = int.Parse(Console.ReadLine());
+						StudentEntity stud= await studentService.GetById(studentId);
+						if(stud != null)
+						Console.WriteLine(stud.ToString());
+						break;
+					case 3:
+						return;
+					default:
+						Console.WriteLine("Not right choose. Try again.");
+						break;
+				}
+			}
+		}
+		private async Task DisplaySubjects()
+		{
+			while (true)
+			{
+				Console.WriteLine("1. Display all Subjects");
+				Console.WriteLine("2. Display all Subjects with Mark");
+				Console.WriteLine("3. Display all Subjects with no Mark");
+				Console.WriteLine("4. Display Subject by Id");
+				Console.WriteLine("5. Back\n");
+				Console.Write("Make choice: ");
+				int choiceSubject = int.Parse(Console.ReadLine());
+
+				switch (choiceSubject)
+				{
+					case 1:
+						foreach (SubjectEntity subject in await subjectService.GetAll()) Console.WriteLine(subject.ToString());
+						break;
+					case 2:
+						foreach (SubjectEntity subject in await subjectService.GetAllRated()) Console.WriteLine(subject.ToString());
+						break;
+					case 3:
+						foreach (SubjectEntity subject in await subjectService.GetAllEmpty()) Console.WriteLine(subject.ToString());
+						break;
+					case 4:
+						Console.Write("Enter Subject Id: ");
+						int subjectId = int.Parse(Console.ReadLine());
+						SubjectEntity subj = await subjectService.GetById(subjectId);
+						if(subj != null)
+						Console.WriteLine(subj.ToString());
+						break;
+					case 5:
+						return;
+					default:
+						Console.WriteLine("Not right choose. Try again.");
+						break;
+				}
+			}
 		}
 		public async Task Delete()
 		{
@@ -162,6 +308,58 @@ namespace Exam_Task.Services.DecanatServices
 						int lectId = int.Parse(Console.ReadLine());
 						await lecturerService.Delete(lectId);
 						Console.WriteLine("Done");
+						break;
+					case 5:
+						return;
+					default:
+						Console.WriteLine("Not right choose. Try again.");
+						break;
+				}
+			}
+		}
+		public async Task EditEntities()
+		{
+			while (true)
+			{
+				Console.WriteLine("1. Add Student to the Group");
+				Console.WriteLine("2. Add Subject to the Student");
+				Console.WriteLine("3. Add Lecturer to the Subject");
+				Console.WriteLine("4. Give Mark to the Subject");
+				Console.WriteLine("5. Back\n");
+				Console.Write("Make choice: ");
+				int choice = int.Parse(Console.ReadLine());
+
+				switch (choice)
+				{
+					case 1:
+						Console.WriteLine("Enter Group Id: ");
+						int groupId = int.Parse(Console.ReadLine());
+						Console.WriteLine("Enter Student Id: ");
+						int studId = int.Parse(Console.ReadLine());
+
+						await studentService.AddStudentToTheGroup(groupId, studId);
+						Console.WriteLine("Done");
+						break;
+					case 2:
+						Console.WriteLine("Enter Student Id: ");
+						int studentId = int.Parse(Console.ReadLine());
+						Console.WriteLine("Enter Subject Id: ");
+						int subjectId = int.Parse(Console.ReadLine());
+
+						await subjectService.AddSubjectToTheStudent(studentId, subjectId);
+						Console.WriteLine("Done");
+						break;
+					case 3:
+						Console.WriteLine("Enter Student Id: ");
+						int lectId = int.Parse(Console.ReadLine());
+						Console.WriteLine("Enter Subject Id: ");
+						int subjId = int.Parse(Console.ReadLine());
+
+						await lecturerService.AddLecturerToTheSubject(subjId, lectId);
+						Console.WriteLine("Done");
+						break;
+					case 4:
+						await GiveMark();
 						break;
 					case 5:
 						return;

@@ -35,11 +35,23 @@ namespace Exam_Task.Services.SubjectServices
 			}
 			return dbRecord;
 		}
-		public async Task<List<SubjectEntity>> GetAllEmpty()
+		public async Task<List<SubjectEntity>> GetAllRated()
 		{
 			List<SubjectEntity> dbRecord = await _subjectRepository.Table
 				.Include(lect => lect.Lecturer)
 				.Where(subj => subj.Mark.HasValue)
+				.ToListAsync();
+			if (dbRecord == null)
+			{
+				return null;
+			}
+			return dbRecord;
+		}
+		public async Task<List<SubjectEntity>> GetAllEmpty()
+		{
+			List<SubjectEntity> dbRecord = await _subjectRepository.Table
+				.Include(lect => lect.Lecturer)
+				.Where(subj => subj.Mark == null)
 				.ToListAsync();
 			if (dbRecord == null)
 			{

@@ -54,20 +54,17 @@ namespace Exam_Task.Services.LecturerServices
 				return null;
 			}
 			List<LecturerEntity> lecturers = new List<LecturerEntity>();
-
-			// Loop through the array of Subject objects that the Student has
-			foreach (SubjectEntity subject in student.Subjects)
+			if (student.Subjects != null)
 			{
-				// Get the Lecturer object of the Subject
-				LecturerEntity lecturer = await _lecturerRepository.GetById(subject.Lecturer.Id);
-
-				if (lecturer != null)
+				foreach (SubjectEntity subject in student.Subjects)
 				{
-					// Add the Lecturer object to the List<LecturerEntity>
-					lecturers.Add(lecturer);
+					LecturerEntity lecturer = await _lecturerRepository.GetById(subject.Lecturer.Id);
+					if (lecturer != null)
+					{
+						lecturers.Add(lecturer);
+					}
 				}
 			}
-
 			return lecturers;
 		}
 		public async Task<List<LecturerEntity>> GetAllAvaliable()

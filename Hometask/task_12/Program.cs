@@ -36,7 +36,7 @@
             return arm1.Health > 0 ? true : false;
 
         }
-        static bool Batle(List<CombatVehicle> arm1, List<CombatVehicle> arm2)
+        static bool Battle(List<CombatVehicle> arm1, List<CombatVehicle> arm2)
         {
             while (arm1.Count > 0 && arm2.Count > 0)
             {
@@ -70,7 +70,7 @@
                 arm.ShowInfo();
             }
 
-            if(Batle(arm1,arm2))
+            if(Battle(arm1,arm2))
                 Console.WriteLine("Win first arm!!!");
             else
                 Console.WriteLine("Win second arm!!!");

@@ -25,10 +25,10 @@ namespace EXAM
         }
         public virtual void Edit()
         {
-            Console.WriteLine("Редагування {0}", Name);
-            Console.Write("Введіть но назву:");
+            Console.Write("\n\t\tРедагування {0}", Name);
+            Console.Write("\n\t\tВведіть нову назву: ");
             this.Name = Console.ReadLine();
-            Console.Write("\nВведіть нову ціну:");
+            Console.Write("\n\t\tВведіть нову ціну:");
             this.Price = int.Parse(Console.ReadLine());
         }
 

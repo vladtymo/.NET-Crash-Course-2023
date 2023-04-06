@@ -16,11 +16,11 @@ namespace EXAM
         public virtual void Edit()
         {
             PrintInfo();
-            Console.WriteLine("Введіть нове ім'я:");
+            Console.Write("\n\t\tВведіть нове ім'я: ");
             Name = Console.ReadLine();
-            Console.WriteLine("Введіть нове прізвище:");
+            Console.Write("\n\t\tВведіть нове прізвище: ");
             Surname = Console.ReadLine();
-            Console.WriteLine("Введіть новий номер:");
+            Console.Write("\n\t\tВведіть новий номер: ");
         }
         public virtual void PrintInfo()
         {

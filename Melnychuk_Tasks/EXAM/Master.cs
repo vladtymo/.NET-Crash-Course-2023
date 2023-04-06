@@ -23,7 +23,7 @@ namespace EXAM
         public override void Edit()
         {
             base.Edit();
-            Console.WriteLine("Введіть ранг:");
+            Console.Write("\n\t\tВведіть ранг: ");
             Rank = int.Parse(Console.ReadLine());
         }
     }

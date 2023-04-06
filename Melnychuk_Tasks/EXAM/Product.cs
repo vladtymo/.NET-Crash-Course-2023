@@ -19,9 +19,9 @@ namespace EXAM
         public void Edit()
         {
             PrintInfo();
-            Console.Write("\nВведіть нове ім'я:");
+            Console.Write("\n\t\tВведіть нове ім'я: ");
             Name = Console.ReadLine();
-            Console.Write("\nВведіть нову варітсть:");
+            Console.Write("\n\t\tВведіть нову варітсть: ");
             Price = int.Parse(Console.ReadLine());
         }
         public void PrintInfo()

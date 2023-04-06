@@ -18,7 +18,7 @@ namespace EXAM
         public override void Edit()
         {
             base.Edit();
-            Console.WriteLine("Введіть кількість грошей:");
+            Console.Write("\n\t\tВведіть кількість грошей: ");
             Money = int.Parse(Console.ReadLine());
         }
     }

@@ -18,8 +18,8 @@ namespace Exam
         #region methods
         public static void Greeting(ref BeautySalon beauty)
         {
-            Console.WriteLine("Привіт ти попав у перукарню");
-            Console.WriteLine("\n\nдля початку тобі потрібно заповнити перукарню.\nтому давай почнемо");
+            Console.WriteLine("\n\n\t\t\tПривіт ти попав у перукарню");
+            Console.WriteLine("\n\n\t\tдля початку тобі потрібно заповнити перукарню.\n\t\t\tтому давай почнемо");
             Wait();
             Console.Clear();
             beauty.AddPerson();
@@ -41,14 +41,14 @@ namespace Exam
         public static int Show(ref BeautySalon beauty)
         {
             Console.Clear();
-            Console.WriteLine("\t\tМеню");
-            Console.WriteLine("Показати список Persons \t-1");
-            Console.WriteLine("Показати список Services \t-2");
-            Console.WriteLine("Показати список Products \t-3");
-            Console.WriteLine("Показати список Orders \t-4");
-            Console.WriteLine("Повернутись назад \t- 0");
+            Console.WriteLine("\t\t\t\tМеню");
+            Console.WriteLine("Показати список Persons \t\t- 1");
+            Console.WriteLine("Показати список Services \t\t- 2");
+            Console.WriteLine("Показати список Products \t\t- 3");
+            Console.WriteLine("Показати список Orders \t\t\t- 4");
+            Console.WriteLine("Повернутись назад \t\t\t- 0");
 
-            Console.Write("\n\n\n\tВаш вибір:");
+            Console.Write("\n\n\n\t\t\tВаш вибір:");
             int variant = int.Parse(Console.ReadLine());
             switch (variant)
             {
@@ -79,15 +79,15 @@ namespace Exam
         public static int BarberShopInterface(ref BeautySalon beauty)
         {
             Console.Clear();
-            Console.WriteLine("\t\tМеню");
-            Console.WriteLine("Відкрити перелік списків об'єктів \t- 1");
-            Console.WriteLine("Додати \t- 2");
-            Console.WriteLine("Редагувати \t - 3");
-            Console.WriteLine("Видалити \t - 4");
-            Console.WriteLine("Виконати замовлення \t - 5");
-            Console.WriteLine("Завершити роботу \t- 0");
+            Console.WriteLine("\n\t\t\t\tМеню");
+            Console.WriteLine("\t\tВідкрити перелік списків об'єктів - 1");
+            Console.WriteLine("\t\tДодати \t\t\t\t  - 2");
+            Console.WriteLine("\t\tРедагувати \t\t\t  - 3");
+            Console.WriteLine("\t\tВидалити \t\t\t  - 4");
+            Console.WriteLine("\t\tВиконати замовлення \t\t  - 5");
+            Console.WriteLine("\t\tЗавершити роботу \t\t  - 0");
 
-            Console.Write("\n\n\n\tВаш вибір:");
+            Console.Write("\n\n\n\t\t\tВаш вибір:");
             int variant = int.Parse(Console.ReadLine());
             int process2 = 1;
             switch (variant)
@@ -121,7 +121,7 @@ namespace Exam
                     while (process2 != 0)
                     {
                         beauty.ShowOrder();
-                        Console.Write("\n\n\n\tВаш вибір(номер ордеру):");
+                        Console.Write("\n\n\n\t\t\tВаш вибір(номер ордеру):");
                         int number = int.Parse(Console.ReadLine()) - 1;
                         beauty.Orders[number].Work();
                         beauty.Orders.RemoveAt(number);
@@ -137,7 +137,7 @@ namespace Exam
         }
         public static int Index()
         {
-            Console.Write("Введіть номер об'єкта якого хочете змінити:");
+            Console.Write("\t\tВведіть номер об'єкта якого хочете змінити:");
             
             return int.Parse(Console.ReadLine()) - 1;
         }
@@ -145,13 +145,13 @@ namespace Exam
         {
             Console.Clear();
 
-            Console.WriteLine("\t\tМеню");
-            Console.WriteLine("Додати - Person   - 1");
-            Console.WriteLine("Додати - Service  - 2");
-            Console.WriteLine("Додати - Product  - 3");
-            Console.WriteLine("Додати - Order    - 4");
-            Console.WriteLine("Повернутись назад - 0");
-            Console.Write("\n\n\n\tВаш вибір:");
+            Console.WriteLine("\n\t\t\t\tМеню");
+            Console.WriteLine("\t\t Додати - Person   - 1");
+            Console.WriteLine("\t\t Додати - Service  - 2");
+            Console.WriteLine("\t\t Додати - Product  - 3");
+            Console.WriteLine("\t\t Додати - Order    - 4");
+            Console.WriteLine("\t\t Повернутись назад - 0");
+            Console.Write("\n\n\n\t\t\tВаш вибір:");
             int variant = int.Parse(Console.ReadLine());
             switch (variant)
             {
@@ -184,30 +184,26 @@ namespace Exam
         {
             Console.Clear();
 
-            Console.WriteLine("\t\tМеню");
-            Console.WriteLine("Видали - Person  - 1");
-            Console.WriteLine("Видали - Service - 2");
-            Console.WriteLine("Видали - Product - 3");
-            Console.WriteLine("Видали - Order   - 4");
+            Console.WriteLine("\n\t\t\t\tМеню");
+            Console.WriteLine("\t\tВидали - Person  - 1");
+            Console.WriteLine("\t\tВидали - Service - 2");
+            Console.WriteLine("\t\tВидали - Product - 3");
+            Console.WriteLine("\t\tВидали - Order   - 4");
             Console.Write("\n\n\n\tВаш вибір:");
             int variant = int.Parse(Console.ReadLine());
             switch (variant)
             {
                 case 0: return 0;
-                case 1:
-                    beauty.ShowPerson();
+                case 1:                 
                     beauty.RemovePerson();
                     break;
-                case 2:
-                    beauty.ShowService();
+                case 2:                  
                     beauty.RemoveService();
                     break;
-                case 3:
-                    beauty.ShowProduct();
+                case 3:                    
                     beauty.RemoveProduct();
                     break;
-                case 4:
-                    beauty.ShowOrder();
+                case 4:                   
                     beauty.RemoveOrder();
                     break;
 
@@ -222,10 +218,10 @@ namespace Exam
         {
             Console.Clear();
 
-            Console.WriteLine("\t\tМеню");
-            Console.WriteLine("Редагувати - Person - 1");
-            Console.WriteLine("Редагувати - Service - 2");
-            Console.WriteLine("Редагувати - Product - 3");            
+            Console.WriteLine("\n\t\t\t\tМеню");
+            Console.WriteLine("\t\tРедагувати - Person  - 1");
+            Console.WriteLine("\t\tРедагувати - Service - 2");
+            Console.WriteLine("\t\tРедагувати - Product - 3");            
             Console.Write("\n\n\n\tВаш вибір:");
             int variant = int.Parse(Console.ReadLine());
             switch (variant)

@@ -25,9 +25,9 @@ namespace EXAM
         public override void Edit()
         {
             base.Edit();
-            Console.Write("\nВведіть новий тип:");
+            Console.Write("\n\t\tВведіть новий тип: ");
             this.Type = Console.ReadLine();
-            Console.Write("\nВведіть нову тривалість процедури:");
+            Console.Write("\n\t\tВведіть нову тривалість процедури: ");
             this.Duration = int.Parse(Console.ReadLine());
         }
     }

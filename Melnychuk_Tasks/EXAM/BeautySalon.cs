@@ -22,16 +22,24 @@ namespace EXAM
 
         public List<Order> Orders { get; set; } = new List<Order>();
 
-        public void ShowItems<T>(List<T> items, Action<T> printMethod)
+        public static void ShowItems<T>(List<T> items, Action<T> printMethod)
         {
-            Console.WriteLine($"Список елементів типу {typeof(T).Name}:");
-            int i = 1;
-            foreach (T item in items)
+           Console.WriteLine($"\n\t\tСписок елементів типу {typeof(T).Name}:");
+            
+            if (items.Count != 0)
             {
-                Console.Write($"№{i}\t|");
-                printMethod(item);
-                i++;
+                int i = 1;
+                foreach (T item in items)
+                {
+                    Console.Write($"\t\t№{i}\t|");
+                    printMethod(item);
+                    i++;
+                }
             }
+            else Console.WriteLine("\n\t\t\tСписок пустий.");
+
+            Console.WriteLine();
+           
         }
 
 
@@ -40,26 +48,26 @@ namespace EXAM
         {
             Console.Clear();
             ShowPerson();
-            Console.WriteLine("Виберіть кого ви хочете додати:");
-            Console.Write("Якщо хочете додати Майстра введіть 1/Клієнта 2:");
+            Console.WriteLine("\n\t\tВиберіть кого ви хочете додати ");
+            Console.Write("\n\t\tЯкщо хочете додати Майстра введіть 1/Клієнта 2: ");
             int b = int.Parse(Console.ReadLine());
             if (b == 1)
             {
-                Console.WriteLine("Введіть ранг(1-5):");
+                Console.Write("\n\t\tВведіть ранг(1-5): ");
                 int rank = int.Parse(Console.ReadLine());
                 Master master = new Master(rank);
                 Persons.Add(master);
             }
             else if (b == 2)
             {
-                Console.WriteLine("Введіть кількість грошей:");
+                Console.Write("\n\t\tВведіть кількість грошей: ");
                 int money = int.Parse(Console.ReadLine());
                 Client client = new Client(money);
                 Persons.Add(client);
             }
             Console.Clear();
 
-            Console.WriteLine("Якщо хочете продовжити додавання введіть +(якщо ні то будь що)");
+            Console.Write("\n\t\tЯкщо хочете продовжити додавання введіть +(якщо ні то будь що): ");
             bool Check = (Console.ReadLine()) == "+" ? true : false;
             if (Check)
             {
@@ -70,8 +78,8 @@ namespace EXAM
         public void RemovePerson()
         {
             ShowPerson();
-            Console.WriteLine("Виберіть кого ви хочете видалити");
-            Console.Write($"Введіть номер:");
+            Console.WriteLine("\n\t\tВиберіть кого ви хочете видалити");
+            Console.Write($"\n\t\tВведіть номер: ");
             int idRemovePerson = int.Parse(Console.ReadLine()) - 1;
             Persons.RemoveAt(idRemovePerson);
             Console.Clear();
@@ -83,15 +91,15 @@ namespace EXAM
             Console.Clear();
 
             ShowProduct();
-            Console.WriteLine("Введіть нове ім'я:");
+            Console.Write("\n\t\tВведіть нове ім'я: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Введіть нову варітсть:");
+            Console.Write("\n\t\tВведіть нову варітсть: ");
             int price = int.Parse(Console.ReadLine());
             Product product = new Product(name, price);
             Products.Add(product);
             Console.Clear();
 
-            Console.WriteLine("Якщо хочете продовжити додавання введіть +(якщо ні то будь що)");
+            Console.Write("\n\t\tЯкщо хочете продовжити додавання введіть +(якщо ні то будь що): ");
             bool Check = (Console.ReadLine()) == "+" ? true : false;
             if (Check)
             {
@@ -101,8 +109,8 @@ namespace EXAM
         public void RemoveProduct()
         {
             ShowProduct();
-            Console.WriteLine("Виберіть що ви хочете видалити");
-            Console.Write($"Введіть номер:");
+            Console.WriteLine("\n\t\tВиберіть що ви хочете видалити");
+            Console.Write($"\n\t\tВведіть номер: ");
             int idRemoveProduct = int.Parse(Console.ReadLine()) - 1;
             Products.RemoveAt(idRemoveProduct);
             Console.Clear();
@@ -113,13 +121,13 @@ namespace EXAM
         {
             Console.Clear();
             ShowService();
-            Console.WriteLine("Виберіть що ви хочете додати:");
+            Console.WriteLine("\n\t\tВиберіть що ви хочете додати: ");
 
-            Console.Write("Якщо хочете додати Haircut введіть 1/Coloring 2/Manicure 3/CosmeticProcedure 4 :");
+            Console.Write("\n\t\tЯкщо хочете додати: \n\t\tHaircut - 1 \n\t\tColoring - 2 \n\t\tManicure - 3 \n\t\tCosmeticProcedure - 4 \n\t\tВаш вибір: ");
             int b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введіть прайс :");
+            Console.Write("\n\t\tВведіть прайс: ");
             int price = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введіть тип:");
+            Console.Write("\n\t\tВведіть тип: ");
             string type = Console.ReadLine();
             switch (b)
             {
@@ -132,12 +140,13 @@ namespace EXAM
                     Services.Add(coloring);
                     break;
                 case 3:
+                    Console.Write("\n\t\tВведіть додаткові побажання: ");
                     string additionalServices = Console.ReadLine();
                     Manicure manicure = new Manicure(type, price, additionalServices);
                     Services.Add(manicure);
                     break;
                 case 4:
-                    Console.WriteLine("Введіть тривалість:");
+                    Console.Write("\n\t\tВведіть тривалість: ");
                     int duration = int.Parse(Console.ReadLine());
                     CosmeticProcedure cosmeticProcedure = new CosmeticProcedure(type, price, duration);
                     Services.Add(cosmeticProcedure);
@@ -146,7 +155,7 @@ namespace EXAM
             }
             Console.Clear();
 
-            Console.WriteLine("Якщо хочете продовжити додавання введіть +(якщо ні то будь що)");
+            Console.Write("\n\t\tЯкщо хочете продовжити додавання введіть +(якщо ні то будь що): ");
             bool Check = (Console.ReadLine()) == "+" ? true : false;
             if (Check)
             {
@@ -156,8 +165,8 @@ namespace EXAM
         public void RemoveService()
         {
             ShowService();
-            Console.WriteLine("Виберіть що ви хочете видалити");
-            Console.Write($"Введіть номер:");
+            Console.WriteLine("\n\t\tВиберіть що ви хочете видалити");
+            Console.Write($"\n\t\tВведіть номер: ");
             int idRemoveService = int.Parse(Console.ReadLine()) - 1;
             Services.RemoveAt(idRemoveService);
             Console.Clear();
@@ -168,22 +177,25 @@ namespace EXAM
         {
             Console.Clear();
             ShowOrder();
-            Console.WriteLine("Виберіть Client в списку усіх персон(його номер):");
+            Console.Write("\n\t\tВиберіть Client в списку усіх персон(його номер)");
             ShowPerson();
+            Console.Write("\n\t\tВаш вибір: ");
             int c = int.Parse(Console.ReadLine()) - 1;
             Client client = (Client)Persons[c];
             
-            Console.WriteLine("Виберіть послугу в списку усіх послуг(її номер):");
+            Console.Write("\n\t\tВиберіть послугу в списку усіх послуг(її номер)");
             ShowService();
+            Console.Write("\n\t\tВаш вибір: ");
             int s = int.Parse(Console.ReadLine()) - 1;
             Service service = Services[s];
             
-            Console.WriteLine("Введіть дату (format: dd/MM/yyyy): ");
+            Console.Write("\n\t\tВведіть дату (format: dd/MM/yyyy): ");
             string input = Console.ReadLine();
             DateTime date = DateTime.ParseExact(input, "dd/MM/yyyy", CultureInfo.InvariantCulture);
           
-            Console.WriteLine("Виберіть Master в списку усіх персон(його номер):");
+            Console.Write("\n\t\tВиберіть Master в списку усіх персон(його номер): ");
             ShowPerson();
+            Console.Write("\n\t\tВаш вибір: ");
             int p = int.Parse(Console.ReadLine()) - 1;
           
             Master master = (Master)Persons[p];
@@ -192,7 +204,7 @@ namespace EXAM
             Orders.Add(order);
             Console.Clear();
 
-            Console.WriteLine("Якщо хочете продовжити додавання введіть +(якщо ні то будь що)");
+            Console.Write("\n\t\tЯкщо хочете продовжити додавання введіть +(якщо ні то будь що): ");
             bool Check = (Console.ReadLine()) == "+" ? true : false;
             if (Check)
             {
@@ -202,8 +214,8 @@ namespace EXAM
         public void RemoveOrder()
         {
             ShowOrder();
-            Console.WriteLine("Виберіть що ви хочете видалити");
-            Console.Write($"Введіть номер:");
+            Console.WriteLine("\n\t\tВиберіть що ви хочете видалити");
+            Console.Write($"\n\t\tВведіть номер: ");
             int idRemoveOrder = int.Parse(Console.ReadLine()) - 1;
             Orders.RemoveAt(idRemoveOrder);
             Console.Clear();

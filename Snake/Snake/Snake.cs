@@ -15,17 +15,17 @@ namespace Snake
         public Element Head { get; set; }
         public Queue<Element> Body { get; set; }
         public Direction EnumDirectiont { get; set; }
-        public Snake(int startX, int startY)
+        public Snake()
         {
             int number = 3;
             EnumDirectiont = Direction.Right;
-            curX = startX;
-            curY = startY;
+            curX = width / 2 - 5;
+            curY = heigth / 2; ;
             Body = new Queue<Element>();
-            Head = new Element(startX, startY, '0', ConsoleColor.Red);
+            Head = new Element(curX, curY, '0', ConsoleColor.Red);
             for (int i = number; i > 0; i--)
             {
-                Body.Enqueue(new Element(Head.X - i - 1, startY, '*', ConsoleColor.Cyan));
+                Body.Enqueue(new Element(Head.X - i - 1, curY, '*', ConsoleColor.Cyan));
             }
         }
 

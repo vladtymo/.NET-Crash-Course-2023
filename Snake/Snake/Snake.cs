@@ -7,8 +7,6 @@ namespace Snake
     class Snake : IDraw
     {
         public enum Direction { Left, Right, Up, Down }
-        //public delegate Direction Directions(Snake snake);
-        //public event Direction CheckMove;
 
         private int curX;
         private int curY;
@@ -76,7 +74,6 @@ namespace Snake
 
         public void Move(Direction direction, bool eat)
         {
-            //Direction direction = MoveEvent.
             Clear();
             Body.Enqueue(new Element(Head.X, Head.Y, '*', ConsoleColor.Cyan));
             if (!eat)

@@ -1,4 +1,5 @@
-﻿using Snake.Interface;
+﻿using Snake;
+using Snake.Interface;
 using System.Numerics;
 using System.Security.Cryptography;
 using System.Text.Json;
@@ -8,38 +9,6 @@ namespace Snake
     internal class Program
     {
         public const int width = 70, heigth = 40;
-        public struct Pixel : IDraw
-        {
-            public int X { get; set; }
-            public int Y { get; set; }
-            public char Char { get; set; }
-            public ConsoleColor Color { get; set; }
-            public Pixel(int x, int y, char ch, ConsoleColor color)
-            {
-               
-                Color = color;
-                X = x;
-                Y = y;
-                Char = ch;
-
-                Draw();
-            }
-
-            public void Draw()
-            {
-                Console.ForegroundColor = Color;
-                Console.SetCursorPosition(X, Y);
-                Console.Write(Char);
-            }
-
-            public void Clear()
-            {
-                Console.SetCursorPosition(X, Y);
-                Console.Write(' ');
-            }
-        }
-
-
         static void StartGame()
         {
             Console.CursorVisible = false;
@@ -48,8 +17,7 @@ namespace Snake
             Console.Write("\n\n\tEnter name: ");
             Player player = new Player( Console.ReadLine());
 
-            Snake snake = new Snake(width / 2, heigth / 2);
-           
+            Snake snake = new Snake();
             Field field = new Field();
             field.Clear();
             field.Draw();
@@ -58,11 +26,10 @@ namespace Snake
             text.Draw();
             text.EndTitel += player.Count;
 
-            Pixel food = field.FormationtFood(snake);
+            Element food = field.FormationtFood(snake);
 
             while (!snake.IsTouch() && !text.Win())
             {
-                //Thread.Sleep(200);
                 if (snake.Head.X == food.X && snake.Head.Y == food.Y)
                 {
                     snake.Move(snake.Check(snake.EnumDirectiont), true);
@@ -76,20 +43,14 @@ namespace Snake
             }
 
             text.EndGame();
-            List<Player> list = new List<Player>()
-            {
-                new Player { NikName = "Bob", Number = 10},
-                new Player { NikName = "Lose", Number = 0},
-                new Player { NikName = "Sem", Number = 5},
-                new Player { NikName = "Tom", Number = 6},
-            };
-            list.Add(player);
-            player.SortList(list);
-            string jsonToSave = JsonSerializer.Serialize(list);
-            File.WriteAllText("data.json", jsonToSave);
-            Console.SetCursorPosition(0, heigth+2);
             string loadedJson = File.ReadAllText("data.json");
             List<Player>? loaded = JsonSerializer.Deserialize<List<Player>>(loadedJson);
+            loaded.Add(player);
+            player.SortList(loaded);
+            string jsonToSave = JsonSerializer.Serialize(loaded);
+            File.WriteAllText("data.json", jsonToSave);
+            Console.SetCursorPosition(0, heigth+2);
+
 
             foreach (var item in loaded)
             {
@@ -101,6 +62,7 @@ namespace Snake
         }
         static void Main(string[] args)
         {
+            
             StartGame();
         }
     }
@@ -109,7 +71,10 @@ namespace Snake
 
 
 
-
+/*new Player { NikName = "Bob", Number = 10 },
+                new Player { NikName = "Lose", Number = 0 },
+                new Player { NikName = "Sem", Number = 5 },
+                new Player { NikName = "Tom", Number = 6 },*/
 
 
 /*public void Up()

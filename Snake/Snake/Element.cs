@@ -1,5 +1,5 @@
 ﻿
-
+using static Snake.Program;
 using Snake.Interface;
 
 namespace Snake

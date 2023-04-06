@@ -12,8 +12,8 @@ namespace Snake
 
         private int curX;
         private int curY;
-        public Pixel Head { get; set; }
-        public Queue<Pixel> Body { get; set; }
+        public Element Head { get; set; }
+        public Queue<Element> Body { get; set; }
         public Direction EnumDirectiont { get; set; }
         public Snake(int startX, int startY)
         {
@@ -21,18 +21,18 @@ namespace Snake
             EnumDirectiont = Direction.Right;
             curX = startX;
             curY = startY;
-            Body = new Queue<Pixel>();
-            Head = new Pixel(startX, startY, '0', ConsoleColor.Red);
+            Body = new Queue<Element>();
+            Head = new Element(startX, startY, '0', ConsoleColor.Red);
             for (int i = number; i > 0; i--)
             {
-                Body.Enqueue(new Pixel(Head.X - i - 1, startY, '*', ConsoleColor.Cyan));
+                Body.Enqueue(new Element(Head.X - i - 1, startY, '*', ConsoleColor.Cyan));
             }
         }
 
         public void Draw()
         {
             Head.Draw();
-            foreach (Pixel px in Body)
+            foreach (Element px in Body)
             {
                 px.Draw();
             }
@@ -42,7 +42,7 @@ namespace Snake
         {
 
             Head.Clear();
-            foreach (Pixel px in Body)
+            foreach (Element px in Body)
             {
                 px.Clear();
             }
@@ -78,16 +78,16 @@ namespace Snake
         {
             //Direction direction = MoveEvent.
             Clear();
-            Body.Enqueue(new Pixel(Head.X, Head.Y, '*', ConsoleColor.Cyan));
+            Body.Enqueue(new Element(Head.X, Head.Y, '*', ConsoleColor.Cyan));
             if (!eat)
                 Body.Dequeue();
 
             Head = direction switch
             {
-                Direction.Up => new Pixel(Head.X, Head.Y - 1, '0', ConsoleColor.Red),
-                Direction.Down => new Pixel(Head.X, Head.Y + 1, '0', ConsoleColor.Red),
-                Direction.Left => new Pixel(Head.X - 1, Head.Y, '0', ConsoleColor.Red),
-                Direction.Right => new Pixel(Head.X + 1, Head.Y, '0', ConsoleColor.Red),
+                Direction.Up => new Element(Head.X, Head.Y - 1, '0', ConsoleColor.Red),
+                Direction.Down => new Element(Head.X, Head.Y + 1, '0', ConsoleColor.Red),
+                Direction.Left => new Element(Head.X - 1, Head.Y, '0', ConsoleColor.Red),
+                Direction.Right => new Element(Head.X + 1, Head.Y, '0', ConsoleColor.Red),
                 _ => Head
             };
             Draw();

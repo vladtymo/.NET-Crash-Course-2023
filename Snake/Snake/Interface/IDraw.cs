@@ -7,9 +7,6 @@ namespace Snake.Interface
 
         public void Draw();
 
-        public void Clear()
-        { 
-            Console.Clear();
-        }
+        public void Clear();
     }
 }

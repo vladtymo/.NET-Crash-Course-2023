@@ -1,5 +1,6 @@
 ﻿using Snake.Interface;
 using System.Numerics;
+using System.Security.Cryptography;
 using System.Text.Json;
 
 namespace Snake
@@ -38,24 +39,26 @@ namespace Snake
             }
         }
 
+
         static void StartGame()
         {
-
-
-        }
-        static void Main(string[] args)
-        {
-
-            //List<Player> list = new List<Player>();
-
             Console.CursorVisible = false;
+
+            // creating instances
+            Console.Write("\n\n\tEnter name: ");
+            Player player = new Player( Console.ReadLine());
+
             Snake snake = new Snake(width / 2, heigth / 2);
+           
+            Field field = new Field();
+            field.Clear();
+            field.Draw();
 
             Text text = new Text();
             text.Draw();
-            Field field = new Field();
+            text.EndTitel += player.Count;
+
             Pixel food = field.FormationtFood(snake);
-            field.Draw();
 
             while (!snake.IsTouch() && !text.Win())
             {
@@ -73,11 +76,32 @@ namespace Snake
             }
 
             text.EndGame();
-            Console.SetCursorPosition(width, heigth);
+            List<Player> list = new List<Player>()
+            {
+                new Player { NikName = "Bob", Number = 10},
+                new Player { NikName = "Lose", Number = 0},
+                new Player { NikName = "Sem", Number = 5},
+                new Player { NikName = "Tom", Number = 6},
+            };
+            list.Add(player);
+            player.SortList(list);
+            string jsonToSave = JsonSerializer.Serialize(list);
+            File.WriteAllText("data.json", jsonToSave);
+            Console.SetCursorPosition(0, heigth+2);
+            string loadedJson = File.ReadAllText("data.json");
+            List<Player>? loaded = JsonSerializer.Deserialize<List<Player>>(loadedJson);
 
+            foreach (var item in loaded)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(item);
+                Console.WriteLine();
+            }
 
-
-           // string jsonToSave = JsonSerializer.Serialize();
+        }
+        static void Main(string[] args)
+        {
+            StartGame();
         }
     }
 }

@@ -6,6 +6,7 @@ namespace Snake
     class Text
     {
         delegate int AddDelegat(int x);
+        public event Action<int> EndTitel;
         private int Add(int value)
         {
             number++;
@@ -24,8 +25,6 @@ namespace Snake
             Console.ForegroundColor= ConsoleColor.White;
             Console.SetCursorPosition(width + 5, 3);
             Console.WriteLine($"Count: {add.Invoke(number)}");
-            
-
         }
 
         public void EndGame()
@@ -36,6 +35,7 @@ namespace Snake
                 Console.WriteLine("Your Win!!!!");
             else
                 Console.WriteLine("Your Died");
+            EndTitel.Invoke(number);
         }
         public bool Win()
         {

@@ -18,7 +18,7 @@ namespace Exam_Task.Services.GroupServices
 		public async Task<bool> Delete(int Id)
 		{
 			GroupEntity dbRecord = await _groupRepository.Table
-				.FirstOrDefaultAsync(g=>g.Id==Id);
+				.FirstOrDefaultAsync(group=>group.Id==Id);
 			if (dbRecord == null)
 			{
 				return false;

@@ -75,16 +75,33 @@ namespace Exam_Task.Services.DecanatServices
 						Console.Write("Enter Student Id: ");
 						int Id = int.Parse(Console.ReadLine());
 						StudentEntity student = await studentService.GetById(Id);
-						List<LecturerEntity> lecturers = await lecturerService.GetByStudentId(student.Id);
-						Console.WriteLine($"Studet {student.FirstName} has such subjects: ");
-						int count = 1;
-						foreach (SubjectEntity subject in student.Subjects)
+						if (student != null)
 						{
-							Console.WriteLine($"\nSubject #{count}");
-							Console.WriteLine($"{subject.ToString()}");
-							Console.WriteLine($"Lecturer:");
-							Console.WriteLine($"{subject.Lecturer.ToString()}");
-							count++;
+							List<LecturerEntity> lecturers = await lecturerService.GetByStudentId(student.Id);
+							Console.WriteLine($"Student {student.FirstName} has such subjects: ");
+							if (student.Subjects.Count != 0)
+							{
+								int count = 1;
+								foreach (SubjectEntity subject in student.Subjects)
+								{
+									Console.WriteLine($"\nSubject #{count}");
+									Console.WriteLine($"{subject.ToString()}");
+									if (subject.Lecturer != null)
+									{
+										Console.WriteLine($"Lecturer:");
+										Console.WriteLine($"{subject.Lecturer.ToString()}");
+									}
+									else
+									{
+										Console.WriteLine("Such subject doesn`t has any Lecturer");
+									}
+									count++;
+								}
+							}
+							else
+							{
+								Console.WriteLine("Such Student doesn`t has any Subjects");
+							}
 						}
 						break;
 					case 2:
@@ -103,8 +120,7 @@ namespace Exam_Task.Services.DecanatServices
 				Console.WriteLine("2. Display Students");
 				Console.WriteLine("3. Display Subjects");
 				Console.WriteLine("4. Display Lecturers");
-				Console.WriteLine("5. Display Student`s Subjects");
-				Console.WriteLine("6. Back\n");
+				Console.WriteLine("5. Back\n");
 				Console.Write("Make choice: ");
 				int choice = int.Parse(Console.ReadLine());
 
@@ -123,9 +139,6 @@ namespace Exam_Task.Services.DecanatServices
 						await DisplayLecturers();
 						break;
 					case 5:
-						await ShowStudentsSubject();
-						break;
-					case 6:
 						return;
 					default:
 						Console.WriteLine("Not right choose. Try again.");
@@ -155,7 +168,14 @@ namespace Exam_Task.Services.DecanatServices
 						Console.Write("Enter Student Id: ");
 						int studentId = int.Parse(Console.ReadLine());
 						List<LecturerEntity> lctr = await lecturerService.GetByStudentId(studentId);
-						foreach (LecturerEntity lecturer in lctr) Console.WriteLine(lecturer.ToString());
+						if (lctr != null)
+						{
+							foreach (LecturerEntity lecturer in lctr) Console.WriteLine(lecturer.ToString());
+						}
+						else
+						{
+							Console.WriteLine("Such Student doesn`t has lecturers");
+						}
 						break;
 					case 3:
 						foreach (LecturerEntity lect in await lecturerService.GetAllAvaliable()) Console.WriteLine(lect.ToString());
@@ -164,7 +184,10 @@ namespace Exam_Task.Services.DecanatServices
 						Console.Write("Enter Lecturer Id: ");
 						int lecId = int.Parse(Console.ReadLine());
 						LecturerEntity let = await lecturerService.GetById(lecId);
-						Console.WriteLine(let.ToString());
+						if (let != null)
+						{
+							Console.WriteLine(let.ToString());
+						}
 						break;
 					case 5:
 						return;
@@ -193,6 +216,7 @@ namespace Exam_Task.Services.DecanatServices
 						Console.Write("Enter Group Id: ");
 						int groupId = int.Parse(Console.ReadLine());
 						GroupEntity grp = await groupService.GetById(groupId);
+						if(grp!= null)
 						Console.WriteLine(grp.ToString());
 						break;
 					case 3:
@@ -207,7 +231,7 @@ namespace Exam_Task.Services.DecanatServices
 		{
 			while (true)
 			{
-				Console.WriteLine("1. Display all Subjects");
+				Console.WriteLine("1. Display all Students");
 				Console.WriteLine("2. Display Student by Id");
 				Console.WriteLine("3. Back\n");
 				Console.Write("Make choice: ");
@@ -241,7 +265,8 @@ namespace Exam_Task.Services.DecanatServices
 				Console.WriteLine("2. Display all Subjects with Mark");
 				Console.WriteLine("3. Display all Subjects with no Mark");
 				Console.WriteLine("4. Display Subject by Id");
-				Console.WriteLine("5. Back\n");
+				Console.WriteLine("5. Display Student`s Subjects");
+				Console.WriteLine("6. Back\n");
 				Console.Write("Make choice: ");
 				int choiceSubject = int.Parse(Console.ReadLine());
 
@@ -264,6 +289,9 @@ namespace Exam_Task.Services.DecanatServices
 						Console.WriteLine(subj.ToString());
 						break;
 					case 5:
+						await ShowStudentsSubject();
+						break;
+					case 6:
 						return;
 					default:
 						Console.WriteLine("Not right choose. Try again.");
@@ -286,25 +314,25 @@ namespace Exam_Task.Services.DecanatServices
 				switch (choice)
 				{
 					case 1:
-						Console.WriteLine("Enter Group Id: ");
+						Console.Write("Enter Group Id: ");
 						int groupId = int.Parse(Console.ReadLine());
 						await groupService.Delete(groupId);
 						Console.WriteLine("Done");
 						break;
 					case 2:
-						Console.WriteLine("Enter Student Id: ");
+						Console.Write("Enter Student Id: ");
 						int studentId = int.Parse(Console.ReadLine());
 						await studentService.Delete(studentId);
 						Console.WriteLine("Done");
 						break;
 					case 3:
-						Console.WriteLine("Enter Subject Id: ");
+						Console.Write("Enter Subject Id: ");
 						int subjectId = int.Parse(Console.ReadLine());
 						await subjectService.Delete(subjectId);
 						Console.WriteLine("Done");
 						break;
 					case 4:
-						Console.WriteLine("Enter Lecturer Id: ");
+						Console.Write("Enter Lecturer Id: ");
 						int lectId = int.Parse(Console.ReadLine());
 						await lecturerService.Delete(lectId);
 						Console.WriteLine("Done");
@@ -332,27 +360,27 @@ namespace Exam_Task.Services.DecanatServices
 				switch (choice)
 				{
 					case 1:
-						Console.WriteLine("Enter Group Id: ");
+						Console.Write("Enter Group Id: ");
 						int groupId = int.Parse(Console.ReadLine());
-						Console.WriteLine("Enter Student Id: ");
+						Console.Write("Enter Student Id: ");
 						int studId = int.Parse(Console.ReadLine());
 
 						await studentService.AddStudentToTheGroup(groupId, studId);
 						Console.WriteLine("Done");
 						break;
 					case 2:
-						Console.WriteLine("Enter Student Id: ");
+						Console.Write("Enter Student Id: ");
 						int studentId = int.Parse(Console.ReadLine());
-						Console.WriteLine("Enter Subject Id: ");
+						Console.Write("Enter Subject Id: ");
 						int subjectId = int.Parse(Console.ReadLine());
 
 						await subjectService.AddSubjectToTheStudent(studentId, subjectId);
 						Console.WriteLine("Done");
 						break;
 					case 3:
-						Console.WriteLine("Enter Student Id: ");
+						Console.Write("Enter Student Id: ");
 						int lectId = int.Parse(Console.ReadLine());
-						Console.WriteLine("Enter Subject Id: ");
+						Console.Write("Enter Subject Id: ");
 						int subjId = int.Parse(Console.ReadLine());
 
 						await lecturerService.AddLecturerToTheSubject(subjId, lectId);

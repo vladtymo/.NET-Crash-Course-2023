@@ -21,6 +21,17 @@ namespace Exam_Task.Services.StudentServices
 		{
 			await _studentRepository.Update(student);
 		}
+		public async Task<bool> Delete(int Id)
+		{
+			var dbRecord = await _studentRepository.Table
+				.FirstOrDefaultAsync(stud => stud.Id == Id);
+			if(dbRecord == null)
+			{
+				return false;
+			}
+			await _studentRepository.Delete(dbRecord);
+			return true;
+		}
 		public async Task<List<StudentEntity>> GetAll()
 		{
 			List<StudentEntity> dbRecord = await _studentRepository.Table
@@ -67,9 +78,5 @@ namespace Exam_Task.Services.StudentServices
 			}
 		}
 
-		public Task<bool> Delete(int Id)
-		{
-			throw new NotImplementedException();
-		}
 	}
 }

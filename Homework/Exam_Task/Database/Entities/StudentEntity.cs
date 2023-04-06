@@ -11,7 +11,7 @@ namespace Exam_Task.Database.Entities
 			Subjects = subjects;
 		}
 		public int Id { get; set; }
-		public IList<SubjectEntity> Subjects { get; set; }
+		public IList<SubjectEntity>? Subjects { get; set; }
 
 		public int? GroupFK { get; set; }
 		public GroupEntity Group { get; set; }

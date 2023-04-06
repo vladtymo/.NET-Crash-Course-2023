@@ -1,5 +1,6 @@
 ﻿using Exam_Task.Database.Entities;
 using Exam_Task.Database.GenericRepository;
+using Exam_Task.Services.StudentServices;
 using Exam_Task.Services.SubjectServices;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,11 +11,13 @@ namespace Exam_Task.Services.LecturerServices
 		private readonly IGenericRepository<LecturerEntity> _lecturerRepository;
 		private readonly IGenericRepository<SubjectEntity> _subjectRepository;
 		private readonly IGenericRepository<StudentEntity> _studentRepository;
-		public LecturerService(IGenericRepository<LecturerEntity> lecturerRepository, IGenericRepository<SubjectEntity> subjectRepository, IGenericRepository<StudentEntity> studentRepository)
+		private readonly IStudentService _studentService;
+		public LecturerService(IGenericRepository<LecturerEntity> lecturerRepository, IGenericRepository<SubjectEntity> subjectRepository, IGenericRepository<StudentEntity> studentRepository,IStudentService studentService)
 		{
 			_lecturerRepository = lecturerRepository;
 			_subjectRepository= subjectRepository;
 			_studentRepository = studentRepository;
+			_studentService = studentService;
 		}
 		public async Task Create(LecturerEntity lecturer)
 		{
@@ -48,7 +51,7 @@ namespace Exam_Task.Services.LecturerServices
 		}
 		public async Task<List<LecturerEntity>> GetByStudentId(int studentId)
 		{
-			StudentEntity student = await _studentRepository.GetById(studentId);
+			StudentEntity student = await _studentService.GetById(studentId);
 			if(student == null)
 			{
 				return null;
@@ -65,6 +68,7 @@ namespace Exam_Task.Services.LecturerServices
 					}
 				}
 			}
+
 			return lecturers;
 		}
 		public async Task<List<LecturerEntity>> GetAllAvaliable()

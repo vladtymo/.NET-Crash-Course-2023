@@ -33,7 +33,7 @@ namespace Exam_Task
 			lecturerRepository = new GenericRepository<LecturerEntity>(dbContext);
 
 			studentService = new StudentService(studentRepository,groupRepository);
-			lecturerService = new LecturerService(lecturerRepository,subjectRepository,studentRepository);
+			lecturerService = new LecturerService(lecturerRepository,subjectRepository,studentRepository,studentService);
 			subjectService = new SubjectService(subjectRepository,studentService);
 			groupService = new GroupService(groupRepository);
 

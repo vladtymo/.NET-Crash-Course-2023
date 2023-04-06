@@ -22,7 +22,17 @@ namespace Exam_Task.Services.SubjectServices
 		{
 			await _subjectRepository.Update(subject);
 		}
-
+	    public async Task<bool> Delete(int Id)
+		{
+			var dbRecord = await _subjectRepository.Table
+				.FirstOrDefaultAsync(subj => subj.Id == Id);
+			if(dbRecord == null)
+			{
+				return false;
+			}
+			await _subjectRepository.Delete(dbRecord);
+			return true;
+		}
 		public async Task<List<SubjectEntity>> GetAll()
 		{
 			List<SubjectEntity> dbRecord = await _subjectRepository.Table
@@ -117,9 +127,6 @@ namespace Exam_Task.Services.SubjectServices
 			}
 		}
 
-		public Task<bool> Delete(int Id)
-		{
-			throw new NotImplementedException();
-		}
+	
 	}
 }

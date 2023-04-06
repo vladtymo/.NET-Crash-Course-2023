@@ -60,7 +60,7 @@ namespace Final_Task
             Console.WriteLine($"Student`s exam grasdes {FirstName} {LastName} :");
             foreach (KeyValuePair<Subject, int> kvp in examGrades)
             {
-                Console.WriteLine($"{kvp.Key} Exam grade :{kvp.Value}");
+                Console.WriteLine($"{kvp.Key} Exam grade :{kvp.Value}"); 
             }
             Console.WriteLine();
         }

@@ -1,0 +1,250 @@
+{
+  "$id": "1",
+  "Predmets": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Name": "Fizika",
+        "OpusPredmetu": "Predmet pro fiz-vlastuvosti"
+      },
+      {
+        "$id": "4",
+        "Name": "Matumatuka",
+        "OpusPredmetu": "Predmet pro mat-vlastuvosti"
+      },
+      {
+        "$id": "5",
+        "Name": "Istoriya",
+        "OpusPredmetu": "Informatsiya po munuli roku"
+      },
+      {
+        "$id": "6",
+        "Name": "Geografiya",
+        "OpusPredmetu": "Informatsiya pro pevni teretoriyi"
+      },
+      {
+        "$id": "7",
+        "Name": "Muzuka",
+        "OpusPredmetu": "Predmet muzuky"
+      }
+    ]
+  },
+  "Osobas": {
+    "$id": "8",
+    "$values": [
+      {
+        "$id": "9",
+        "FirstName": "Grugir",
+        "LastName": "Bzdunduntykevich",
+        "NomerTelefona": "0635588997",
+        "DataNarodgenya": "2001-05-07T00:00:00"
+      },
+      {
+        "$id": "10",
+        "FirstName": "Vasya",
+        "LastName": "Pupcin",
+        "NomerTelefona": "093000001",
+        "DataNarodgenya": "2001-03-05T00:00:00"
+      },
+      {
+        "$id": "11",
+        "FirstName": "Olga",
+        "LastName": "Zubchata",
+        "NomerTelefona": "0635456997",
+        "DataNarodgenya": "2001-01-07T00:00:00"
+      },
+      {
+        "$id": "12",
+        "FirstName": "Nazar",
+        "LastName": "Duduk",
+        "NomerTelefona": "0635487987",
+        "DataNarodgenya": "2000-09-09T00:00:00"
+      },
+      {
+        "$id": "13",
+        "FirstName": "Ann",
+        "LastName": "Osobluva",
+        "NomerTelefona": "0635456997",
+        "DataNarodgenya": "2000-03-01T00:00:00"
+      },
+      {
+        "$id": "14",
+        "FirstName": "Vitaliy",
+        "LastName": "Gaduk",
+        "NomerTelefona": "0637765897",
+        "DataNarodgenya": "2000-06-03T00:00:00"
+      },
+      {
+        "$id": "15",
+        "FirstName": "Roman",
+        "LastName": "Duchuna",
+        "NomerTelefona": "0557764397",
+        "DataNarodgenya": "1999-07-09T00:00:00"
+      },
+      {
+        "$id": "16",
+        "FirstName": "Macha",
+        "LastName": "Melnuk",
+        "NomerTelefona": "0667788557",
+        "DataNarodgenya": "1999-02-01T00:00:00"
+      },
+      {
+        "$id": "17",
+        "FirstName": "Yaroslav",
+        "LastName": "Mechnuy",
+        "NomerTelefona": "0987763597",
+        "DataNarodgenya": "1999-05-07T00:00:00"
+      },
+      {
+        "$id": "18",
+        "FirstName": "Oleksandr",
+        "LastName": "Grigorovich",
+        "NomerTelefona": "093555777",
+        "DataNarodgenya": "1985-07-09T00:00:00"
+      },
+      {
+        "$id": "19",
+        "FirstName": "Dmitro",
+        "LastName": "Gemko",
+        "NomerTelefona": "066558337",
+        "DataNarodgenya": "1989-05-07T00:00:00"
+      },
+      {
+        "$id": "20",
+        "FirstName": "Vasil",
+        "LastName": "Drugko",
+        "NomerTelefona": "093555777",
+        "DataNarodgenya": "1979-11-03T00:00:00"
+      },
+      {
+        "$id": "21",
+        "FirstName": "Tettyana",
+        "LastName": "Bayda",
+        "NomerTelefona": "093555777",
+        "DataNarodgenya": "1987-09-09T00:00:00"
+      },
+      {
+        "$id": "22",
+        "FirstName": "Fedir",
+        "LastName": "Robochuy",
+        "NomerTelefona": "093555777",
+        "DataNarodgenya": "1990-10-07T00:00:00"
+      }
+    ]
+  },
+  "Students": {
+    "$id": "23",
+    "$values": [
+      {
+        "$ref": "9"
+      },
+      {
+        "$ref": "10"
+      },
+      {
+        "$ref": "11"
+      },
+      {
+        "$ref": "12"
+      },
+      {
+        "$ref": "13"
+      },
+      {
+        "$ref": "14"
+      },
+      {
+        "$ref": "15"
+      },
+      {
+        "$ref": "16"
+      },
+      {
+        "$ref": "17"
+      }
+    ]
+  },
+  "Vukladachs": {
+    "$id": "24",
+    "$values": [
+      {
+        "$ref": "18"
+      },
+      {
+        "$ref": "19"
+      },
+      {
+        "$ref": "20"
+      },
+      {
+        "$ref": "21"
+      },
+      {
+        "$ref": "22"
+      }
+    ]
+  },
+  "Grups": {
+    "$id": "25",
+    "$values": [
+      {
+        "$id": "26",
+        "Name": "IPZ-21",
+        "Kurs": 2,
+        "Students": {
+          "$id": "27",
+          "$values": [
+            {
+              "$ref": "9"
+            },
+            {
+              "$ref": "10"
+            },
+            {
+              "$ref": "11"
+            }
+          ]
+        }
+      },
+      {
+        "$id": "28",
+        "Name": "I-31",
+        "Kurs": 3,
+        "Students": {
+          "$id": "29",
+          "$values": [
+            {
+              "$ref": "12"
+            },
+            {
+              "$ref": "13"
+            },
+            {
+              "$ref": "14"
+            }
+          ]
+        }
+      },
+      {
+        "$id": "30",
+        "Name": "CT-41",
+        "Kurs": 4,
+        "Students": {
+          "$id": "31",
+          "$values": [
+            {
+              "$ref": "15"
+            },
+            {
+              "$ref": "16"
+            },
+            {
+              "$ref": "17"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

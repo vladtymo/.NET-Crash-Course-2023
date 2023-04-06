@@ -3,6 +3,7 @@ using Exam.Database.Enitites;
 using Exam.EntityFramework.Repository;
 using Exam.Services.Response;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Exam.Services.ProductServices
 {
@@ -79,7 +80,13 @@ namespace Exam.Services.ProductServices
         public async Task<ICollection<ProductEntity>> GetAll()
         {
             return await _productRepository.GetAsQueryable()
-                .OrderBy(product => product.Category)
+                .ToListAsync();
+        }
+
+        public async Task<ICollection<ProductEntity>> GetAll<TKey>(Expression<Func<ProductEntity, TKey>> direction)
+        {
+            return await _productRepository.GetAsQueryable()
+                .OrderBy(direction)
                 .ToListAsync();
         }
 

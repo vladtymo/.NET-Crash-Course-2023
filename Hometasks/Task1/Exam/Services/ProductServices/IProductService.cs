@@ -1,5 +1,6 @@
 ﻿using Exam.Database.Enitites;
 using Exam.Services.Response;
+using System.Linq.Expressions;
 
 namespace Exam.Services.ProductServices
 {
@@ -12,6 +13,7 @@ namespace Exam.Services.ProductServices
         Task<ResponseService<ProductEntity>> GetById(long id);
         Task<ICollection<ProductEntity>> GetByName(string name); // TODO Implementation
         Task<ICollection<ProductEntity>> GetAll();
+        Task<ICollection<ProductEntity>> GetAll<TKey>(Expression<Func<ProductEntity, TKey>> direction);
         Task<ICollection<ProductEntity>> GetBuyed();
         Task<ICollection<ProductEntity>> GetNotBuyed();
         Task<ICollection<ProductEntity>> GetExpired();

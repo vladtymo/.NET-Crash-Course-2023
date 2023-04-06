@@ -1,4 +1,5 @@
-﻿using Exam.Database.Enitites;
+﻿using Exam.Common;
+using Exam.Database.Enitites;
 using Exam.EntityFramework.Configurations;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,7 +19,7 @@ namespace Exam.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=localhost;Database=SupermarketDb;Trusted_Connection=True;Encrypt=false");
+            optionsBuilder.UseSqlServer(Configuration.DEFAULT_CONNECTION);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -8,9 +8,6 @@ namespace Exam_Task.Services.DecanatServices
 {
 	public interface IDecanatSystem
 	{
-		Task Show();
-		Task Delete();
-		Task EditEntities();
-	    Task Add();
+		Task Run();
 	}
 }

@@ -20,6 +20,41 @@ namespace Exam_Task.Services.DecanatServices
 			subjectService = _subjectService;
 			lecturerService = _lecturerService;
 		}
+		public async Task Run()
+		{
+			Console.WriteLine("<============> Decanat System <============>");
+			while (true)
+			{
+				Console.WriteLine("1. Add new");
+				Console.WriteLine("2. Delete by Id");
+				Console.WriteLine("3. Display");
+				Console.WriteLine("4. Edit");
+				Console.WriteLine("5. Exit\n");
+				Console.Write("Make choice: ");
+				int choice = int.Parse(Console.ReadLine());
+
+				switch (choice)
+				{
+					case 1:
+						await Add();
+						break;
+					case 2:
+						await Delete();
+						break;
+					case 3:
+						await Show();
+						break;
+					case 4:
+						await EditEntities();
+						break;
+					case 5:
+						return;
+					default:
+						Console.WriteLine("Not right choose. Try again.");
+						break;
+				}
+			}
+		}
 		private async Task GiveMark()
 		{
 			while (true)
@@ -115,7 +150,7 @@ namespace Exam_Task.Services.DecanatServices
 				}
 			}
 		}
-		public async Task Show()
+		private async Task Show()
 		{
 			while (true)
 			{
@@ -302,7 +337,7 @@ namespace Exam_Task.Services.DecanatServices
 				}
 			}
 		}
-		public async Task Delete()
+		private async Task Delete()
 		{
 			while (true)
 			{
@@ -348,7 +383,7 @@ namespace Exam_Task.Services.DecanatServices
 				}
 			}
 		}
-		public async Task EditEntities()
+		private async Task EditEntities()
 		{
 			while (true)
 			{
@@ -400,7 +435,7 @@ namespace Exam_Task.Services.DecanatServices
 				}
 			}
 		}
-		public async Task Add()
+		private async Task Add()
 		{
 			while (true)
 			{

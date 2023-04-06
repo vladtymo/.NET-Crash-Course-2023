@@ -39,38 +39,7 @@ namespace Exam_Task
 
 			decanatSystem = new DecanatService(groupService, studentService,subjectService,lecturerService);
 
-			Console.WriteLine("<============> Decanat System <============>");
-			while (true)
-			{
-				Console.WriteLine("1. Add new");
-				Console.WriteLine("2. Delete by Id");
-				Console.WriteLine("3. Display");
-				Console.WriteLine("4. Edit");
-				Console.WriteLine("5. Exit\n");
-				Console.Write("Make choice: ");
-				int choice = int.Parse(Console.ReadLine());
-
-				switch(choice)
-				{
-					case 1:
-						await decanatSystem.Add();
-						break;
-					case 2:
-						await decanatSystem.Delete();
-						break;
-					case 3:
-						await decanatSystem.Show();
-						break;
-					case 4:
-						await decanatSystem.EditEntities();
-						break;
-					case 5:
-						return;
-					default:
-						Console.WriteLine("Not right choose. Try again.");
-						break;
-				}
-			}
+			await decanatSystem.Run();
 		}
 		
 	}

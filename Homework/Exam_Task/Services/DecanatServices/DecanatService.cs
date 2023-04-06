@@ -35,22 +35,25 @@ namespace Exam_Task.Services.DecanatServices
 						Console.Write("Enter Student Id: ");
 						int studentId = int.Parse(Console.ReadLine());
 						StudentEntity student = await studentService.GetById(studentId);
-						List<LecturerEntity> lecturers = await lecturerService.GetByStudentId(student.Id);
-						Console.WriteLine($"Studet {student.FirstName} has such subjects: ");
-						int count = 1;
-						foreach (SubjectEntity subject in student.Subjects)
+						if (student != null)
 						{
-							Console.WriteLine($"\nSubject #{count}");
-							Console.WriteLine($"{subject.ToString()}");
-							count++;
-						}
+							List<LecturerEntity> lecturers = await lecturerService.GetByStudentId(student.Id);
+							Console.WriteLine($"Studet {student.FirstName} has such subjects: ");
+							int count = 1;
+							foreach (SubjectEntity subject in student.Subjects)
+							{
+								Console.WriteLine($"\nSubject #{count}");
+								Console.WriteLine($"{subject.ToString()}");
+								count++;
+							}
 
-						Console.Write("Enter Subject Id: ");
-						int subjectId = int.Parse(Console.ReadLine());
-						Console.Write("Enter Mark: ");
-						int mark = int.Parse(Console.ReadLine());
-						await subjectService.EnterMark(studentId, subjectId, mark);
+							Console.Write("Enter Subject Id: ");
+							int subjectId = int.Parse(Console.ReadLine());
+							Console.Write("Enter Mark: ");
+							int mark = int.Parse(Console.ReadLine());
+							await subjectService.EnterMark(studentId, subjectId, mark);
 						Console.WriteLine("Done");
+						}
 						break;
 					case 2:
 						return;

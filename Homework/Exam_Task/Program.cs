@@ -42,10 +42,10 @@ namespace Exam_Task
 			Console.WriteLine("<============> Decanat System <============>");
 			while (true)
 			{
-				Console.WriteLine("1. Add new Entity");
-				Console.WriteLine("2. Delete Entity by Id");
-				Console.WriteLine("3. Show Entity from Db");
-				Console.WriteLine("4. Edit Entites");
+				Console.WriteLine("1. Add new");
+				Console.WriteLine("2. Delete by Id");
+				Console.WriteLine("3. Display");
+				Console.WriteLine("4. Edit");
 				Console.WriteLine("5. Exit\n");
 				Console.Write("Make choice: ");
 				int choice = int.Parse(Console.ReadLine());

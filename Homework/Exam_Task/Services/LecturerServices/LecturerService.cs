@@ -61,10 +61,13 @@ namespace Exam_Task.Services.LecturerServices
 			{
 				foreach (SubjectEntity subject in student.Subjects)
 				{
-					LecturerEntity lecturer = await _lecturerRepository.GetById(subject.Lecturer.Id);
-					if (lecturer != null)
+					if (subject.Lecturer != null)
 					{
-						lecturers.Add(lecturer);
+						LecturerEntity lecturer = await _lecturerRepository.GetById(subject.Lecturer.Id);
+						if (lecturer != null)
+						{
+							lecturers.Add(lecturer);
+						}
 					}
 				}
 			}

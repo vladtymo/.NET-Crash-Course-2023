@@ -1,0 +1,15 @@
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\bin\Debug\net7.0\Game.exe
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\bin\Debug\net7.0\Game.deps.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\bin\Debug\net7.0\Game.runtimeconfig.json
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\bin\Debug\net7.0\Game.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\bin\Debug\net7.0\Game.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.csproj.AssemblyReference.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.AssemblyInfoInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.AssemblyInfo.cs
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.csproj.CoreCompileInputs.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\refint\Game.dll
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.pdb
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\Game.genruntimeconfig.cache
+E:\GitS\.NET-Crash-Course-2023\dot_net_crash_course\Game\obj\Debug\net7.0\ref\Game.dll

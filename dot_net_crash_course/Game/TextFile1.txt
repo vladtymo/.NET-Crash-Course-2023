@@ -1,0 +1,6 @@
+﻿public enum Level { Labyrinth, CastleYard, Dungeon };
+    public class FieldBuilder
+    {
+        public Level Name { get; set; }
+
+    }

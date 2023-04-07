@@ -1,0 +1,17 @@
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\bin\Debug\net7.0\Step-By-Step Dungeon.exe
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\bin\Debug\net7.0\Step-By-Step Dungeon.deps.json
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\bin\Debug\net7.0\Step-By-Step Dungeon.runtimeconfig.json
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\bin\Debug\net7.0\Step-By-Step Dungeon.dll
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\bin\Debug\net7.0\Step-By-Step Dungeon.pdb
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.csproj.AssemblyReference.cache
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.AssemblyInfoInputs.cache
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.AssemblyInfo.cs
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.csproj.CoreCompileInputs.cache
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.dll
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\refint\Step-By-Step Dungeon.dll
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.pdb
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.genruntimeconfig.cache
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\ref\Step-By-Step Dungeon.dll
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\GitS\.NET-Crash-Course-2023\Step-By-Step Dungeon\Step-By-Step Dungeon\obj\Debug\net7.0\Step-By-Step Dungeon.csproj.CopyComplete

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wtE2Zb/Xuk+XXGcOQpfdXWQT1yQuD38Ixmrwvh2NKZwrut7uQ6KNLe8zAOEsb36Fg961Er+oqKhl144SmTFFoQ==",
+  "success": true,
+  "projectFilePath": "E:\\GitS\\.NET-Crash-Course-2023\\Step-By-Step Dungeon\\Step-By-Step Dungeon\\Step-By-Step Dungeon.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Startex\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

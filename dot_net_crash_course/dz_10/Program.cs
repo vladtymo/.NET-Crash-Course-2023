@@ -116,7 +116,6 @@ namespace dz_10
 
             Movie m1 = new Movie("Avatar 2", d1, "USA", Genre.Adventure, 2022, 5);
             Movie m2 = (Movie)m1.Clone();
-            m2.Title = "Titanic";
             m2.GenreOfFilm = Genre.Drama;
             m2.Year = 1912;
 
@@ -133,6 +132,10 @@ namespace dz_10
             c1.Sort();
             Console.WriteLine();
             c1.GetMovies();
+
+            Console.WriteLine("-----------------");
+            Console.WriteLine(m1);
+            Console.WriteLine(m2);
 
         }
     }

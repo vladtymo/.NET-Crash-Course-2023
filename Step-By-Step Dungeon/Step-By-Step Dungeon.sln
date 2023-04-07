@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Step-By-Step Dungeon", "Step-By-Step Dungeon\Step-By-Step Dungeon.csproj", "{6188FBBE-F627-4FFC-84F7-A974D6E0150D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6188FBBE-F627-4FFC-84F7-A974D6E0150D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6188FBBE-F627-4FFC-84F7-A974D6E0150D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6188FBBE-F627-4FFC-84F7-A974D6E0150D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6188FBBE-F627-4FFC-84F7-A974D6E0150D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F4CCE57-854E-4B21-A9A0-AE01850BF270}
+	EndGlobalSection
+EndGlobal
